@@ -1,0 +1,28 @@
+// VerilogA for PLL, PFD, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module PFD(Fref,Fdiv,up,down);
+	//dclaration des variables
+	inout Fref,Fdiv,up,down;
+	electrical up,down;
+
+	real Fref,Fdiv;
+
+	analog begin
+		if(Fref<Fdiv) begin
+			V(up) <= 0;
+			V(down) <= 1.2;
+		end
+		else if(Fref>Fdiv) begin
+			V(up) <= 1.2;
+			V(down) <= 0;
+		end
+		else begin
+			V(up) <= 0;
+			V(down) <= 0;
+		end
+	end
+
+endmodule

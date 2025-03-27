@@ -1,0 +1,26 @@
+// VerilogA for PLL, PDC, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module PDC(up,down,s);
+	//dclaration des variables
+	inout up,down,s;
+	electrical up,down,s;
+	parameter real Iout=100E-6;
+
+	//fonctionnement
+	analog begin
+		if (V(up)>0.6 && V(down)<0.6) begin
+			I(s)<+ -Iout;
+		end
+		else if(V(up)<0.6 && V(down)>0.6)begin
+			I(s)<+ Iout;
+		end	
+		else begin //V(up)==V(down)
+			I(s) <+ 0;
+		end
+	end
+
+
+endmodule
