@@ -1,0 +1,81 @@
+<Qucs Schematic 25.1.1>
+<Properties>
+  <View=-68,-225,1922,733,1,243,50>
+  <Grid=10,10,1>
+  <DataSet=premiers_tests_grille_commune.dat>
+  <DataDisplay=premiers_tests_grille_commune.dpl>
+  <OpenDisplay=0>
+  <Script=premiers_tests_grille_commune.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Titre>
+  <FrameText1=Auteur :>
+  <FrameText2=Date :>
+  <FrameText3=Version :>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+  <GND * 1 550 220 0 0 0 3>
+  <GND * 1 550 400 0 0 0 3>
+  <Vdc V1 1 210 -20 18 -26 0 1 "1 V" 1>
+  <GND * 1 210 30 0 0 0 0>
+  <Vac V2 1 240 490 18 -26 0 1 "1 V" 1 "1 kHz" 0 "0" 0 "0" 0 "0" 0 "0" 0>
+  <GND * 1 240 530 0 0 0 0>
+  <Vdc V4 1 670 430 18 -26 0 1 "1 V" 1>
+  <GND * 1 670 480 0 0 0 0>
+  <Vdc V3 1 670 250 18 -26 0 1 "1 V" 1>
+  <GND * 1 670 300 0 0 0 0>
+  <.AC AC1 1 0 30 0 99 0 0 "log" 1 "100k" 1 "300 GHz" 1 "101" 1 "no" 0>
+  <INCLSCR INCLSCR1 1 20 400 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR2 1 20 530 -60 16 0 0 "\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR3 1 20 640 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <L_SPICE L1 1 430 10 10 -26 0 1 "3n" 1 "" 0 "" 0 "" 0 "" 0>
+  <C_SPICE C1 1 590 10 17 -26 0 1 "1,41p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
+  <R_SPICE R2 1 760 0 15 -26 0 1 "600" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
+  <Lib sg13_lv_nmos1 1 590 220 95 -121 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "121u" 1 "0.13u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos2 1 590 400 95 -121 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "121u" 1 "0.13u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <L_SPICE L2 1 520 490 10 -26 0 1 "3n" 1 "" 0 "" 0 "" 0 "" 0>
+  <GND * 1 520 520 0 0 0 0>
+  <R_SPICE R1 1 380 460 -26 15 0 0 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
+</Components>
+<Wires>
+  <590 60 590 170 "" 0 0 0 "">
+  <590 280 590 350 "" 0 0 0 "">
+  <550 220 580 220 "" 0 0 0 "">
+  <550 400 580 400 "" 0 0 0 "">
+  <430 -50 590 -50 "" 0 0 0 "">
+  <430 -50 430 -20 "" 0 0 0 "">
+  <430 40 430 60 "" 0 0 0 "">
+  <430 60 590 60 "" 0 0 0 "">
+  <590 -50 760 -50 "" 0 0 0 "">
+  <760 -50 760 -30 "" 0 0 0 "">
+  <590 60 760 60 "" 0 0 0 "">
+  <760 60 860 60 "" 0 0 0 "">
+  <210 -50 430 -50 "" 0 0 0 "">
+  <210 10 210 30 "" 0 0 0 "">
+  <240 520 240 530 "" 0 0 0 "">
+  <240 460 350 460 "" 0 0 0 "">
+  <640 400 670 400 "" 0 0 0 "">
+  <670 460 670 480 "" 0 0 0 "">
+  <640 220 670 220 "" 0 0 0 "">
+  <670 280 670 300 "" 0 0 0 "">
+  <590 40 590 60 "" 0 0 0 "">
+  <590 -50 590 -20 "" 0 0 0 "">
+  <410 460 520 460 "" 0 0 0 "">
+  <760 30 760 60 "" 0 0 0 "">
+  <520 460 590 460 "" 0 0 0 "">
+  <240 460 240 460 "Vin" 270 430 0 "">
+  <670 400 670 400 "Vb1" 700 370 0 "">
+  <670 220 670 220 "Vb2" 700 190 0 "">
+  <590 -50 590 -50 "VDD" 620 -80 0 "">
+  <860 60 860 60 "Vout" 890 30 0 "">
+</Wires>
+<Diagrams>
+  <Rect 1010 532 871 717 3 #c0c0c0 1 11 0 100000 1 3e+11 1 0 1 0 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.v(Vout)" #0000ff 0 3 0 0 0>
+	<"ngspice/ac.v(Vin)" #ff0000 0 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
