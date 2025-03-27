@@ -1,0 +1,40 @@
+* Qucs 25.1.1  /home/userproj/microelectronics/projects/Test_Mix/mixer.sch
+.INCLUDE "/usr/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+
+.SUBCKT IHP_PDK_nonlinear_components_sg13_lv_nmos  gnd d g s b w=0.35u l=0.34u ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346e-6 z2=0.38e-6 wmin=0.15e-6 rfmode=0 pre_layout=1 mlist=1
+X1 d g s b  sg13_lv_nmos w={w} l={l} ng={ng} m={m} as={as} ad={ad} pd={pd} 
++ ps={ps} trise={trise} z1={z1} z2={z2} wmin={wmin} rfmode={rfmode} pre_layout={pre_layout} 
+.ENDS
+  
+.LIB cornerRES.lib res_wcs
+
+.LIB cornerMOSlv.lib mos_tt
+
+
+
+R1 V_out_P  Vdd 400
+R2 V_out_N  Vdd 400
+Xsg13_lv_nmos5 0  V_apres1 VRF_1 _net0 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=17.36U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos6 0  Vapres2 VRF_2 _net0 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=17.36U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos3 0  V_out_N VOL_Neg1 Vapres2 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos2 0  V_out_P VOL_POS Vapres2 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos1 0  V_out_N VOL_POS V_apres1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos4 0  V_out_P VOL_Neg V_apres1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+V1 Vdd 0 DC 1.2
+Ip _net0 0 DC 4.64M
+VP1 VRF_1 0 dc 0 ac 0.632456 SIN(0 0.632456 2.443G) portnum 1 z0 50
+VP2 VRF_2 0 dc 0 ac 0.632456 SIN(0 0.632456 2.443G) portnum 2 z0 50
+V5 VOL_Neg 0 DC 0 PULSE( 0 -2V 0N 0 0 204.5F {(204.5F)+(204.5F)+(0)+(0)} )  AC 0
+V7 VOL_POS 0 DC 0 PULSE( 0 2 0N 0 0 204.5F {(204.5F)+(204.5F)+(0)+(0)} )  AC 0
+V6 VOL_Neg1 0 DC 0 PULSE( 0 -2V 0N 0 0 204.5F {(204.5F)+(204.5F)+(0)+(0)} )  AC 0
+
+.control
+
+tran 1.0101e-09 1e-07 0 
+write spice4qucs.tr1.plot v(VOL_Neg) v(VOL_Neg1) v(VOL_POS) v(VRF_1) v(VRF_2) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd)
+destroy all
+reset
+
+exit
+.endc
+.END
