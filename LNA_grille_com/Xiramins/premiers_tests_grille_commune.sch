@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-68,-225,1922,733,1,243,50>
+  <View=-88,-311,1922,818,0.591542,0,0>
   <Grid=10,10,1>
   <DataSet=premiers_tests_grille_commune.dat>
   <DataDisplay=premiers_tests_grille_commune.dpl>
@@ -26,10 +26,6 @@
   <GND * 1 670 480 0 0 0 0>
   <Vdc V3 1 670 250 18 -26 0 1 "1 V" 1>
   <GND * 1 670 300 0 0 0 0>
-  <.AC AC1 1 0 30 0 99 0 0 "log" 1 "100k" 1 "300 GHz" 1 "101" 1 "no" 0>
-  <INCLSCR INCLSCR1 1 20 400 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n" 1 "" 0 "" 0>
-  <INCLSCR INCLSCR2 1 20 530 -60 16 0 0 "\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
-  <INCLSCR INCLSCR3 1 20 640 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <L_SPICE L1 1 430 10 10 -26 0 1 "3n" 1 "" 0 "" 0 "" 0 "" 0>
   <C_SPICE C1 1 590 10 17 -26 0 1 "1,41p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
   <R_SPICE R2 1 760 0 15 -26 0 1 "600" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
@@ -38,6 +34,9 @@
   <L_SPICE L2 1 520 490 10 -26 0 1 "3n" 1 "" 0 "" 0 "" 0 "" 0>
   <GND * 1 520 520 0 0 0 0>
   <R_SPICE R1 1 380 460 -26 15 0 0 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
+  <.SW SW1 1 0 180 0 70 0 0 "DC1" 1 "lin" 1 "V2" 1 "0" 1 "3" 1 "301" 1>
+  <.SW SW2 1 170 180 0 70 0 0 "SW1" 1 "lin" 1 "V1" 1 "0" 1 "0.9" 1 "10" 1>
+  <INCLSCR INCLSCR1 1 20 0 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <590 60 590 170 "" 0 0 0 "">
@@ -72,9 +71,8 @@
   <860 60 860 60 "Vout" 890 30 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1010 532 871 717 3 #c0c0c0 1 11 0 100000 1 3e+11 1 0 1 0 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/ac.v(Vout)" #0000ff 0 3 0 0 0>
-	<"ngspice/ac.v(Vin)" #ff0000 0 3 0 0 0>
+  <Rect 972 572 868 643 3 #c0c0c0 1 00 1 0 0.2 3 1 -2.95736e-05 5e-05 0.000325268 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/i(pr1)" #ff00ff 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

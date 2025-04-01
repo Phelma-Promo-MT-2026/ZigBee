@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=186,-200,1827,654,1.24271,104,130>
+  <View=199,-357,1763,656,1.13459,0,0>
   <Grid=10,10,1>
   <DataSet=test_nmos_id_gm.dat>
   <DataDisplay=test_nmos_id_gm.dpl>
@@ -26,7 +26,7 @@
   <GND * 1 400 590 0 0 0 0>
   <.SW SW2 1 500 30 0 70 0 0 "SW1" 1 "lin" 1 "V1" 1 "0" 1 "0.9" 1 "10" 1>
   <Lib sg13_lv_nmos1 1 510 500 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.35u" 1 "0.34u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <INCLSCR INCLSCR1 1 360 -160 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR1 1 350 -150 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <510 560 510 590 "" 0 0 0 "">
