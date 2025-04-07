@@ -1225,7 +1225,7 @@ if not preview_only:  # start simulation
 
     # print some inductor data
     # get series L and series R at frequency of interest
-    targetfreq = 10e9
+    targetfreq = 2.45e9
     findex = where (f>=targetfreq)[0]
     findex = findex.item(0)
 
@@ -1240,16 +1240,16 @@ if not preview_only:  # start simulation
 
 
     # create Touchstone S1P output file in simulation data path
-    s1p_name = os.path.join(sim_path, model_basename + '.s1p')
-    s1p_file = open(s1p_name, 'w')
-    s1p_file.write('#   Hz   S  RI   R   50\n')
-    s1p_file.write('!\n')
-    for index in range(0, numfreq):
-        freq = f[index]
-        re = real(s11[index])
-        im = imag(s11[index])
-        s1p_file.write(str(freq) + ' ' + str(re) + ' ' + str(im) + '\n')
-    s1p_file.close()
+    # s1p_name = os.path.join(sim_path, model_basename + '.s1p')
+    # s1p_file = open(s1p_name, 'w')
+    # s1p_file.write('#   Hz   S  RI   R   50\n')
+    # s1p_file.write('!\n')
+    # for index in range(0, numfreq):
+    #     freq = f[index]
+    #     re = real(s11[index])
+    #     im = imag(s11[index])
+    #     s1p_file.write(str(freq) + ' ' + str(re) + ' ' + str(im) + '\n')
+    # s1p_file.close()
 
     # Show all plots
     show()

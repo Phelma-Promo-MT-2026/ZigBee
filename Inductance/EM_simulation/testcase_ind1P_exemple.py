@@ -632,8 +632,4 @@ if not preview_only:  # start simulation
     s1p_file.close()
 
     # Show all plots
-    show()
-
-    
-
-    
+    show() 
