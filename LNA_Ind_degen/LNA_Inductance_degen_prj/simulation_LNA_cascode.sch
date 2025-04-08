@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=239,-32,1370,908,1.4619,0,177>
+  <View=275,85,1628,684,1.4619,0,0>
   <Grid=10,10,1>
   <DataSet=simulation_LNA_cascode.dat>
   <DataDisplay=simulation_LNA_cascode.dpl>
@@ -29,6 +29,7 @@
   <GND * 1 740 560 0 0 0 0>
   <C C1 1 620 440 -26 -51 0 2 "1 mF" 1 "" 0 "polar" 0>
   <Sub LNA_Cascode 1 830 440 -26 21 0 0 "LNA_cascode.sch" 1>
+  <.SW SW1 1 630 160 0 70 0 0 "SP1" 1 "lin" 1 "C0" 1 "500f" 1 "1500f" 1 "301" 1>
 </Components>
 <Wires>
   <570 590 570 610 "" 0 0 0 "">
@@ -43,7 +44,7 @@
   <740 440 800 440 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Smith 950 581 361 361 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+  <Smith 1220 611 361 361 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(s_1_1)" #0000ff 0 3 0 0 0>
 	  <Mkr 2.44906e+09 190 -406 3 0 0>
   </Smith>
