@@ -12,33 +12,49 @@ X1 d g s b  sg13_lv_nmos w={w} l={l} ng={ng} m={m} as={as} ad={ad} pd={pd}
 
 
 
-R1 V_out_P  Vdd 400
-R2 V_out_N  Vdd 400
-Xsg13_lv_nmos5 0  V_apres1 VRF_1 _net0 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=17.36U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
-Xsg13_lv_nmos6 0  Vapres2 VRF_2 _net0 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=17.36U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
-Xsg13_lv_nmos3 0  V_out_N VOL_Neg1 Vapres2 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
-Xsg13_lv_nmos2 0  V_out_P VOL_POS Vapres2 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
-Xsg13_lv_nmos1 0  V_out_N VOL_POS V_apres1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
-Xsg13_lv_nmos4 0  V_out_P VOL_Neg V_apres1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.479U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
 V1 Vdd 0 DC 1.2
-Ip _net0 0 DC 4.64M
-VP1 VRF_1 0 dc 0 ac 0.632456 SIN(0 0.632456 2.443G) portnum 1 z0 50
-VP2 VRF_2 0 dc 0 ac 0.632456 SIN(0 0.632456 2.443G) portnum 2 z0 50
-V7 VOL_POS 0 DC 0 PULSE( 0 2 0N 2F 1.5F 204.5F {(204.5F)+(204.5F)+(2F)+(1.5F)} )  AC 0
-V6 VOL_Neg1 0 DC 0 PULSE( 0 -2V 0N 2F 2F 204.5F {(204.5F)+(204.5F)+(2F)+(2F)} )  AC 0
-V5 VOL_Neg 0 DC 0 PULSE( 0 -1V 0N 2F 2F 204.5F {(204.5F)+(204.5F)+(2F)+(2F)} )  AC 0
+V18 VOL_Neg 0 DC 0.9 SIN(0.9 -2V 2.44G 0 0 0) AC -2V ACPHASE 0
+V19 VOL_Pos 0 DC 0.8 SIN(0.8 2 2.44G 0 0 0) AC 2 ACPHASE 0
+V17 VOL_Pos1 0 DC 0.8 SIN(0.8 2 2.44G 0 0 0) AC 2 ACPHASE 0
+R3 Vref_pos  _net0 50
+R4 Vref_neg  _net1 50
+Ip _net2 0 DC 4.64M
+Xsg13_lv_nmos5 0  V_apres1 Vref_pos 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=17.1U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos6 0  Vapres2 Vref_neg 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=17.1U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+R6 Vref_pos  _net2 10k
+R7 _net2  Vref_neg 10k
+Xsg13_lv_nmos7 0  V_out_P VOL_Pos V_apres1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.46U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.479U rfmode=0 pre_layout=1
+Xsg13_lv_nmos1 0  V_out_N VOL_Neg V_apres1 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.46U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.479U rfmode=0 pre_layout=1
+Xsg13_lv_nmos2 0  V_out_P VOL_Neg Vapres2 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.46U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.479U rfmode=0 pre_layout=1
+Xsg13_lv_nmos3 0  V_out_N VOL_Pos1 Vapres2 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.46U l=0.130U ng={W/L} m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.479U rfmode=0 pre_layout=1
+V15 _net0 0 DC 0.8 SIN(0.8 0.4 2.45G 0 0 0) AC 0.4 ACPHASE 0
+V16 _net1 0 DC 0.8 SIN(0.8 -0.4V 2.45G 0 0 0) AC -0.4V ACPHASE 0
+R1 V_out_P  Vdd 800
+R2 V_out_N  Vdd 800
 
 .control
 
-tran 3.44828e-10 1e-08 0 
+op
 let vout = V_out_P-V_out_N
-write spice4qucs.tr1.plot v(VOL_Neg) v(VOL_Neg1) v(VOL_POS) v(VRF_1) v(VRF_2) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd) vout
+let fft_v = fft(vout)
+print v(VOL_Neg) v(VOL_Pos) v(VOL_Pos1) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd) v(Vref_neg) v(Vref_pos)  vout fft_v > spice4qucs.dc1.ngspice.dc.print
 destroy all
 reset
 
-op
+tran 2.07423e-11 2.8e-07 0 
 let vout = V_out_P-V_out_N
-print v(VOL_Neg) v(VOL_Neg1) v(VOL_POS) v(VRF_1) v(VRF_2) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd)  vout > spice4qucs.dc1.ngspice.dc.print
+let fft_v = fft(vout)
+write spice4qucs.tr2.plot v(VOL_Neg) v(VOL_Pos) v(VOL_Pos1) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd) v(Vref_neg) v(Vref_pos) vout fft_v
+destroy all
+reset
+
+tran 5e-07 0.0001 0
+set specwindow=hanning
+linearize v(VOL_Neg) v(VOL_Pos) v(VOL_Pos1) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd) v(Vref_neg) v(Vref_pos) 
+fft v(VOL_Neg) v(VOL_Pos) v(VOL_Pos1) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd) v(Vref_neg) v(Vref_pos) 
+let vout = V_out_P-V_out_N
+let fft_v = fft(vout)
+write spice4qucs.fft1.plot v(VOL_Neg) v(VOL_Pos) v(VOL_Pos1) v(V_apres1) v(V_out_N) v(V_out_P) v(Vapres2) v(Vdd) v(Vref_neg) v(Vref_pos) vout fft_v
 destroy all
 reset
 
