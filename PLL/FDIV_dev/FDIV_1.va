@@ -1,0 +1,27 @@
+//VerilogA for PLL, FDIV, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FDIV(Vvco, Vdiv);
+	input Vvco;
+	output Vdiv;
+	electrical Vvco, Vdiv;
+	integer N = 256;
+	integer count = 0;
+	parameter real vth = 0.6, vout = 1.2;
+	real Vvco_1 = 0;
+	analog begin
+		if(V(Vvco) > vth && Vvco_1 < vth) begin
+			count = count + 1;
+			if (count >+ N/2) begin
+				count = 0;
+				V(Vdiv) <+ -1 * V(Vdiv);
+			end
+			Vvco_1 = V(Vvco);
+		end
+		else begin
+			Vvco_1 = Vvco_1;
+		end
+	end
+endmodule
