@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=0,240,1573,1084,1,0,0>
+  <View=76,268,1461,1011,1.13574,0,0>
   <Grid=10,10,1>
-  <DataSet=Inductance_S1P_1-2nH.dat>
-  <DataDisplay=Inductance_S1P_1-2nH.dpl>
+  <DataSet=Inductance_S1P_1.1nH.dat>
+  <DataDisplay=Inductance_S1P_1.1nH.dpl>
   <OpenDisplay=0>
   <Script=Inductance_S1P_1-2nH.m>
   <RunScript=0>
@@ -24,7 +24,7 @@
   <R R1 1 650 390 -26 15 0 0 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <.SP SP1 1 120 640 0 70 0 0 "lin" 1 "75 MHz" 1 "30 GHz" 1 "400" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <NutmegEq NutmegEq1 1 150 840 -30 18 0 0 "SP1" 1 "Rs=real(z_1_1)" 1 "Ls=imag(z_1_1)/(2*pi*frequency)" 1 "Q=imag(z_1_1)/real(z_1_1)" 1>
-  <SPfile X1 1 460 390 -26 -55 0 0 "/home/userproj/QucsWorkspace/ZigBee_Proj/Inductance/lib_ind_param_s/Ind_1P_1-2nH.s1p" 1 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
+  <SPfile X1 1 460 390 -26 -55 0 0 "/home/userproj/QucsWorkspace/ZigBee_Proj/Inductance/lib_ind_param_s/Ind_1P_1.1nH.s1p" 1 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
 </Components>
 <Wires>
   <280 480 280 510 "" 0 0 0 "">
