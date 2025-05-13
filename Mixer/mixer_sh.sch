@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-367,50,1843,1140,1.26071,310,257>
+  <View=-367,146,1843,996,1.26071,4,197>
   <Grid=10,10,1>
   <DataSet=mixer_sh.dat>
   <DataDisplay=mixer_sh.dpl>
@@ -56,8 +56,6 @@
   <Lib sg13_lv_nmos1 1 260 540 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos6 1 210 540 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Idc Ip1 1 380 850 -59 -26 0 3 "1.5 mA" 1>
-  <R_SPICE R3 1 210 400 15 -26 0 1 "750" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
-  <R_SPICE R4 1 500 400 15 -26 0 1 "750" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <Port VOL_POS1 1 70 550 -23 12 0 0 "1" 1 "analog" 0>
   <Port VRF_POS 1 160 720 -23 12 0 0 "3" 1 "analog" 0>
   <Port VOL_POS2 1 690 550 4 12 1 2 "2" 1 "analog" 0>
@@ -66,6 +64,8 @@
   <Port VOUT_N 1 500 450 -23 12 0 0 "8" 1 "analog" 0>
   <Port VOUT_P 1 210 450 -23 12 0 0 "7" 1 "analog" 0>
   <Port VOL_NEG 1 360 540 12 4 0 1 "6" 1 "analog" 0>
+  <R_SPICE R3 1 210 400 15 -26 0 1 "750" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
+  <R_SPICE R4 1 500 400 15 -26 0 1 "750" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
 </Components>
 <Wires>
   <480 600 480 610 "" 0 0 0 "">

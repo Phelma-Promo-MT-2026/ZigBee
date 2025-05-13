@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-1324,-1160,3751,1590,0.972682,965,1147>
+  <View=-1324,-1160,3751,1590,0.972682,501,1147>
   <Grid=10,10,1>
   <DataSet=mixer.dat>
   <DataDisplay=mixer.dpl>
@@ -45,7 +45,6 @@
 <Components>
   <INCLSCR INCLSCR1 1 20 110 -60 16 0 0 ".LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <INCLSCR INCLSCR2 1 200 110 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
-  <.CUSTOMSIM CUSTOM1 0 -410 600 0 41 0 0 "tran 50f 15p 0 \nlinearize V(V_out_P)\nfft V(V_out_P)\nlet s=db(V(V_out_P))" 1 "s" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
   <GND * 1 290 430 0 0 0 2>
   <GND * 1 520 430 0 0 0 2>
   <Lib sg13_lv_nmos1 1 320 620 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "17.1u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
@@ -55,7 +54,6 @@
   <Lib sg13_lv_nmos4 1 490 450 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos5 1 300 450 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos6 1 250 450 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Port VOL_POS1 1 110 460 -23 12 0 0 "1" 1 "analog" 0>
   <Port VRF_POS 1 200 630 -23 12 0 0 "3" 1 "analog" 0>
   <Port VOL_POS2 1 730 460 4 12 1 2 "2" 1 "analog" 0>
   <Port VRF_NEG 1 640 630 4 12 1 2 "4" 1 "analog" 0>
@@ -69,6 +67,7 @@
   <Idc Ip1 1 420 790 -59 -26 0 3 "4.64mA" 1>
   <R_SPICE R4 1 320 740 -26 15 0 0 "100" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <R_SPICE R3 1 510 740 -26 15 0 0 "100" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
+  <Port VOL_POS1 1 90 450 -23 12 0 0 "1" 1 "analog" 0>
 </Components>
 <Wires>
   <290 430 290 450 "" 0 0 0 "">
@@ -103,8 +102,6 @@
   <410 620 410 640 "" 0 0 0 "">
   <260 450 290 450 "" 0 0 0 "">
   <250 510 300 510 "" 0 0 0 "">
-  <110 450 110 460 "" 0 0 0 "">
-  <110 450 200 450 "" 0 0 0 "">
   <250 380 250 400 "" 0 0 0 "">
   <300 510 320 510 "" 0 0 0 "">
   <540 250 540 280 "" 0 0 0 "">
@@ -129,6 +126,7 @@
   <420 820 420 830 "" 0 0 0 "">
   <540 740 590 740 "" 0 0 0 "">
   <350 740 420 740 "" 0 0 0 "">
+  <90 450 200 450 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
