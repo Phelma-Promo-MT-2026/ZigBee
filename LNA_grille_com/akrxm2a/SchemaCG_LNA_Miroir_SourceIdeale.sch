@@ -1,11 +1,11 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=6,-56,1594,796,0.99061,0,0>
+  <View=215,-56,1803,796,0.99061,0,0>
   <Grid=10,10,1>
-  <DataSet=SchemaCG_LNA_Miroir.dat>
-  <DataDisplay=SchemaCG_LNA_Miroir.dpl>
+  <DataSet=SchemaCG_LNA_Miroir_SourceIdeale.dat>
+  <DataDisplay=SchemaCG_LNA_Miroir_SourceIdeale.dpl>
   <OpenDisplay=0>
-  <Script=SchemaCG_LNA_Miroir.m>
+  <Script=SchemaCG_LNA_Miroir_SourceIdeale.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Titre>
@@ -32,14 +32,11 @@
   <Vdc Vdd 1 640 120 18 -26 0 1 "1.2 V" 1>
   <GND * 1 1060 630 0 0 0 0>
   <Lib mn3 1 1060 530 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "28.7u" 1 "520n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Idc I1 1 1060 390 18 -26 1 3 "1.3 mA" 1>
+  <NutmegEq NutmegEq1 1 620 290 -30 18 0 0 "ALL" 1>
   <R_SPICE Rs1 1 740 640 -26 -83 0 2 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <GND * 1 660 730 0 0 0 0>
   <Vdc Vin 1 660 670 18 -26 0 1 "1.2 V" 1>
-  <IProbe Pr2 1 1060 390 -35 -26 0 3>
-  <GND * 1 1160 180 0 0 0 0>
-  <Vdc Vpol 1 1160 130 18 -26 0 1 "1.2 V" 1>
-  <R_SPICE Rpol 1 1060 310 15 -26 0 1 "462" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
-  <NutmegEq NutmegEq1 1 270 90 -30 18 0 0 "ALL" 1>
 </Components>
 <Wires>
   <730 90 730 120 "" 0 0 0 "">
@@ -65,6 +62,7 @@
   <860 340 970 340 "" 0 0 0 "">
   <900 90 970 90 "" 0 0 0 "">
   <970 90 970 340 "" 0 0 0 "">
+  <970 90 1060 90 "" 0 0 0 "">
   <860 530 980 530 "" 0 0 0 "">
   <1060 600 1060 630 "" 0 0 0 "">
   <1060 600 1090 600 "" 0 0 0 "">
@@ -76,14 +74,10 @@
   <980 530 1010 530 "" 0 0 0 "">
   <1060 460 1060 480 "" 0 0 0 "">
   <1060 420 1060 460 "" 0 0 0 "">
+  <1060 90 1060 360 "" 0 0 0 "">
   <770 640 810 640 "" 0 0 0 "">
   <660 640 710 640 "" 0 0 0 "">
   <660 700 660 730 "" 0 0 0 "">
-  <1160 90 1160 100 "" 0 0 0 "">
-  <1160 160 1160 180 "" 0 0 0 "">
-  <1060 90 1160 90 "" 0 0 0 "">
-  <1060 90 1060 280 "" 0 0 0 "">
-  <1060 340 1060 360 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>

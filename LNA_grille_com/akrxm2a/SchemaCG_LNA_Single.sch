@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-444,-314,1401,676,1.03162,171,79>
+  <View=-298,-237,1261,599,1.00898,0,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Single.dat>
   <DataDisplay=SchemaCG_LNA_Single.dpl>
@@ -35,7 +35,6 @@
   <R_SPICE Rs 1 400 420 -26 -83 0 2 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <L_SPICE L1 1 430 -70 10 -26 0 1 "3n" 1 "" 0 "" 0 "" 0 "" 0>
   <C_SPICE C1 1 510 -70 17 -26 0 1 "1.41p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
-  <Vdc Vg 1 660 350 18 -26 0 1 "0.6 V" 1>
   <GND * 1 490 310 0 0 0 3>
   <NutmegEq NutmegEq1 0 -220 140 -30 18 0 0 "ALL" 1 "gm_mos=@n.mn1.x1.nsg13_lv_nmos[gm]" 1 "gds_mos=@n.mn1.x1.nsg13_lv_nmos[gds]" 1 "cgs_mos=@n.mn1.x1.nsg13_lv_nmos[cgs]" 1>
   <INCLSCR INCLSCR3 0 -190 -110 -60 16 0 0 ".save all @n.mn1.x1.nsg13_lv_nmos[gm]\n.save all @n.mn1.x1.nsg13_lv_nmos[gds]\n.save all @n.mn1.x1.nsg13_lv_nmos[cgs]" 1 "" 0 "" 0>
@@ -43,6 +42,7 @@
   <NutmegEq NutmegEq2 1 -220 380 -30 18 0 0 "ALL" 1 "gm=deriv(i(VPr2))" 1>
   <Lib mn1 1 510 310 95 -121 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib mn2 1 510 120 95 -121 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Vdc Vg 1 660 350 18 -26 0 1 "0.6 V" 1>
 </Components>
 <Wires>
   <670 180 670 200 "" 0 0 0 "">
