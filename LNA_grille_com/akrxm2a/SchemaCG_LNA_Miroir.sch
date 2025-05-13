@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=2,-17,1561,819,1.00898,0,0>
+  <View=2,-194,1561,760,1.00898,0,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Miroir.dat>
   <DataDisplay=SchemaCG_LNA_Miroir.dpl>
