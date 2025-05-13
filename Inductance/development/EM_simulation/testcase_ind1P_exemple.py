@@ -605,7 +605,7 @@ if not preview_only:  # start simulation
 
     # print some inductor data
     # get series L and series R at frequency of interest
-    targetfreq = 10e9
+    targetfreq = 2.45e9
     findex = where (f>=targetfreq)[0]
     findex = findex.item(0)
 
