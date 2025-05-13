@@ -1,9 +1,9 @@
-<Qucs Schematic 25.1.1>
+<Qucs Schematic 25.1.2>
 <Properties>
-  <View=206,58,1631,822,1.10463,0,0>
+  <View=206,43,1631,836,1.10463,0,0>
   <Grid=10,10,1>
-  <DataSet=extraction_gm.dat>
-  <DataDisplay=extraction_gm.dpl>
+  <DataSet=extraction_gm_seul.dat>
+  <DataDisplay=extraction_gm_seul.dpl>
   <OpenDisplay=0>
   <Script=extraction_gm.m>
   <RunScript=0>
