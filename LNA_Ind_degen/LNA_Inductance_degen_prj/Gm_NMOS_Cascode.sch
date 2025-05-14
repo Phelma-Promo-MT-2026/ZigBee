@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=12,-178,1891,868,0.837147,0,0>
+  <View=142,-92,1891,882,0.899371,0,0>
   <Grid=10,10,1>
-  <DataSet=Cascode_gm.dat>
-  <DataDisplay=Cascode_gm.dpl>
+  <DataSet=Gm_NMOS_Cascode.dat>
+  <DataDisplay=Gm_NMOS_Cascode.dpl>
   <OpenDisplay=0>
   <Script=LNA_cascode.m>
   <RunScript=0>
