@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=21,8,2125,865,0.824937,547,0>
+  <View=-13,-62,1814,963,0.651864,2,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Miroir_cascode.dat>
   <DataDisplay=SchemaCG_LNA_Miroir_cascode.dpl>
@@ -44,10 +44,10 @@
   <Lib sg13_lv_nmos6 1 610 300 46 -97 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W1" 1 "L1" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos8 1 610 490 46 -97 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W1" 1 "L1" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos7 1 1070 330 -135 0 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W2" 1 "L2" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos5 1 1070 490 -141 6 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W2/4" 1 "L2" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <.SW SW1 1 40 360 0 70 0 0 "DC1" 1 "lin" 1 "R2" 1 "1 Ohm" 1 "2000 Ohm" 1 "10" 1>
   <.SW SW2 1 190 580 0 70 0 0 "TR1" 1 "lin" 1 "W2" 1 "10u" 1 "500u" 1 "10" 1>
   <.SW SW3 1 30 580 0 70 0 0 "SW1" 1 "lin" 1 "W2" 1 "10u" 1 "500u" 1 "10" 1>
+  <Lib sg13_lv_nmos5 1 1070 490 -141 6 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W1" 1 "L2" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <530 600 610 600 "" 0 0 0 "">
