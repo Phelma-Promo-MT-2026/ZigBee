@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=100,14,1789,771,1.01526,274,65>
+  <View=21,8,2125,865,0.824937,547,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Miroir_cascode.dat>
   <DataDisplay=SchemaCG_LNA_Miroir_cascode.dpl>
@@ -31,23 +31,25 @@
   <R_SPICE R1 1 700 110 15 -26 0 1 "1000" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <GND * 1 1130 500 0 0 0 0>
   <GND * 1 1070 560 0 0 0 0>
-  <INCLSCR INCLSCR2 1 180 200 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
-  <.DC DC1 1 120 50 0 99 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
-  <NutmegEq NutmegEq2 1 150 290 -30 18 0 0 "ALL" 1>
   <GND * 1 940 150 0 0 0 0>
   <Vdc Vpol 1 940 100 18 -26 0 1 "1.2 V" 1>
-  <Lib sg13_lv_nmos5 1 1070 490 -141 6 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "28.7u" 1 "520n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos4 1 610 490 55 -81 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos6 1 610 300 46 -97 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <IProbe Pr2 1 1070 190 -35 -26 0 3>
   <GND * 1 1130 340 0 0 0 0>
-  <Lib sg13_lv_nmos7 1 1070 330 -135 0 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W2" 1 "520n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <.SW SW2 0 110 580 0 70 0 0 "SW1" 1 "lin" 1 "W2" 1 "37u" 1 "38u" 1 "10" 1>
-  <.SW SW1 0 110 370 0 70 0 0 "DC1" 1 "lin" 1 "R1" 1 "999.9 Ohm" 1 "1000.1 Ohm" 1 "10" 1>
-  <SpicePar SpicePar1 1 1200 310 -28 18 0 0 "W2=38u" 1>
+  <INCLSCR INCLSCR2 1 100 190 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <.DC DC1 1 40 40 0 99 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
+  <NutmegEq NutmegEq2 1 70 280 -30 18 0 0 "ALL" 1>
+  <.TR TR1 1 190 360 0 99 0 0 "lin" 1 "0" 1 "1 ms" 1 "200" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <R_SPICE R2 1 1070 110 15 -26 0 1 "Rpol" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
+  <SpicePar SpicePar1 1 1200 310 -28 18 0 0 "W1=58.8u" 1 "L1=130n" 1 "W2=38u" 1 "L2=L1*3" 1 "Rpol=100" 1>
+  <Lib sg13_lv_nmos6 1 610 300 46 -97 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W1" 1 "L1" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos8 1 610 490 46 -97 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W1" 1 "L1" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos7 1 1070 330 -135 0 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W2" 1 "L2" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos5 1 1070 490 -141 6 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "W2/4" 1 "L2" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <.SW SW1 1 40 360 0 70 0 0 "DC1" 1 "lin" 1 "R2" 1 "1 Ohm" 1 "2000 Ohm" 1 "10" 1>
+  <.SW SW2 1 190 580 0 70 0 0 "TR1" 1 "lin" 1 "W2" 1 "10u" 1 "500u" 1 "10" 1>
+  <.SW SW3 1 30 580 0 70 0 0 "SW1" 1 "lin" 1 "W2" 1 "10u" 1 "500u" 1 "10" 1>
 </Components>
 <Wires>
-  <400 660 400 690 "" 0 0 0 "">
   <530 600 610 600 "" 0 0 0 "">
   <400 600 470 600 "" 0 0 0 "">
   <530 50 530 80 "" 0 0 0 "">
@@ -91,14 +93,20 @@
   <980 250 980 300 "" 0 0 0 "">
   <980 330 1020 330 "" 0 0 0 "">
   <980 300 980 330 "" 0 0 0 "">
-  <1070 50 1070 160 "" 0 0 0 "">
+  <1070 50 1070 80 "" 0 0 0 "">
+  <400 660 400 690 "" 0 0 0 "">
+  <1070 140 1070 160 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1330 361 440 345 3 #c0c0c0 1 00 1 999.9 0.02 1000.1 1 0.0015697 5e-05 0.00191621 1 -1 0.5 1 315 0 225 1 0 0 "Rpol" "ipr1 et ipr2" "">
+  <Rect 1330 361 440 345 3 #c0c0c0 1 00 1 999.9 0.02 1000.1 1 0.00129958 1e-06 0.00130662 1 -1 0.5 1 315 0 225 1 0 0 "Rpol" "ipr1 et ipr2" "">
 	<"ngspice/sw1.i(pr1)" #0000ff 0 3 0 0 0>
-	  <Mkr 999.989/3.77778e-05/0/0 282 -302 3 0 0>
+	  <Mkr 889.444/1e-05 302 -112 3 0 0>
 	<"ngspice/sw1.i(pr2)" #ff0000 0 3 0 0 0>
-	  <Mkr 999.989/3.8e-05/0/0 233 -95 3 0 0>
+	  <Mkr 889.444/1e-05 303 -255 3 0 0>
+  </Rect>
+  <Rect 1330 751 440 345 3 #c0c0c0 1 00 1 -1 0.2 1 1 -1 0.5 1 1 -1 0.5 1 315 0 225 1 0 0 "Temps" "ipr1 et ipr2" "">
+	<"ngspice/tr1.tran.i(pr1)" #ff00ff 1 3 0 0 0>
+	<"ngspice/tr1.tran.i(pr2)" #00ff00 1 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
