@@ -1,28 +1,19 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module FDIV(vin,vss, vout);
-	input vin, vss;
+module FDIV(vin, vss, vout);
+	input vin;
+	inout vss;
 	output vout;
 	electrical vin, vss, vout; 
-	parameter integer N = 256, v = 1;        
-	integer count, C;              
-	parameter real vth = 0.5;                        
-
+	
+	parameter real amplitude = 1.2;
+	real freq = 0;
+	
 	analog begin
-
-		if (V(vin, vss) > vth) begin
-			count = count + 1;
-			if (count >= N) begin
-				count = 0;              
-				C = 0; 
-			end else begin
-				C = 1;
-			end
-		end else begin
-			count = count;			
-		end	
-		V(vout, vss) <+ v * C;	
+		@(initial_step) begin
+			freq = freq + 1;
+		end
+		V(vout, vss) <+ freq;
 	end
 endmodule
-
