@@ -35,7 +35,6 @@
   <GND * 1 190 220 0 0 0 0>
   <Lib nmos1 1 430 540 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "nmos_w*10e-6" 1 "0.130u" 1 "n_finger" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <NutmegEq NutmegEq2 0 1250 250 -30 18 0 0 "ALL" 1 "gm=deriv(i(VPr1))" 1>
-  <R R1 1 430 170 15 -26 0 1 "310 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <C C1 1 620 170 17 -26 0 1 "700 fF" 1 "" 0 "neutral" 0>
   <.SW SW1 0 1110 40 0 70 0 0 "SP1" 1 "lin" 1 "C1" 1 "0.5p" 1 "1 p" 1 "6" 1>
   <SpicePar SpicePar1 1 50 -60 -28 18 0 0 "nmos_w=106" 1 "n_finger=11" 1>
@@ -46,6 +45,7 @@
   <IProbe Pr1 1 430 430 -33 -26 0 3>
   <Pac P2 1 670 340 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <Pac P1 1 -20 660 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 GHz" 1 "26.85" 0 "true" 0>
+  <R R1 1 430 170 15 -26 0 1 "310Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
 </Components>
 <Wires>
   <430 200 430 290 "" 0 0 0 "">
