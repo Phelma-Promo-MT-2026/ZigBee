@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-102,73,1816,845,1.48644,1278,43>
+  <View=-138,-94,1648,834,0.909774,0,0>
   <Grid=10,10,1>
   <DataSet=fft_mixer_v2sch.dat>
   <DataDisplay=fft_mixer_v2sch.dpl>
@@ -27,13 +27,15 @@
   <Vdc V1 1 520 540 18 -26 0 1 "1.2 V" 1>
   <Vac V4 1 330 440 18 -26 0 1 "-2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
   <Vac V5 1 270 420 18 -26 0 1 "2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
-  <INCLSCR INCLSCR1 1 -30 100 -60 16 0 0 ".LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
-  <INCLSCR INCLSCR2 1 190 90 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Vac V6 1 220 380 18 -26 0 1 "2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
-  <.CUSTOMSIM CUSTOM1 1 640 130 0 41 0 0 "tran 50p 100n 0\nlet diff = v(VOUTP) - v(VOUTN)\nlinearize diff\nfft diff\nlet s=mag(diff)\nplot s" 1 "diff;s" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
   <Sub SUB1 1 370 20 -26 518 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer.sch" 0>
-  <Vac V2 1 430 500 18 -26 0 1 "-1 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
-  <Vac V3 1 370 470 18 -26 0 1 "1 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <Vac V3 1 370 470 18 -26 0 1 "0.4 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <Vac V2 1 430 500 18 -26 0 1 "-0.4 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <GND * 1 570 590 0 0 0 0>
+  <Vdc V7 1 570 560 18 -26 0 1 "1.01 V" 1>
+  <.CUSTOMSIM CUSTOM1 1 870 120 0 41 0 0 "tran 50p 100n 0\nlet diff = v(VOUTP) - v(VOUTN)\nlinearize diff\nfft diff\nlet s=mag(diff)\nplot s" 1 "diff;s" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
+  <INCLSCR INCLSCR2 1 690 140 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR1 1 440 140 -60 16 0 0 ".LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <520 500 570 500 "" 0 0 0 "">

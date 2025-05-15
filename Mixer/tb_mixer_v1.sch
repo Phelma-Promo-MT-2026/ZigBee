@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=0,77,2348,1024,1.21,480,0>
+  <View=112,-81,2348,1119,0.703488,0,0>
   <Grid=10,10,1>
   <DataSet=tb_mixer_v1.dat>
   <DataDisplay=tb_mixer_v1.dpl>
@@ -34,8 +34,8 @@
   <INCLSCR INCLSCR2 1 440 220 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <.TR TR1 1 160 310 0 99 0 0 "lin" 1 "0" 1 "280 ns" 1 "13500" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <NutmegEq NutmegEq1 1 600 330 -30 18 0 0 "ALL" 1 "vout=VOUTP-VOUTN" 1>
-  <Sub SUB1 1 640 420 -26 248 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
   <Vac V1 1 470 510 18 -26 0 1 "2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <Sub SUB1 1 640 420 -26 248 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
 </Components>
 <Wires>
   <770 630 820 630 "" 0 0 0 "">
@@ -54,7 +54,7 @@
 <Diagrams>
   <Rect 1497 830 810 523 3 #c0c0c0 1 00 1 0 2e-08 2.8e-07 1 -0.151152 0.02 0.027648 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.vout" #0000ff 1 3 0 0 0>
-	  <Mkr 5.52188e-08 220 -525 3 0 0>
+	  <Mkr 5.52216e-08 220 -525 3 0 0>
 	  <Mkr 1.54441e-07 507 -527 3 0 0>
   </Rect>
 </Diagrams>

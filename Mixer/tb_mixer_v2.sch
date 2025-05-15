@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-92,-387,1890,662,1.18774,0,192>
+  <View=-118,-497,1917,543,0.811243,0,0>
   <Grid=10,10,1>
   <DataSet=tb_mixer_v2.dat>
   <DataDisplay=tb_mixer_v2.dpl>
@@ -42,6 +42,8 @@
   <.CUSTOMSIM CUSTOM1 0 -60 60 0 41 0 0 "tran 50p 100n 0\nlet diff = v(VOUTP) - v(VOUTN)\nlinearize diff\nfft diff\nlet s=db(diff)\nplot s" 1 "diff,s" 0 "" 0>
   <Vac V4 1 450 170 18 -26 0 1 "-0.4 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
   <Vac V3 1 390 140 18 -26 0 1 "0.4 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <GND * 1 590 260 0 0 0 0>
+  <Vdc V7 1 590 230 18 -26 0 1 "1.01 V" 1>
 </Components>
 <Wires>
   <540 170 590 170 "" 0 0 0 "">
@@ -58,9 +60,9 @@
   <1100 50 1100 50 "VOUTN" 1130 20 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1329 310 451 311 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
+  <Rect 1238 310 662 576 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.vout" #0000ff 1 3 0 0 0>
-	  <Mkr 5.58484e-08 150 -342 3 0 0>
+	  <Mkr 5.58529e-08 361 -342 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

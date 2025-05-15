@@ -29,11 +29,11 @@
   <Vac V5 1 390 470 18 -26 0 1 "2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
   <INCLSCR INCLSCR1 1 90 150 -60 16 0 0 ".LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <INCLSCR INCLSCR2 1 310 140 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
-  <Sub SUB1 1 510 340 -26 248 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
   <Vac V6 1 340 430 18 -26 0 1 "2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
   <.CUSTOMSIM CUSTOM1 1 760 180 0 41 0 0 "tran 50p 100n 0\nlet diff = v(VOUTP) - v(VOUTN)\nlinearize diff\nfft diff\nlet s=mag(diff)\nplot s" 1 "diff;s" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
-  <Vac V3 1 490 520 18 -26 0 1 "1V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
-  <Vac V2 1 550 550 18 -26 0 1 "-1V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <Sub SUB1 1 510 340 -26 248 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
+  <Vac V3 1 490 520 18 -26 0 1 "0.4V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <Vac V2 1 550 550 18 -26 0 1 "-0.4V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
 </Components>
 <Wires>
   <640 550 690 550 "" 0 0 0 "">
