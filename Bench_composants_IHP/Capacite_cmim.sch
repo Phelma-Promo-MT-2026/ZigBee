@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=35,205,1118,855,1.64222,0,95>
+  <View=-39,259,962,796,1.57169,0,0>
   <Grid=10,10,1>
-  <DataSet=Capacite_rfcmim.dat>
-  <DataDisplay=Capacite_rfcmim.dpl>
+  <DataSet=Capacite_cmim.dat>
+  <DataDisplay=Capacite_cmim.dpl>
   <OpenDisplay=0>
   <Script=Capacite_rfcmim.m>
   <RunScript=0>
