@@ -2,8 +2,8 @@
 <Properties>
   <View=206,43,1631,836,1.10463,0,0>
   <Grid=10,10,1>
-  <DataSet=extraction_gm_seul.dat>
-  <DataDisplay=extraction_gm_seul.dpl>
+  <DataSet=Gm_NMOS_seul.dat>
+  <DataDisplay=Gm_NMOS_seul.dpl>
   <OpenDisplay=0>
   <Script=extraction_gm.m>
   <RunScript=0>
