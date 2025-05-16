@@ -2,10 +2,10 @@
 <Properties>
   <View=0,0,1,1,1,0,0>
   <Grid=10,10,1>
-  <DataSet=Pompes_charge.dat>
-  <DataDisplay=Pompes_charge.dpl>
+  <DataSet=Bascule_D_full_MOS.dat>
+  <DataDisplay=Bascule_D_full_MOS.dpl>
   <OpenDisplay=0>
-  <Script=Pompes_charge.m>
+  <Script=Bascule_D_full_MOS.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Titre>
