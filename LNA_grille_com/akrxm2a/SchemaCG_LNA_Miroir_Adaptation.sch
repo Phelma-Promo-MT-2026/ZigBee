@@ -1,11 +1,11 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=72,-11,2264,820,1.01526,523,0>
+  <View=206,-176,2356,978,0.88527,0,96>
   <Grid=10,10,1>
-  <DataSet=SchemaCG_LNA_Miroir_AdapSortie.dat>
-  <DataDisplay=SchemaCG_LNA_Miroir_AdapSortie.dpl>
+  <DataSet=SchemaCG_LNA_Miroir_Adaptation.dat>
+  <DataDisplay=SchemaCG_LNA_Miroir_Adaptation.dpl>
   <OpenDisplay=0>
-  <Script=SchemaCG_LNA_Miroir_AdapSortie.m>
+  <Script=SchemaCG_LNA_Miroir_Adaptation.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Titre>
@@ -26,7 +26,7 @@
   <GND * 1 850 540 0 0 0 0>
   <R_SPICE Rpol 1 330 300 15 -26 0 1 "462" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <GND * 1 330 730 0 0 0 0>
-  <Lib mn3 1 330 530 -94 -41 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "28.7u" 1 "520n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib mn3 1 330 530 -73 -38 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "28.7u" 1 "520n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <IProbe Pr2 1 330 400 -35 -26 0 3>
   <Vdc Vpol 1 260 130 18 -26 0 1 "1.2 V" 1>
   <GND * 1 260 170 0 0 0 0>
@@ -106,15 +106,15 @@
   <810 640 820 640 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1480 621 775 491 3 #c0c0c0 1 00 1 0 5e+08 5e+09 1 -171.007 20 40 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+  <Rect 1540 661 775 491 3 #c0c0c0 1 00 1 0 5e+08 5e+09 1 -171.007 20 40 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g" #0000ff 0 3 0 0 0>
 	  <Mkr 2.45e+09 430 -508 3 0 0>
   </Rect>
-  <Smith 1064 704 350 350 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+  <Smith 1114 724 350 350 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(s_1_1)" #0000ff 0 3 0 0 0>
 	  <Mkr 2.45e+09 101 -256 3 0 0>
   </Smith>
-  <Tab 1100 300 300 200 3 #c0c0c0 1 00 1 2444 1 1 1 0 1 1 1 0 1 5000 315 0 225 1 0 0 "" "" "">
+  <Tab 1140 300 300 200 3 #c0c0c0 1 00 1 2444 1 1 1 0 1 1 1 0 1 5000 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g" #0000ff 0 3 1 0 0>
   </Tab>
 </Diagrams>
