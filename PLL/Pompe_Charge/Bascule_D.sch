@@ -16,19 +16,19 @@
 <Symbol>
   <.ID -20 -16 SUB>
   <Rectangle 179 -29 116 142 #00007f 2 1 #c0c0c0 1 0>
-  <Line 179 82 -43 0 #00007f 2 1>
-  <Line 339 5 -44 0 #00007f 2 1>
   <Text 216 29 12 #00007f 0 "D_L_a_t_c_h_">
   <Text 271 -9 15 #00007f 0 "Q">
   <Text 186 -9 15 #00007f 0 "D">
-  <.PortSym 135 82 4 0 H>
-  <.PortSym 340 5 1 180 Q>
-  <.PortSym 134 5 3 0 D>
   <Text 187 60 15 #00007f 0 "H">
-  <Line 180 5 -44 0 #00007f 2 1>
-  <Line 235 114 0 44 #00007f 2 1>
-  <.PortSym 235 159 2 0 RESET>
   <Text 209 85 15 #00007f 0 "RESET\n">
+  <Line 339 0 -44 0 #00007f 2 1>
+  <.PortSym 340 0 1 180 Q>
+  <Line 179 0 -44 0 #00007f 2 1>
+  <.PortSym 134 0 3 0 D>
+  <Line 179 80 -43 0 #00007f 2 1>
+  <.PortSym 135 80 4 0 H>
+  <Line 230 113 0 44 #00007f 2 1>
+  <.PortSym 230 158 2 0 RESET>
 </Symbol>
 <Components>
   <INCLSCR INCLSCR1 1 210 -170 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
