@@ -1,0 +1,23 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module test(in, out, vss);
+	input in;
+	inout vss;
+	output out;
+	electrical in, out, vss;
+	integer state, next_state;
+	
+	analog begin
+		@(initial_step) begin
+			state = 0;
+			next_state = 1;
+		end
+		
+		state = next_state;
+		
+		V(out, vss) <+ (state == 1 ? V(in) : -V(in));
+		
+		next_state = state + 1;
+	end
+endmodule

@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=47,-389,1261,500,0.504942,0,0>
+  <View=47,-349,1177,409,1.17699,0,0>
   <Grid=10,10,1>
   <DataSet=PDC.dat>
   <DataDisplay=PDC.dpl>
@@ -16,26 +16,26 @@
 <Symbol>
 </Symbol>
 <Components>
-  <SPICEINIT SPICEINIT1 1 130 250 -32 18 0 0 "osdi /home/userproj/microelectronics/projects/Projet_ZigBee/PLL/PLL/PDC.osdi" 1>
+  <SPICEINIT SPICEINIT1 1 130 250 -32 18 0 0 "osdi /home/Manadjack/Projet_Zigbee/ZigBee/PLL/PDC/PDC.osdi" 1>
   <SpiceModel SpiceModel1 1 120 150 -29 18 0 0 ".MODEL pdc1 charge_pump()" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
-  <GND * 1 300 150 0 0 0 0>
-  <SPICE_dev X1 1 480 90 -26 -102 0 0 "3" 1 "N" 1 "pdc1" 1 "" 0>
   <GND * 1 570 200 0 0 0 0>
   <.TR TR1 1 110 -50 0 99 0 0 "lin" 1 "0" 1 "1 ms" 1 "200" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "DoolittleLU" 0 "no" 0 "no" 0 "0" 0>
   <GND * 1 360 220 0 0 0 0>
   <R R1 1 390 120 -26 15 0 0 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <Vrect V1 1 300 90 18 -26 0 1 "1 V" 1 "0.1 ms" 1 "0.1 ms" 1 "1 ns" 0 "1 ns" 0 "0 ns" 0 "0 V" 1>
-  <Vrect V2 1 570 130 18 -26 0 1 "1 V" 1 "0.1 ms" 1 "0.1 ms" 1 "1 ns" 0 "1 ns" 0 "50 us" 1 "0 V" 1>
+  <GND * 1 280 150 0 0 0 0>
+  <Vrect V1 1 280 90 18 -26 0 1 "1 V" 1 "0.1 ms" 0 "0.1 ms" 0 "1 ns" 0 "1 ns" 0 "0 ns" 1 "0 V" 0>
+  <SPICE_dev X1 1 470 90 -26 -102 0 0 "3" 0 "N" 0 "pdc1" 1 "" 0>
+  <Vrect V2 1 570 130 18 -26 0 1 "1 V" 1 "0.1 ms" 0 "0.1 ms" 0 "1 ns" 0 "1 ns" 0 "50 us" 1 "0 V" 0>
 </Components>
 <Wires>
-  <300 60 440 60 "v1" 390 30 61 "">
-  <300 120 300 150 "" 0 0 0 "">
   <570 160 570 200 "" 0 0 0 "">
-  <520 60 570 60 "" 0 0 0 "">
-  <570 60 570 100 "" 0 0 0 "">
-  <420 120 440 120 "vout" 460 90 8 "">
   <360 120 360 220 "" 0 0 0 "">
-  <570 60 570 60 "v2" 600 30 0 "">
+  <420 120 430 120 "" 0 0 0 "">
+  <570 60 570 100 "" 0 0 0 "">
+  <510 60 570 60 "v2" 550 10 0 "">
+  <280 60 430 60 "v1" 350 0 81 "">
+  <280 120 280 150 "" 0 0 0 "">
+  <420 120 420 120 "vout" 460 180 0 "">
 </Wires>
 <Diagrams>
   <Rect 754 -59 379 243 3 #c0c0c0 1 00 1 0 0.0002 0.001 1 -0.1 0.2 1.1 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
