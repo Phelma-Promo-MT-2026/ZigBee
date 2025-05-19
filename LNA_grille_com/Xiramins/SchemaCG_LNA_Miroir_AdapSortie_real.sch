@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-847,-787,2403,1179,0.573086,109,234>
+  <View=-381,-329,1736,807,0.743033,0,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Miroir_AdapSortie_real.dat>
   <DataDisplay=SchemaCG_LNA_Miroir_AdapSortie_real.dpl>
@@ -110,10 +110,6 @@
   <-230 220 -230 240 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Smith 504 574 350 350 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/ac.v(s_1_1)" #0000ff 0 3 0 0 0>
-	  <Mkr 2.45e+09 101 -256 3 0 0>
-  </Smith>
   <Tab 540 170 300 200 3 #c0c0c0 1 00 1 2444 1 1 1 0 1 1 1 0 1 5000 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g" #0000ff 0 3 1 0 0>
   </Tab>
@@ -121,6 +117,10 @@
 	<"ngspice/ac.g" #0000ff 0 3 0 0 0>
 	  <Mkr 2.45e+09 430 -508 3 0 0>
   </Rect>
+  <Smith 494 574 350 350 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.v(s_1_1)" #0000ff 0 3 0 0 0>
+	  <Mkr 2.45e+09 101 -256 3 0 0>
+  </Smith>
 </Diagrams>
 <Paintings>
 </Paintings>
