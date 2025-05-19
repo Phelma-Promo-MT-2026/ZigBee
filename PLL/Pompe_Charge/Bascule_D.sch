@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-3438,-1573,4405,2138,1.01526,2569,1270>
+  <View=-1013,-442,1117,729,0.67268,67,58>
   <Grid=1,1,1>
   <DataSet=Bascule_D.dat>
   <DataDisplay=Bascule_D.dpl>
@@ -31,7 +31,6 @@
   <.PortSym 230 158 2 0 RESET>
 </Symbol>
 <Components>
-  <INCLSCR INCLSCR1 1 210 -170 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Port Q 1 344 -20 4 12 1 2 "1" 1 "analog" 0>
   <Port D 1 -616 269 -23 12 0 0 "3" 1 "analog" 0>
   <Port H 1 -616 100 -23 12 0 0 "4" 1 "analog" 0>
@@ -43,6 +42,7 @@
   <Sub SUB3 1 -502 109 -26 72 0 0 "NAND3.sch" 0>
   <Sub SUB2 1 -505 236 -26 72 0 0 "NAND3.sch" 0>
   <Sub SUB5 1 -760 288 38 88 0 0 "INV_2x.sch" 0>
+  <INCLSCR INCLSCR1 1 656 -291 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <58 66 317 66 "" 0 0 0 "">
