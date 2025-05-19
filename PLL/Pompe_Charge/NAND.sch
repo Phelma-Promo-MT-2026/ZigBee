@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-74,34,1504,846,1.03941,0,0>
+  <View=-79,24,1434,836,1.03941,0,0>
   <Grid=1,1,1>
   <DataSet=NAND.dat>
   <DataDisplay=NAND.dpl>
@@ -17,13 +17,13 @@
   <.ID -20 44 SUB>
   <EArc 186 -20 -156 64 4320 2880 #000080 2 1>
   <Line 108 -20 0 64 #00007f 2 1>
-  <Ellipse 186 -2 34 30 #00007f 2 1 #c0c0c0 1 0>
-  <Line 221 13 49 0 #00007f 2 1>
-  <Line 58 -2 50 0 #00007f 2 1>
-  <Line 57 26 50 0 #00007f 2 1>
-  <.PortSym 57 -2 2 0 A>
-  <.PortSym 56 26 3 0 B>
-  <.PortSym 271 13 1 180 Vout>
+  <Line 221 10 49 0 #00007f 2 1>
+  <.PortSym 271 10 1 180 Vout>
+  <Ellipse 186 -5 34 30 #00007f 2 1 #c0c0c0 1 0>
+  <Line 57 30 50 0 #00007f 2 1>
+  <Line 58 0 50 0 #00007f 2 1>
+  <.PortSym 57 0 2 0 A>
+  <.PortSym 56 30 3 0 B>
 </Symbol>
 <Components>
   <Vdc V1 1 1040 160 18 -26 0 1 "1.2 V" 1>
