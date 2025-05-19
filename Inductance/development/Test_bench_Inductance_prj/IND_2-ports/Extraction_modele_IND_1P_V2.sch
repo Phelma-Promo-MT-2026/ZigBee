@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-503,321,1803,1348,0.839055,362,18>
+  <View=24,419,1649,1291,0.96789,0,0>
   <Grid=10,10,1>
   <DataSet=Extraction_modele_IND_1P_V2.dat>
   <DataDisplay=Extraction_modele_IND_1P_V2.dpl>
@@ -18,7 +18,7 @@
 <Components>
   <NutmegEq NutmegEq1 1 220 830 -30 18 0 0 "SP1" 1 "Rs_EM=real(z_1_1)" 1 "Ls_EM=imag(z_1_1)/(2*pi*frequency)" 1 "Q_EM=imag(z_1_1)/real(z_1_1)" 1 "Rs_SPICE=real(z_3_3)" 1 "Ls_SPICE=imag(z_3_3)/(2*pi*frequency)" 1 "Q_SPICE=imag(z_3_3)/real(z_3_3)" 1>
   <.SP SP1 1 200 610 0 70 0 0 "lin" 1 "75 MHz" 1 "12 GHz" 1 "477" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
-  <SpicePar SpicePar1 1 220 1050 -28 18 0 0 "Ls=2.885n" 1 "Rs=3.623" 1 "Csp=15.555f" 1 "Cox=27.900f" 1 "Rsi=36.64" 1 "RHF=4.97" 1 "RHFexp=1.03" 1>
+  <SpicePar SpicePar1 1 220 1050 -28 18 0 0 "Ls=2.885n" 1 "Rs=3.623" 1 "Csp=13.691f" 1 "Cox=27.9f" 1 "Rsi=36.64" 1 "RHF=4.97" 1 "RHFexp=1.03" 1>
   <Pac P1 1 1150 600 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <GND * 1 1150 660 0 0 0 0>
   <GND * 1 1260 570 0 0 0 0>
