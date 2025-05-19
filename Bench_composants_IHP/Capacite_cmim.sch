@@ -1,6 +1,10 @@
 <Qucs Schematic 25.1.1>
 <Properties>
+<<<<<<< HEAD
   <View=-75,259,963,816,1.51526,0,0>
+=======
+  <View=-39,259,962,796,1.57169,0,0>
+>>>>>>> 8e1c53a50beb8493ab19dc0a2b86520afadd919e
   <Grid=10,10,1>
   <DataSet=Capacite_cmim.dat>
   <DataDisplay=Capacite_cmim.dpl>
