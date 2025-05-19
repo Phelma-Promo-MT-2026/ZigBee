@@ -23,7 +23,7 @@ module VCO(Vctrl, vss, Vout);
 			W_VCO = Wo + (Ko*V(Vctrl, vss));
 		end
 		//phi = W_VCO * $abstime;
-		phi = idt(W_VCO);
+		phi = idt(W_VCO, 0.0);
 		V(Vout, vss) <+ 0.6 + 0.6*cos(phi);
 		//V(Vout, vss) <+ sin(2*`M_PI*V(Vctrl, vss)*W_VCO);
 	end
