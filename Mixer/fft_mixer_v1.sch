@@ -2,8 +2,8 @@
 <Properties>
   <View=-18,-44,1711,884,0.909774,0,0>
   <Grid=10,10,1>
-  <DataSet=fft_mixer_v1sch.dat>
-  <DataDisplay=fft_mixer_v1sch.dpl>
+  <DataSet=fft_mixer_v1.dat>
+  <DataDisplay=fft_mixer_v1.dpl>
   <OpenDisplay=0>
   <Script=fft_mixer_v1sch.m>
   <RunScript=0>
@@ -14,6 +14,11 @@
   <FrameText3=Version :>
 </Properties>
 <Symbol>
+  <.ID -20 -16 SUB>
+  <Line -20 20 40 0 #000080 2 1>
+  <Line 20 20 0 -40 #000080 2 1>
+  <Line -20 -20 40 0 #000080 2 1>
+  <Line -20 20 0 -40 #000080 2 1>
 </Symbol>
 <Components>
   <GND * 1 340 460 0 0 0 0>

@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-74,43,1076,660,1.36791,0,0>
+  <View=33,44,1006,566,1.61686,0,0>
   <Grid=10,10,1>
   <DataSet=simu_balun.dat>
   <DataDisplay=simu_balun.dpl>
@@ -26,7 +26,7 @@
   <.AC AC1 1 690 90 0 99 0 0 "lin" 1 "2.4 GHz" 1 "2.5 GHz" 1 "200" 1 "no" 0>
   <Vac V1 1 210 470 18 -26 0 1 "va" 1 "2.45 GHz" 0 "0" 0 "0" 0 "0" 0 "0" 0>
   <NutmegEq NutmegEq1 1 310 230 -30 18 0 0 "ALL" 1 "gm=v(v1)/i(Vpr1)" 1>
-  <SpicePar SpicePar1 1 510 100 -28 18 0 0 "va=200m" 1 "ia=200u" 1 "w=103.189u" 1>
+  <SpicePar SpicePar1 1 510 100 -28 18 0 0 "va=200m" 1 "ia=200u" 1 "w=108.761u" 1>
   <Lib sg13_lv_nmos1 1 310 440 12 -29 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "w " 0 "0.130u" 0 "10" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
 </Components>
 <Wires>

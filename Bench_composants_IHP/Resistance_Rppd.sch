@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=38,261,1319,948,1.22846,0,0>
+  <View=42,221,1201,843,1.3572,0,0>
   <Grid=10,10,1>
   <DataSet=Resistance_Rppd.dat>
   <DataDisplay=Resistance_Rppd.dpl>
@@ -22,7 +22,7 @@
   <GND * 1 750 480 0 0 0 0>
   <NutmegEq NutmegEq1 1 120 430 -30 18 0 0 "SP1" 1 "Rs=real(z_1_1)" 1>
   <INCLSCR INCLSCR1 1 150 340 -60 16 0 0 "\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
-  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=39.8812u" 1 "l=34.3u" 1>
+  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=1u" 1 "l=21.2u" 1>
   <Pac P1 1 350 410 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <GND * 1 350 450 0 0 0 0>
   <.SP SP1 1 350 600 0 70 0 0 "lin" 1 "75 MHz" 1 "10 GHz" 1 "401" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
