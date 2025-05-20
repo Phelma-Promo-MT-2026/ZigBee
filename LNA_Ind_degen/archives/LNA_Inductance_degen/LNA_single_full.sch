@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-242,-156,2001,1094,0.701361,0,1>
+  <View=-242,-156,2001,1145,0.701361,0,1>
   <Grid=10,10,1>
   <DataSet=LNA_single_full.dat>
   <DataDisplay=LNA_single_full.dpl>
@@ -37,11 +37,10 @@
   <Lib nmos3 1 0 540 38 14 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "34u" 1 "0.295u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <IProbe Pr2 1 -10 430 -33 -26 0 3>
   <GND * 1 910 350 0 0 0 0>
-  <Pac P2 1 910 310 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
+  <Pac P2 1 910 310 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <.SP SP1 1 680 -40 0 70 0 0 "lin" 1 "500 MHz" 1 "5 GHz" 1 "501" 1 "yes" 1 "1" 1 "2" 0 "no" 0 "no" 0>
   <INCLSCR INCLSCR3 0 420 -80 -60 16 0 0 ".save i(vids)\n.save all @n.mn0.x1.nsg13_lv_nmos[gm]\n\n" 1 "" 0 "" 0>
-  <NutmegEq NutmegEq1 1 1110 -30 -30 18 0 0 "ALL" 1 "g=dB(s_2_1)+10*log10(5000/50)" 1>
-  <GND * 1 760 330 0 0 0 0>
+  <NutmegEq NutmegEq1 1 1110 -30 -30 18 0 0 "ALL" 1 "g=dB(s_2_1)" 1>
   <Lib nmos1 1 430 540 48 -30 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "nmos_w*10e-6" 1 "0.130u" 1 "11" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib nmos2 1 430 340 40 -42 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "nmos_w*10e-6" 1 "0.130u" 1 "11" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <.SW SW1 0 860 40 0 70 0 0 "SP1" 1 "lin" 1 "R1" 1 "1000" 1 "7000" 1 "61" 1>
@@ -49,8 +48,9 @@
   <Lib rhigh2 1 -10 320 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "5.1u" 1 "18.6u" 1 "1" 1>
   <SPfile LL 1 430 150 38 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
   <GND * 1 400 150 0 0 0 0>
-  <Lib cap_cmim1 1 610 270 -24 -71 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "26.5u" 1 "26.5u" 1>
-  <Lib cap_cmim2 1 760 290 -82 -16 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "30.1u" 1 "30.1u" 1>
+  <GND * 1 810 330 0 0 0 0>
+  <C C7 1 720 270 -26 17 0 0 "1.06 pF" 1 "" 0 "neutral" 0>
+  <C C8 1 810 300 17 -26 0 1 "1.3 pF" 1 "" 0 "neutral" 0>
 </Components>
 <Wires>
   <430 90 430 110 "" 0 0 0 "">
@@ -87,12 +87,11 @@
   <430 620 430 680 "" 0 0 0 "">
   <430 270 430 290 "" 0 0 0 "">
   <910 270 910 280 "" 0 0 0 "">
-  <430 270 590 270 "" 0 0 0 "">
-  <760 310 760 330 "" 0 0 0 "">
   <-10 230 -10 280 "" 0 0 0 "">
   <-10 360 -10 400 "" 0 0 0 "">
-  <630 270 760 270 "" 0 0 0 "">
-  <760 270 910 270 "" 0 0 0 "">
+  <430 270 690 270 "" 0 0 0 "">
+  <750 270 810 270 "" 0 0 0 "">
+  <810 270 910 270 "" 0 0 0 "">
   <0 80 0 80 "Vdd" 30 50 0 "">
   <430 90 430 90 "Vdd" 460 60 0 "">
   <-10 230 -10 230 "Vdd" 20 200 0 "">

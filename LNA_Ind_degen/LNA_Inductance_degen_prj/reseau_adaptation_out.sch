@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=0,0,1573,876,1,0,0>
+  <View=312,206,969,572,2.39328,0,0>
   <Grid=10,10,1>
   <DataSet=reseau_adaptation_out.dat>
   <DataDisplay=reseau_adaptation_out.dpl>
