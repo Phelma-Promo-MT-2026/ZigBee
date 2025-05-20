@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-296,-124,1171,650,1.09044,26,0>
+  <View=-296,-138,1147,636,1.09044,0,0>
   <Grid=5,5,1>
   <DataSet=SchemaCG_LNA_Diff.dat>
   <DataDisplay=SchemaCG_LNA_Diff.dpl>
@@ -70,7 +70,7 @@
   <Port SortiePlus 1 520 50 40 -12 1 2 "3" 1 "out" 0>
   <Port SortieMoins 1 840 50 31 -14 1 2 "4" 1 "out" 0>
   <INCLSCR INCLSCR1 1 -20 20 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
-  <SpicePar SpicePar1 1 15 200 -28 18 0 0 "w1=58.8u" 1 "l1=130n" 1 "w2=3.3u" 1 "l2=2*l1" 1>
+  <SpicePar SpicePar1 1 10 200 -28 18 0 0 "w1=58.8u" 1 "l1=130n" 1 "w2=3.3u" 1 "l2=2*l1" 1>
 </Components>
 <Wires>
   <340 -60 340 -30 "" 0 0 0 "">

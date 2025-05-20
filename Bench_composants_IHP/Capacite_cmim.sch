@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-49,259,907,796,1.24395,0,0>
+  <View=-7,259,929,761,1.68127,0,0>
   <Grid=10,10,1>
   <DataSet=Capacite_cmim.dat>
   <DataDisplay=Capacite_cmim.dpl>
@@ -16,7 +16,6 @@
 <Symbol>
 </Symbol>
 <Components>
-  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=24.098u" 1 "l=24.098u" 1>
   <NutmegEq NutmegEq1 1 120 430 -30 18 0 0 "SP1" 1 "Cmim=imag(y_1_1)/(2*pi*frequency)" 1>
   <INCLSCR INCLSCR1 1 150 320 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n" 1 "" 0 "" 0>
   <GND * 1 380 390 0 0 0 0>
@@ -27,6 +26,7 @@
   <R R1 1 670 310 -26 15 0 0 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <GND * 1 730 420 0 0 0 0>
   <.SP SP1 1 360 560 0 70 0 0 "lin" 1 "25 MHz" 1 "10 GHz" 1 "400" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
+  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=52.232u" 1 "l=w" 1>
 </Components>
 <Wires>
   <380 370 380 380 "" 0 0 0 "">
