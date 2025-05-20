@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-435,-333,1500,757,0.813102,0,0>
+  <View=-435,-333,1500,705,0.813102,0,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Miroir_Adaptation_real.dat>
   <DataDisplay=SchemaCG_LNA_Miroir_Adaptation_real.dpl>
@@ -45,14 +45,14 @@
   <GND * 1 430 190 0 0 0 0>
   <Lib cap_cmim12 1 90 510 -26 -81 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "30.6u" 1 "30.6u" 1>
   <C_SPICE C1_out1 0 350 70 -26 -85 0 2 "1.940p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
-  <Lib cap_cmim13 1 350 130 -40 28 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "35.87u" 1 "35.87u" 1>
   <C_SPICE C2_out1 0 500 180 -23 46 0 1 "4.101p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
   <Lib cap_cmim14 1 430 160 -54 59 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "52.232u" 1 "52.232u" 1>
   <.SP SP1 1 1020 -290 0 70 0 0 "lin" 1 "1 MHz" 1 "5 GHz" 1 "5000" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <INCLSCR INCLSCR1 1 780 -270 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <NutmegEq NutmegEq1 1 -90 -230 -30 18 0 0 "ALL" 1 "g=dB(s_2_1)+10*log10(5000/50)" 1>
-  <Pac P2 1 560 170 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <Pac P1 1 0 550 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
+  <Lib cap_cmim13 1 350 130 -40 28 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "35.87u" 1 "35.87u" 1>
+  <Pac P2 1 560 170 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
 </Components>
 <Wires>
   <250 340 250 350 "" 0 0 0 "">
