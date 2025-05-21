@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-423,-107,1036,676,1.07791,0,0>
+  <View=-507,-133,1036,650,1.07791,0,0>
   <Grid=10,10,1>
   <DataSet=Symbole_LNA_CG_Single.dat>
   <DataDisplay=Symbole_LNA_CG_Single.dpl>
@@ -37,9 +37,7 @@
   <GND * 1 290 220 0 0 0 0>
   <GND * 1 290 410 0 0 0 0>
   <GND * 1 240 610 0 0 0 0>
-  <SPfile Lb 1 290 510 29 -4 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
   <Lib cap_cmim11 1 190 560 -83 -22 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "24.829u" 1 "24.829u" 1>
-  <SPfile Lb1 1 250 -10 29 -4 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
   <Lib cap_cmim12 1 90 510 -26 -81 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "30.6u" 1 "30.6u" 1>
   <INCLSCR INCLSCR1 1 590 -30 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <GND * 1 -80 600 0 0 0 0>
@@ -49,6 +47,10 @@
   <Port out 1 380 120 4 -46 0 2 "2" 1 "out" 0>
   <Port Vpol 1 -80 -40 -53 -23 0 3 "3" 1 "analog" 0>
   <Port Vdd 1 170 -40 -53 -23 0 3 "4" 1 "analog" 0>
+  <Sub L1 1 270 40 -84 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <GND * 1 205 30 0 0 0 0>
+  <GND * 1 270 550 0 0 0 2>
+  <Sub Lb 1 330 580 -84 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
 </Components>
 <Wires>
   <290 210 290 220 "" 0 0 0 "">
@@ -60,22 +62,13 @@
   <130 210 200 210 "" 0 0 0 "">
   <250 460 250 510 "" 0 0 0 "">
   <190 510 250 510 "" 0 0 0 "">
-  <250 510 260 510 "" 0 0 0 "">
-  <290 540 290 610 "" 0 0 0 "">
-  <250 610 290 610 "" 0 0 0 "">
-  <240 610 250 610 "" 0 0 0 "">
   <190 610 240 610 "" 0 0 0 "">
   <190 580 190 610 "" 0 0 0 "">
   <190 510 190 540 "" 0 0 0 "">
   <0 510 70 510 "" 0 0 0 "">
   <110 510 190 510 "" 0 0 0 "">
-  <250 20 250 120 "" 0 0 0 "">
-  <210 -10 220 -10 "" 0 0 0 "">
-  <210 -40 210 -10 "" 0 0 0 "">
   <250 120 250 160 "" 0 0 0 "">
   <250 120 380 120 "" 0 0 0 "">
-  <170 -40 210 -40 "" 0 0 0 "">
-  <210 -40 170 -40 "" 0 0 0 "">
   <-80 330 -80 350 "" 0 0 0 "">
   <-80 330 -10 330 "" 0 0 0 "">
   <-30 400 -10 400 "" 0 0 0 "">
@@ -89,6 +82,17 @@
   <-80 -40 -80 140 "" 0 0 0 "">
   <-80 220 -80 330 "" 0 0 0 "">
   <250 270 250 350 "" 0 0 0 "">
+  <170 -40 250 -40 "" 0 0 0 "">
+  <250 -40 250 -10 "" 0 0 0 "">
+  <250 50 250 120 "" 0 0 0 "">
+  <205 20 230 20 "" 0 0 0 "">
+  <205 20 205 30 "" 0 0 0 "">
+  <250 510 310 510 "" 0 0 0 "">
+  <310 510 310 530 "" 0 0 0 "">
+  <310 590 310 610 "" 0 0 0 "">
+  <240 610 310 610 "" 0 0 0 "">
+  <270 560 290 560 "" 0 0 0 "">
+  <270 550 270 560 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>

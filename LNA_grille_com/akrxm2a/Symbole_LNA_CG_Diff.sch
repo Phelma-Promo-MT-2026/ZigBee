@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-341,-138,1102,636,1.09044,0,0>
+  <View=-331,-138,1128,645,1.07791,0,0>
   <Grid=5,5,1>
   <DataSet=Symbole_LNA_CG_Diff.dat>
   <DataDisplay=Symbole_LNA_CG_Diff.dpl>
@@ -41,22 +41,15 @@
 <Components>
   <GND * 1 460 200 0 0 0 0>
   <GND * 1 460 390 0 0 0 0>
-  <SPfile Lb3 1 370 -30 29 -4 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
-  <SPfile Lb4 1 460 490 29 -4 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
   <Lib mn4 1 420 190 -100 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib mn5 1 420 380 -98 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "w1" 1 "l1" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 420 570 0 0 0 0>
-  <Lib mn3 1 160 380 -60 -48 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "w2" 1 "l2" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 160 570 0 0 0 0>
-  <Lib cap_cmim6 1 360 530 20 -11 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
+  <Lib cap_cmim6 1 360 530 -85 15 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
   <GND * 1 780 200 0 0 0 0>
   <GND * 1 780 390 0 0 0 0>
-  <SPfile Lb1 1 690 -30 29 -4 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
-  <SPfile Lb2 1 780 490 29 -4 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
   <Lib mn1 1 740 190 -100 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib mn2 1 740 380 -98 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "w1" 1 "l1" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 740 570 0 0 0 0>
-  <Lib cap_cmim3 1 680 530 26 -8 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
+  <Lib cap_cmim3 1 680 530 -77 24 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
   <Port Vdd 1 570 -60 -59 -38 0 3 "5" 1 "analog" 0>
   <Port Vpol 1 160 -60 -59 -38 0 3 "6" 1 "analog" 0>
   <Lib rpol 1 320 330 -138 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "7.72u" 1 "19.62u" 1 "1" 1>
@@ -66,64 +59,52 @@
   <Port EntreeMoins 1 590 490 -23 12 0 0 "2" 1 "in" 0>
   <Port SortiePlus 1 520 50 40 -12 1 2 "3" 1 "out" 0>
   <Port SortieMoins 1 840 50 31 -14 1 2 "4" 1 "out" 0>
-  <SpicePar SpicePar1 1 -20 205 -28 18 0 0 "w1=58.8u" 1 "l1=130n" 1 "w2=3.3u" 1 "l2=2*l1" 1>
-  <INCLSCR INCLSCR1 1 -110 25 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
+  <GND * 1 660 0 0 0 0 0>
+  <GND * 1 340 0 0 0 0 0>
+  <GND * 1 415 525 0 0 0 2>
+  <Sub L2 1 725 10 -84 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Sub L1 1 405 10 -84 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Sub Lb1 1 475 555 -84 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <GND * 1 755 525 0 0 0 2>
+  <Sub Lb2 1 815 555 -84 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Lib mn2 1 740 380 -98 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib mn5 1 420 380 -98 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib mn3 1 160 380 -60 -48 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "3.3u" 1 "260n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <INCLSCR INCLSCR1 1 -75 -60 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
+  <SpicePar SpicePar1 0 -55 125 -28 18 0 0 "w1=58.8u" 1 "l1=130n" 1 "w2=3.3u" 1 "l2=2*l1" 1>
 </Components>
 <Wires>
-  <340 -60 340 -30 "" 0 0 0 "">
   <460 190 460 200 "" 0 0 0 "">
   <430 190 460 190 "" 0 0 0 "">
-  <460 380 460 390 "" 0 0 0 "">
-  <430 380 460 380 "" 0 0 0 "">
-  <300 -60 340 -60 "" 0 0 0 "">
+  <300 -60 385 -60 "" 0 0 0 "">
   <300 -60 300 190 "" 0 0 0 "">
   <300 190 370 190 "" 0 0 0 "">
   <420 50 420 140 "" 0 0 0 "">
-  <420 440 420 490 "" 0 0 0 "">
-  <370 50 420 50 "" 0 0 0 "">
-  <370 0 370 50 "" 0 0 0 "">
-  <420 490 430 490 "" 0 0 0 "">
-  <340 -60 570 -60 "" 0 0 0 "">
   <330 490 360 490 "" 0 0 0 "">
   <360 490 420 490 "" 0 0 0 "">
-  <460 520 460 570 "" 0 0 0 "">
-  <420 570 460 570 "" 0 0 0 "">
-  <290 380 370 380 "" 0 0 0 "">
-  <140 380 150 380 "" 0 0 0 "">
-  <140 380 140 460 "" 0 0 0 "">
-  <160 440 160 460 "" 0 0 0 "">
   <160 460 160 570 "" 0 0 0 "">
   <140 460 160 460 "" 0 0 0 "">
-  <210 380 220 380 "" 0 0 0 "">
   <360 570 420 570 "" 0 0 0 "">
   <360 550 360 570 "" 0 0 0 "">
   <360 490 360 510 "" 0 0 0 "">
-  <660 -60 660 -30 "" 0 0 0 "">
   <780 190 780 200 "" 0 0 0 "">
   <750 190 780 190 "" 0 0 0 "">
   <780 380 780 390 "" 0 0 0 "">
   <750 380 780 380 "" 0 0 0 "">
-  <620 -60 660 -60 "" 0 0 0 "">
   <620 -60 620 190 "" 0 0 0 "">
   <620 190 690 190 "" 0 0 0 "">
   <740 50 740 140 "" 0 0 0 "">
   <740 440 740 490 "" 0 0 0 "">
-  <690 50 740 50 "" 0 0 0 "">
-  <690 0 690 50 "" 0 0 0 "">
-  <740 490 750 490 "" 0 0 0 "">
   <680 490 740 490 "" 0 0 0 "">
   <680 490 680 510 "" 0 0 0 "">
-  <780 520 780 570 "" 0 0 0 "">
   <680 550 680 570 "" 0 0 0 "">
   <680 570 740 570 "" 0 0 0 "">
-  <740 570 780 570 "" 0 0 0 "">
   <160 -60 160 120 "" 0 0 0 "">
   <270 490 290 490 "" 0 0 0 "">
   <490 380 690 380 "" 0 0 0 "">
   <290 340 290 380 "" 0 0 0 "">
   <290 340 490 340 "" 0 0 0 "">
   <490 340 490 380 "" 0 0 0 "">
-  <160 320 160 330 "" 0 0 0 "">
   <160 320 220 320 "" 0 0 0 "">
   <220 380 290 380 "" 0 0 0 "">
   <220 320 220 380 "" 0 0 0 "">
@@ -133,8 +114,41 @@
   <740 50 840 50 "" 0 0 0 "">
   <420 50 520 50 "" 0 0 0 "">
   <160 200 160 320 "" 0 0 0 "">
-  <420 250 420 330 "" 0 0 0 "">
   <740 250 740 330 "" 0 0 0 "">
+  <660 -10 685 -10 "" 0 0 0 "">
+  <660 -10 660 0 "" 0 0 0 "">
+  <705 -60 705 -40 "" 0 0 0 "">
+  <620 -60 705 -60 "" 0 0 0 "">
+  <705 20 705 50 "" 0 0 0 "">
+  <705 50 740 50 "" 0 0 0 "">
+  <340 -10 365 -10 "" 0 0 0 "">
+  <340 -10 340 0 "" 0 0 0 "">
+  <385 -60 570 -60 "" 0 0 0 "">
+  <385 -60 385 -40 "" 0 0 0 "">
+  <385 20 385 50 "" 0 0 0 "">
+  <385 50 420 50 "" 0 0 0 "">
+  <415 535 435 535 "" 0 0 0 "">
+  <415 525 415 535 "" 0 0 0 "">
+  <455 490 455 505 "" 0 0 0 "">
+  <420 490 455 490 "" 0 0 0 "">
+  <455 565 455 570 "" 0 0 0 "">
+  <420 570 455 570 "" 0 0 0 "">
+  <755 535 775 535 "" 0 0 0 "">
+  <755 525 755 535 "" 0 0 0 "">
+  <795 490 795 505 "" 0 0 0 "">
+  <795 565 795 570 "" 0 0 0 "">
+  <740 490 795 490 "" 0 0 0 "">
+  <740 570 795 570 "" 0 0 0 "">
+  <460 380 460 390 "" 0 0 0 "">
+  <430 380 460 380 "" 0 0 0 "">
+  <420 440 420 490 "" 0 0 0 "">
+  <290 380 370 380 "" 0 0 0 "">
+  <420 250 420 330 "" 0 0 0 "">
+  <140 380 140 460 "" 0 0 0 "">
+  <140 380 150 380 "" 0 0 0 "">
+  <160 440 160 460 "" 0 0 0 "">
+  <210 380 220 380 "" 0 0 0 "">
+  <160 320 160 330 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
