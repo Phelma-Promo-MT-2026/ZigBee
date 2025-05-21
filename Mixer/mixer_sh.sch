@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-492,114,1077,1016,1.00238,0,60>
+  <View=-492,114,1077,956,1.00238,0,0>
   <Grid=10,10,1>
   <DataSet=mixer_sh.dat>
   <DataDisplay=mixer_sh.dpl>
@@ -43,11 +43,10 @@
   <.ID 280 34 SUB>
 </Symbol>
 <Components>
-  <INCLSCR INCLSCR1 1 -100 250 -60 16 0 0 ".LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <GND * 1 250 520 0 0 0 2>
   <GND * 1 480 520 0 0 0 2>
   <GND * 1 380 890 0 0 0 0>
-  <INCLSCR INCLSCR2 1 -100 170 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR2 1 -100 170 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs" 1 "" 0 "" 0>
   <Lib sg13_lv_nmos3 1 280 710 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "17.1u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos4 1 480 710 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "17.1u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 370 730 0 0 0 0>

@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-163,-87,2082,1118,1.02585,320,282>
+  <View=-1316,-275,2661,1077,1.02585,1388,480>
   <Grid=10,10,1>
   <DataSet=pt_fonc_mixer_v2.dat>
   <DataDisplay=pt_fonc_mixer_v2.dpl>
@@ -50,11 +50,11 @@
   <INCLSCR INCLSCR2 1 210 70 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <GND * 1 370 930 0 0 0 0>
   <GND * 1 650 950 0 0 0 0>
-  <Lib sg13_lv_nmos7 1 370 830 -142 -122 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1.71u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos8 1 650 830 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "17.1u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 210 710 0 0 0 0>
-  <Vdc V7 1 210 680 18 -26 0 1 "1.01 V" 1>
   <IProbe Pr1 1 690 690 -33 -26 0 3>
+  <Vdc V7 1 210 680 18 -26 0 1 "1.2 V" 1>
+  <Lib sg13_lv_nmos7 1 370 830 -136 -96 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1.1u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos8 1 650 830 69 -42 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "11u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <810 420 810 480 "Vapres2" 850 450 21 "">
@@ -138,8 +138,8 @@
 <Diagrams>
   <Rect 1231 879 810 523 3 #c0c0c0 1 00 1 0 2e-08 2.8e-07 1 -1.2 0.2 1.2 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.vout" #0000ff 1 3 0 0 0>
-	  <Mkr 5.52417e-08 220 -525 3 0 0>
-	  <Mkr 1.54443e-07 507 -527 3 0 0>
+	  <Mkr 5.52413e-08 220 -525 3 0 0>
+	  <Mkr 1.54446e-07 507 -527 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
