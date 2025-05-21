@@ -55,9 +55,7 @@
   <Lib sg13_lv_nmos1 1 260 540 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos6 1 210 540 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Idc Ip1 1 380 850 -59 -26 0 3 "1.5 mA" 1>
-  <Port VOL_POS1 1 70 550 -23 12 0 0 "1" 1 "analog" 0>
   <Port VRF_POS 1 160 720 -23 12 0 0 "3" 1 "analog" 0>
-  <Port VOL_POS2 1 690 550 4 12 1 2 "2" 1 "analog" 0>
   <Port VRF_NEG 1 600 720 4 12 1 2 "4" 1 "analog" 0>
   <Port VDD 1 360 340 -53 -23 0 3 "5" 1 "analog" 0>
   <Port VOUT_N 1 500 450 -23 12 0 0 "8" 1 "analog" 0>
@@ -65,6 +63,8 @@
   <Port VOL_NEG 1 360 540 12 4 0 1 "6" 1 "analog" 0>
   <Lib rhigh1 1 500 390 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.020u" 1 "240n" 1 "1" 1>
   <Lib rhigh2 1 210 390 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.020u" 1 "240n" 1 "1" 1>
+  <Port VOL_POS1 1 90 540 -23 12 0 0 "1" 1 "analog" 0>
+  <Port VOL_POS2 1 640 540 4 12 1 2 "2" 1 "analog" 0>
 </Components>
 <Wires>
   <480 600 480 610 "" 0 0 0 "">
@@ -95,15 +95,11 @@
   <480 540 520 540 "" 0 0 0 "">
   <530 600 530 610 "" 0 0 0 "">
   <480 610 530 610 "" 0 0 0 "">
-  <580 540 580 550 "" 0 0 0 "">
-  <580 550 690 550 "" 0 0 0 "">
   <500 470 530 470 "" 0 0 0 "">
   <530 470 530 490 "" 0 0 0 "">
   <370 710 370 730 "" 0 0 0 "">
   <220 540 250 540 "" 0 0 0 "">
   <210 600 260 600 "" 0 0 0 "">
-  <70 540 70 550 "" 0 0 0 "">
-  <70 540 160 540 "" 0 0 0 "">
   <210 470 210 490 "" 0 0 0 "">
   <260 600 280 600 "" 0 0 0 "">
   <500 430 500 450 "" 0 0 0 "">
@@ -113,6 +109,8 @@
   <210 350 360 350 "" 0 0 0 "">
   <360 350 500 350 "" 0 0 0 "">
   <360 340 360 350 "" 0 0 0 "">
+  <90 540 160 540 "" 0 0 0 "">
+  <580 540 640 540 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
