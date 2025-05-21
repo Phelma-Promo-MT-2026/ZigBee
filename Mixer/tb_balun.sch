@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-369,-284,1934,967,1.21,606,416>
+  <View=232,71,1343,667,1.41584,0,0>
   <Grid=10,10,1>
   <DataSet=tb_balun.dat>
   <DataDisplay=tb_balun.dpl>
@@ -36,7 +36,7 @@
   <Rect 960 580 240 160 3 #c0c0c0 1 00 0 0 1e-09 5e-09 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tr1.tran.v(s)" #0000ff 1 3 0 0 0>
 	  <Mkr 2.82676e-09 196 -75 3 0 0>
-	  <Mkr 2.22523e-09 167 -189 3 0 0>
+	  <Mkr 2.22523e-09 167 -189 4 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
