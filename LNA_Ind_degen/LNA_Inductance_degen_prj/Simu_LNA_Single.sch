@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-234,-195,1858,1050,0.751841,0,0>
+  <View=-288,-83,1618,976,0.820585,0,0>
   <Grid=10,10,1>
   <DataSet=Simu_LNA_Single.dat>
   <DataDisplay=Simu_LNA_Single.dpl>
@@ -17,12 +17,12 @@
 </Symbol>
 <Components>
   <GND * 1 420 290 0 0 0 0>
-  <Vdc V1 1 340 160 18 -26 0 1 "1 V" 1>
+  <Vdc V1 1 340 160 18 -26 0 1 "1.2 V" 1>
   <GND * 1 340 190 0 0 0 0>
   <INCLSCR INCLSCR1 1 70 -10 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerCAP.lib cap_typ\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <INCLSCR INCLSCR2 1 330 -20 -60 16 0 0 ".save i(vids)\n.save all @n.mn0.x1.nsg13_lv_nmos[gm]\n\n" 1 "" 0 "" 0>
   <GND * 1 400 590 0 0 0 0>
-  <Vdc V2 1 320 460 18 -26 0 1 "1 V" 1>
+  <Vdc V2 1 320 460 18 -26 0 1 "1.2 V" 1>
   <GND * 1 320 490 0 0 0 0>
   <C C3 1 310 550 -26 17 0 0 "1 F" 1 "" 0 "neutral" 0>
   <Pac P3 1 200 590 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
@@ -40,9 +40,9 @@
   <GND * 1 660 330 0 0 0 0>
   <C C2 1 610 250 -26 17 0 0 "1 F" 1 "" 0 "neutral" 0>
   <Lib cap_cmim1 1 510 190 30 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "21.55u" 1 "21.55u" 1>
-  <.SP SP1 1 610 -40 0 70 0 0 "lin" 1 "2 GHz" 1 "3 GHz" 1 "1000" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
+  <.SP SP1 1 610 -40 0 62 0 0 "lin" 1 "2 GHz" 1 "3 GHz" 1 "1000" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <GND * 1 380 870 0 0 0 0>
-  <Vdc V3 1 300 740 18 -26 0 1 "1 V" 1>
+  <Vdc V3 1 300 740 18 -26 0 1 "1 2V" 1>
   <GND * 1 300 770 0 0 0 0>
   <C C4 1 290 830 -26 17 0 0 "1 F" 1 "" 0 "neutral" 0>
   <Pac P5 1 180 870 18 -26 0 1 "5" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
