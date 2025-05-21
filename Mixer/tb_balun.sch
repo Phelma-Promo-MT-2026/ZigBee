@@ -23,9 +23,9 @@
   <.CUSTOMSIM CUSTOM1 1 950 160 0 41 0 0 "tran 50p 100n 0\nlinearize v(s)\nfft v(s)\nlet sortie=mag(v(s))\nplot sortie" 1 "v(s);sortie" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
   <GND * 1 560 360 0 0 0 0>
   <GND * 1 560 480 0 0 0 0>
-  <Vac V5 1 560 330 18 -26 0 1 "0.2" 1 "2.45G" 0 "0" 0 "0" 0 "1.01" 0 "0" 0>
-  <Vac V4 1 560 450 18 -26 0 1 "-0.2" 1 "2.45G" 0 "0" 0 "0" 0 "1.01" 0 "0" 0>
   <Sub SUB1 1 340 220 -26 228 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/Balun.sch" 0>
+  <Vac V5 1 560 330 18 -26 0 1 "0.1" 1 "2.45G" 0 "0" 0 "0" 0 "1.01" 0 "0" 0>
+  <Vac V4 1 560 450 18 -26 0 1 "-0.1" 1 "2.45G" 0 "0" 0 "0" 0 "1.01" 0 "0" 0>
 </Components>
 <Wires>
   <560 300 560 300 "Ep" 520 270 0 "">
