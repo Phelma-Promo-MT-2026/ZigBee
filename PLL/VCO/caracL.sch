@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-288,-65,2223,1152,0.693434,146,0>
+  <View=-179,-54,2567,1112,0.839055,320,77>
   <Grid=10,10,1>
   <DataSet=caracL.dat>
   <DataDisplay=caracL.dpl>
@@ -30,7 +30,7 @@
   <Lib dantenna2 0 60 860 41 -15 0 3 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "dantenna" 0 "20u" 1 "20u" 1>
   <Lib dantenna1 0 -60 860 -106 -23 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "dantenna" 0 "20u" 1 "20u" 1>
   <.SW SW3 1 220 330 0 70 0 0 "SP1" 1 "lin" 1 "Vctrl" 1 "0.00" 1 "1.2V" 1 "2" 1>
-  <SpicePar SpicePar1 1 390 340 -28 18 0 0 "w=1u" 1 "l=1u" 1 "Vctrl=1.2V" 1>
+  <SpicePar SpicePar1 1 390 340 -28 18 0 0 "w=1u" 1 "l=1u" 1 "Vctrl=0V" 1>
   <Lib dpantenna1 0 -60 930 -118 -11 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "dpantenna" 0 "50u" 1 "50u" 1>
   <Lib dpantenna2 0 60 930 49 -11 0 3 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "dpantenna" 0 "50u" 1 "50u" 1>
   <R R2 1 780 690 15 -26 0 1 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
@@ -42,9 +42,11 @@
   <Lib cap_cmim1 1 770 950 -228 -24 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "19.4u" 1 "19.4u" 1>
   <L L1 0 160 1080 10 -26 0 1 "1 H" 1 "" 0>
   <L L2 0 -140 1070 10 -26 0 1 "1 H" 1 "" 0>
-  <SPfile X1 1 920 660 -26 -55 0 0 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
-  <SPfile X2 1 620 630 -53 -26 0 1 "/home/userproj/microelectronics/projects/ZigBee/Inductance/lib_ind_param_s/Ind_1P_3nH_High_Q_simu.s1p" 0 "rectangular" 0 "linear" 0 "open" 0 "1" 0>
-  <Pac P5 1 780 1000 -36 39 0 2 "1" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 GHz" 1 "26.85" 0 "true" 0>
+  <Pac P5 1 780 1000 -36 39 0 2 "1" 1 "500000 Ohm" 1 "0 dBm" 0 "2.45 GHz" 1 "26.85" 0 "true" 0>
+  <Sub SUB1 1 600 610 55 -1 0 1 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Sub SUB2 1 940 670 -86 -26 0 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <GND * 1 850 650 0 0 0 3>
+  <GND * 1 670 630 0 0 0 1>
 </Components>
 <Wires>
   <130 -40 170 -40 "" 0 0 0 "">
@@ -75,16 +77,15 @@
   <620 950 750 950 "" 0 0 0 "">
   <790 950 920 950 "" 0 0 0 "">
   <620 660 620 820 "" 0 0 0 "">
-  <920 690 920 820 "" 0 0 0 "">
-  <890 620 920 620 "" 0 0 0 "">
-  <890 620 890 660 "" 0 0 0 "">
-  <650 630 670 630 "" 0 0 0 "">
-  <670 520 780 520 "" 0 0 0 "">
-  <670 520 670 630 "" 0 0 0 "">
   <920 950 920 1000 "" 0 0 0 "">
   <810 1000 920 1000 "" 0 0 0 "">
   <620 950 620 1000 "" 0 0 0 "">
   <620 1000 750 1000 "" 0 0 0 "">
+  <620 520 620 600 "" 0 0 0 "">
+  <620 520 780 520 "" 0 0 0 "">
+  <920 680 920 820 "" 0 0 0 "">
+  <640 630 670 630 "" 0 0 0 "">
+  <850 650 900 650 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 1109 300 345 204 3 #c0c0c0 1 00 1 1e+09 2e+09 1e+10 1 0 5e-13 1.79993e-12 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
@@ -94,8 +95,8 @@
   </Rect>
   <Rect 1070 690 360 207 3 #c0c0c0 1 00 1 1e+09 2e+09 1e+10 1 -108.396 500 1194.02 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(rs)" #ff0000 0 3 0 0 0>
-	  <Mkr 2.53e+09/0 148 -122 3 0 0>
-	  <Mkr 2.37e+09/1.2 143 -189 3 0 0>
+	  <Mkr 2.39e+09/0 148 -122 3 0 0>
+	  <Mkr 2.52e+09/1.2 143 -189 3 0 0>
   </Rect>
   <Rect 664 305 371 186 3 #c0c0c0 1 00 1 1e+09 2e+09 1e+10 1 100 20 160 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.rp" #0000ff 0 3 0 0 0>
@@ -104,7 +105,7 @@
   </Rect>
   <Rect 1584 330 430 293 3 #c0c0c0 1 00 1 1e+09 2e+09 1e+10 1 -1 0.5 1 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.ls" #0000ff 0 3 0 0 0>
-	  <Mkr 2.39e+09/0 95 -266 3 0 0>
+	  <Mkr 2.38e+09/0 95 -266 3 0 0>
 	  <Mkr 2.51e+09/1.2 96 -205 3 0 0>
   </Rect>
   <Rect 1569 684 458 291 3 #c0c0c0 1 00 1 1e+09 2e+09 1e+10 1 -0.467771 1 5.15347 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
