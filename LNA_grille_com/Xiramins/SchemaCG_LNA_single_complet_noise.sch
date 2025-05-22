@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-1169,-711,1520,800,0.783217,750,411>
+  <View=-530,-336,1307,697,0.647287,0,1>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_single_complet_noise.dat>
   <DataDisplay=SchemaCG_LNA_single_complet_noise.dpl>
