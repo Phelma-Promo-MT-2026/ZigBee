@@ -1,0 +1,72 @@
+* Qucs 25.1.1  /home/userproj/microelectronics/projects/ZigBee/PLL/VCO/vco.sch
+.INCLUDE "/usr/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+.SUBCKT Modele_Inductance _net2 _net1 _net4 
+Ls _net0 _net1  2.885N 
+Rs _net2 _net0  3.623 tc1=0.0 tc2=0.0 
+Csp _net1 _net2  13.69F 
+Cox2 _net3 _net1  55.8F 
+Rp2 _net4 _net3  18.32 tc1=0.0 tc2=0.0 
+Rp1 _net4 _net5  18.32 tc1=0.0 tc2=0.0 
+Cox1 _net5 _net2  55.8F 
+.ENDS
+
+.SUBCKT IHP_PDK_nonlinear_components_sg13_lv_nmos  gnd d g s b w=0.35u l=0.34u ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346e-6 z2=0.38e-6 wmin=0.15e-6 rfmode=0 pre_layout=1 mlist=1
+X1 d g s b  sg13_lv_nmos w={w} l={l} ng={ng} m={m} as={as} ad={ad} pd={pd} 
++ ps={ps} trise={trise} z1={z1} z2={z2} wmin={wmin} rfmode={rfmode} pre_layout={pre_layout} 
+.ENDS
+  
+
+.SUBCKT IHP_PDK_basic_components_cap_cmim  gnd P1 P2  l=7.0u w=7.0u
+X1 P1 P2 cap_cmim l={l} w={w}
+.ENDS
+  
+
+.SUBCKT IHP_PDK_basic_components_rhigh  gnd P1 P2 w=1.0e-6 l=0.5e-6 m=1
+X1 P1 P2 rhigh w={w} l={l} m={m}
+.ENDS
+  
+
+.LIB cornerRES.lib res_typ
+.LIB cornerCAP.lib cap_typ
+.LIB cornerMOSlv.lib mos_tt
+
+.PARAM w = 18.4u
+.PARAM l = 18.4u
+.PARAM Io = 1.5mA
+XSUB1 _net2 mos1 0 Modele_Inductance
+XSUB2 _net2 mos2 0 Modele_Inductance
+V4 _net2 0 DC 1.2
+Xsg13_lv_nmos9 0  mos1 mos2 _net3 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=20U l=130N ng=2 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos8 0  mos2 mos1 _net3 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=20U l=130N ng=2 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos11 0  _net4 mos2 _net4 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=200U l=130N ng=20 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos10 0  _net4 mos1 _net4 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=200U l=130N ng=20 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+VPr1 _net3 _net5 DC 0
+Xsg13_lv_nmos13 0  _net5 _net6 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=10U l=130N ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+VPr2 _net7 _net6 DC 0
+Xsg13_lv_nmos12 0  _net6 _net6 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=1U l=130N ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xcap_cmim4 0  0 _net7 IHP_PDK_basic_components_cap_cmim l=200U w=200U
+V8 _net12 0 DC 1.2
+Xsg13_lv_nmos16 0  Vout _net13 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=5.3U l=130N ng=5 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos17 0  _net12 mos1 Vout 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=65U l=130N ng=10 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+V10 _net13 0 DC 1.2
+V7 _net14 0 DC 1.2
+Xsg13_lv_nmos14 0  Vout _net15 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=5.3U l=130N ng=5 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos15 0  _net14 mos2 Vout 0 IHP_PDK_nonlinear_components_sg13_lv_nmos w=65U l=130N ng=10 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+V9 _net15 0 DC 1.2
+Xcap_cmim3 0  mos2 mos1 IHP_PDK_basic_components_cap_cmim l={L} w={W}
+Xrhigh1 0  Vbias _net7 IHP_PDK_basic_components_rhigh w=2.1U l=4.1U m=1
+V6 Vbias 0 DC 1.2
+Vctrl Vctrl 0 DC 0
+Xrhigh2 0  Vctrl _net4 IHP_PDK_basic_components_rhigh w=3.1U l=1.6U m=1
+
+
+.control
+
+tran 1.78571e-12 3.5e-08 1e-08 
+write spice4qucs.tr1.plot i(VPr1) i(VPr2) v(Vbias) v(Vctrl) v(Vout) v(mos1) v(mos2)
+destroy all
+reset
+
+exit
+.endc
+.END
