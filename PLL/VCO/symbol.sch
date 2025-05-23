@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-705,-372,2667,1437,0.564474,0,4>
+  <View=-801,-355,2743,1219,0.536142,0,0>
   <Grid=10,10,1>
   <DataSet=symbol.dat>
   <DataDisplay=symbol.dpl>
@@ -14,15 +14,18 @@
   <FrameText3=Version :>
 </Properties>
 <Symbol>
-  <.PortSym 80 0 1 180 Vout>
-  <Line 60 0 20 0 #000000 1 1>
-  <Text 60 0 9 #000000 0 "Vout\n">
   <Rectangle -60 -30 120 60 #000000 1 1 #c0c0c0 1 0>
   <.PortSym -90 0 2 0 Vctrl>
   <Line -90 0 30 0 #000000 1 1>
   <.ID -20 44 SUB "1=VCO===">
   <Text -10 -10 12 #aa0000 0 "VCO\n">
   <Text -90 0 9 #000000 0 "Vctrl\n">
+  <Line 60 20 20 0 #000000 1 1>
+  <Line 60 -20 20 0 #000000 1 1>
+  <Text 60 0 12 #000000 0 "Vs-\n\n">
+  <.PortSym 80 -20 3 0 VS2>
+  <Text 60 -40 12 #000000 0 "Vs+\n\n">
+  <.PortSym 80 20 1 0 VS1>
 </Symbol>
 <Components>
   <GND * 1 630 -90 0 0 0 2>
@@ -39,26 +42,6 @@
   <GND * 1 820 550 0 0 0 1>
   <GND * 1 500 550 0 0 0 3>
   <Lib sg13_lv_nmos4 1 520 260 -181 -36 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "200u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <SpicePar SpicePar1 1 350 360 -28 18 0 0 "w=18.4u" 1 "l=18.4u" 1 "Io=1.5mA" 1>
-  <GND * 1 200 490 0 0 1 2>
-  <GND * 1 220 700 0 0 1 2>
-  <GND * 1 210 640 0 0 1 2>
-  <GND * 1 220 300 0 0 1 0>
-  <Vdc V2 1 220 400 18 -26 1 3 "1.2" 1>
-  <Lib sg13_lv_nmos7 1 220 640 -112 -36 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "5.3u" 1 "130n" 1 "5" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos8 1 220 490 -147 -42 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "65u" 1 "130n" 1 "10" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Vdc V3 1 300 640 -26 18 1 2 "1.2" 1>
-  <GND * 1 330 640 0 0 1 3>
-  <Lib cap_cmim2 1 640 340 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "l" 1 "w" 1>
-  <GND * 1 930 660 0 0 0 3>
-  <GND * 1 1050 280 0 0 0 2>
-  <GND * 1 1080 490 0 0 0 0>
-  <GND * 1 1070 660 0 0 0 0>
-  <GND * 1 1060 720 0 0 0 0>
-  <Vdc V4 1 1060 390 -50 -26 0 3 "1.2" 1>
-  <Lib sg13_lv_nmos9 1 1060 660 45 -24 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "5.3u" 1 "130n" 1 "5" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos10 1 1060 490 61 -42 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "65u" 1 "130n" 1 "10" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Vdc V5 1 980 660 -26 18 0 0 "1.2" 1>
   <GND * 1 710 1010 0 0 0 0>
   <GND * 1 700 1070 0 0 0 0>
   <GND * 1 440 890 0 0 0 0>
@@ -70,9 +53,11 @@
   <Lib rhigh1 1 510 840 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "2.1u" 1 "4.1u" 1 "1" 1>
   <GND * 1 510 1080 0 0 0 0>
   <Lib sg13_lv_nmos6 1 511 998 -92 -22 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Port Vout 1 1110 570 4 -46 0 2 "1" 1 "analog" 0>
   <Port Vctrl 1 630 140 -44 -71 0 0 "2" 1 "analog" 0>
   <Lib rhigh2 1 630 200 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "3.1u" 1 "1.6u" 1 "1" 1>
+  <Lib cap_cmim2 1 640 340 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.4u" 1 "18.4u" 1>
+  <Port VS2 1 1010 500 4 -46 0 2 "3" 1 "analog" 0>
+  <Port VS1 1 270 490 -23 12 0 0 "1" 1 "analog" 0>
 </Components>
 <Wires>
   <600 430 860 430 "" 0 0 0 "">
@@ -121,28 +106,12 @@
   <810 550 820 550 "" 0 0 0 "">
   <500 550 510 550 "" 0 0 0 "">
   <440 660 640 660 "" 0 0 0 "">
-  <200 490 210 490 "" 0 0 0 "">
-  <220 300 220 370 "" 0 0 0 "">
-  <220 430 220 440 "" 0 0 0 "">
   <440 420 440 490 "mos1" 520 460 36 "">
   <440 490 440 500 "" 0 0 0 "">
   <270 490 440 490 "" 0 0 0 "">
-  <860 430 860 490 "mos2" 790 460 30 "">
-  <860 490 860 500 "" 0 0 0 "">
-  <220 550 220 560 "" 0 0 0 "">
-  <220 560 220 590 "" 0 0 0 "">
-  <60 560 220 560 "" 0 0 0 "">
+  <860 430 860 500 "mos2" 790 460 30 "">
   <630 260 650 260 "" 0 0 0 "">
   <630 220 630 240 "" 0 0 0 "">
-  <860 490 1010 490 "" 0 0 0 "">
-  <1050 280 1060 280 "" 0 0 0 "">
-  <1070 490 1080 490 "" 0 0 0 "">
-  <1060 420 1060 440 "" 0 0 0 "">
-  <1060 280 1060 360 "" 0 0 0 "">
-  <1060 550 1060 570 "" 0 0 0 "">
-  <1060 570 1060 610 "" 0 0 0 "">
-  <1060 570 1110 570 "" 0 0 0 "">
-  <930 660 950 660 "" 0 0 0 "">
   <500 890 510 890 "" 0 0 0 "">
   <440 890 460 890 "" 0 0 0 "">
   <580 920 580 990 "" 0 0 0 "">
@@ -166,6 +135,7 @@
   <510 948 511 948 "" 0 0 0 "">
   <630 240 630 260 "" 0 0 0 "">
   <630 140 630 160 "" 0 0 0 "">
+  <860 500 1010 500 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
