@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-801,-355,2743,1219,0.536142,0,0>
+  <View=-836,-574,2446,1623,0.536142,179,130>
   <Grid=10,10,1>
   <DataSet=symbol.dat>
   <DataDisplay=symbol.dpl>
@@ -58,6 +58,7 @@
   <Lib cap_cmim2 1 640 340 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.4u" 1 "18.4u" 1>
   <Port VS2 1 1010 500 4 -46 0 2 "3" 1 "analog" 0>
   <Port VS1 1 270 490 -23 12 0 0 "1" 1 "analog" 0>
+  <INCLSCR INCLSCR1 1 130 60 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n.INCLUDE diodes.lib\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <600 430 860 430 "" 0 0 0 "">
