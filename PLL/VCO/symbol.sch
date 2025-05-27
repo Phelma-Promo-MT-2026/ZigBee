@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-549,-177,2694,1124,0.648732,211,0>
+  <View=-553,-167,1791,1134,0.507302,0,0>
   <Grid=10,10,1>
   <DataSet=symbol.dat>
   <DataDisplay=symbol.dpl>
@@ -46,7 +46,6 @@
   <Port Vctrl 1 630 140 -44 -71 0 0 "2" 1 "in" 0>
   <Port VS1 1 270 490 -23 12 0 0 "1" 1 "out" 0>
   <Port VS2 1 1010 500 4 -46 0 2 "3" 1 "out" 0>
-  <INCLSCR INCLSCR1 1 130 60 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Lib sg13_lv_nmos4 1 520 260 -181 -36 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "200u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos3 1 780 260 88 -33 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "200u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 1 520 550 -109 -38 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "20u" 1 "130n" 1 "2" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
@@ -59,6 +58,8 @@
   <Lib rhigh1 1 510 840 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "2.1u" 1 "4.1u" 1 "1" 1>
   <Lib rhigh2 1 630 190 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "3.1u" 1 "1.6u" 1 "1" 1>
   <Sub SUB2 1 840 120 55 -26 1 3 "/home/userproj/microelectronics/projects/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <INCLSCR INCLSCR1 1 -100 50 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <SpicePar SpicePar1 1 -140 230 -28 18 0 0 "w=18.4u" 1 "l=18.4u" 1 "Io=1.5mA" 1>
 </Components>
 <Wires>
   <600 430 860 430 "" 0 0 0 "">

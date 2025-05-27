@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-959,-689,3717,2022,0.683013,2005,428>
+  <View=-961,-889,3332,1402,0.603249,588,461>
   <Grid=10,10,1>
   <DataSet=DIV_PAR_256_VF.dat>
   <DataDisplay=DIV_PAR_256_VF.dpl>
@@ -28,7 +28,6 @@
   <Text -60 230 9 #000000 0 "Clockbarre">
 </Symbol>
 <Components>
-  <Sub SUB1 1 -930 310 -26 108 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/freq_div_new/Diviseur_par_4_symbole.sch" 0>
   <Sub SUB2 1 -340 390 -26 8 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/freq_div_new/Diviseur_par_2_digital_symbole_.sch" 0>
   <GND * 1 160 440 0 0 0 1>
   <GND * 1 110 610 0 0 0 0>
@@ -36,7 +35,6 @@
   <GND * 1 190 50 0 0 0 0>
   <Lib sg13_lv_pmos1 1 110 230 45 -101 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "2u" 1 "0.13 u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 1 110 440 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Sub SUB3 1 280 430 -26 8 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/freq_div_new/Diviseur_par_2_digital_symbole_.sch" 0>
   <GND * 1 780 480 0 0 0 1>
   <GND * 1 730 650 0 0 0 0>
   <Vdc V4 1 810 50 18 -26 0 1 "1.2 V" 1>
@@ -76,6 +74,8 @@
   <Port Clock 1 -770 310 -23 12 0 0 "1" 1 "analog" 0>
   <Port Clock_barre 1 -770 380 -23 12 0 0 "2" 1 "analog" 0>
   <Port VOUT 1 3140 570 4 12 1 2 "3" 1 "analog" 0>
+  <Sub SUB1 1 -930 310 -26 108 0 0 "Diviseur_par_4_symbole.sch" 0>
+  <Sub SUB8 1 280 430 -26 8 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/freq_div_new/Diviseur_par_2_digital_symbole_.sch" 0>
 </Components>
 <Wires>
   <-340 330 -280 330 "V4" -290 300 15 "">
