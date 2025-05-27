@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-1121,-338,870,601,0.693434,196,0>
+  <View=-837,-310,505,436,0.885906,0,1>
   <Grid=1,1,1>
   <DataSet=Bascule_D.dat>
   <DataDisplay=Bascule_D.dpl>
@@ -36,14 +36,13 @@
   <Port RESET 1 -666 348 -23 12 0 0 "2" 1 "analog" 0>
   <Sub NAND2 1 46 -33 -23 52 0 0 "NAND.sch" 0>
   <Sub SUB5 1 -760 288 38 88 0 0 "INV_2x.sch" 0>
-  <INCLSCR INCLSCR1 1 656 -291 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
-  <Sub SUB6 1 -1090 -270 -26 21 0 0 "" 0>
   <Sub NAND3 1 -414 -103 -23 52 0 0 "NAND.sch" 0>
   <Sub SUB3 1 -479 107 -26 72 0 0 "NAND3.sch" 0>
   <Sub SUB2 1 -501 238 -26 72 0 0 "NAND3.sch" 0>
   <Sub SUB4 1 -523 16 -26 72 0 0 "NAND3.sch" 0>
   <Port Q 1 344 -23 4 12 1 2 "1" 1 "analog" 0>
   <Sub SUB1 1 -17 192 -26 72 0 0 "NAND3.sch" 0>
+  <INCLSCR INCLSCR1 1 -252 -254 -60 16 0 0 "\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <-616 100 -436 100 "" 0 0 0 "">

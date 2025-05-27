@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-122,-265,1984,904,0.564474,0,0>
+  <View=56,94,1182,681,1.12488,78,0>
   <Grid=10,10,1>
   <DataSet=Diviseur_par_2_symbole_test.dat>
   <DataDisplay=Diviseur_par_2_symbole_test.dpl>
@@ -14,6 +14,11 @@
   <FrameText3=Version :>
 </Properties>
 <Symbol>
+  <.ID -20 -16 SUB>
+  <Line -20 20 40 0 #000080 2 1>
+  <Line 20 20 0 -40 #000080 2 1>
+  <Line -20 -20 40 0 #000080 2 1>
+  <Line -20 20 0 -40 #000080 2 1>
 </Symbol>
 <Components>
   <INCLSCR INCLSCR1 1 930 190 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
