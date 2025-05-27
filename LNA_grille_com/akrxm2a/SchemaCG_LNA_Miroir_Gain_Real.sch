@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-389,-283,1559,795,0.839054,0,60>
+  <View=-458,-286,1480,754,0.811538,0,0>
   <Grid=10,10,1>
   <DataSet=SchemaCG_LNA_Miroir_Gain_Real.dat>
   <DataDisplay=SchemaCG_LNA_Miroir_Gain_Real.dpl>
@@ -43,12 +43,11 @@
   <GND * 1 240 610 0 0 0 0>
   <Lib cap_cmim3 1 190 560 -83 -22 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.705u" 1 "23.705u" 1>
   <GND * 1 560 210 0 0 0 0>
-  <Pac P2 1 560 170 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <GND * 1 440 50 0 0 0 0>
   <Lib cap_cmim9 1 250 10 24 -22 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "30.62u" 1 "30.62u" 1>
   <C_SPICE C1 0 270 -100 17 -26 0 1 "1.41p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
-  <C_SPICE C2 1 360 130 -26 -85 0 2 "500f" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
   <Lib mn3 1 -150 400 -60 -48 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "3.292u" 1 "260n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Pac P2 1 560 170 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
 </Components>
 <Wires>
   <170 -40 170 -10 "" 0 0 0 "">
@@ -100,9 +99,8 @@
   <560 200 560 210 "" 0 0 0 "">
   <560 130 560 140 "" 0 0 0 "">
   <440 30 440 50 "" 0 0 0 "">
-  <250 130 330 130 "" 0 0 0 "">
-  <390 130 560 130 "" 0 0 0 "">
   <250 30 250 70 "" 0 0 0 "">
+  <250 130 560 130 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Smith 444 644 350 350 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">

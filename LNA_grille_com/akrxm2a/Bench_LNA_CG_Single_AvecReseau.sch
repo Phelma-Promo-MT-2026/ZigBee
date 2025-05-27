@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-239,94,1190,917,1.10039,0,1>
+  <View=-239,94,1190,861,1.10039,0,0>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Single_AvecReseau.dat>
   <DataDisplay=Bench_LNA_CG_Single_AvecReseau.dpl>

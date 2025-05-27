@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-136,404,1088,1126,1.28463,0,0>
+  <View=-136,404,1088,1061,1.28463,0,0>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Single_Trans.dat>
   <DataDisplay=Bench_LNA_CG_Single_Trans.dpl>
@@ -31,7 +31,7 @@
   <GND * 1 180 870 0 0 0 0>
   <C_SPICE Cres1 1 380 740 17 -96 0 1 "1.41p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
   <NutmegEq NutmegEq2 0 400 466 -30 18 0 0 "TR1" 1 "Gain_dB=20*log10(Vout/Vin)" 1 "Gain=Vout/Vin" 1>
-  <Vac V1 1 180 830 18 -26 0 1 "0.3 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2 V" 1 "0" 0>
+  <Vac V1 1 180 830 18 -26 0 1 "0.3 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1 V" 1 "0" 0>
 </Components>
 <Wires>
   <50 710 50 720 "" 0 0 0 "">
