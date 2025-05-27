@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-1112,-851,3313,1284,0.51656,167,226>
+  <View=-865,-1039,4579,1856,0.291585,14,0>
   <Grid=10,10,1>
   <DataSet=vco.dat>
   <DataDisplay=vco.dpl>
