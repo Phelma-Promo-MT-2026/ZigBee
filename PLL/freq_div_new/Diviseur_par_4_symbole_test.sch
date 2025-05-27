@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-71,2,945,518,4.27174,1914,107>
+  <View=-77,-122,980,508,1.12488,0,0>
   <Grid=10,10,1>
   <DataSet=Diviseur_par_4_symbole_test.dat>
   <DataDisplay=Diviseur_par_4_symbole_test.dpl>
@@ -22,7 +22,7 @@
   <INCLSCR INCLSCR1 1 840 90 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Vrect V1 1 190 350 18 -26 0 1 "1.2 V" 1 "0.208ns" 1 "0.208 ns" 1 "0.01 ps" 0 "0.01 ps" 0 "0.01 ns" 0 "0 V" 1>
   <Vrect V2 1 310 440 18 -26 0 1 "0 V" 1 "0.208ns" 1 "0.208 ns" 1 "0.01 ps" 0 "0.01 ps" 0 "0.01 ns" 0 "1.2 V" 1>
-  <.TR TR1 1 -30 230 0 99 0 0 "lin" 1 "0ns" 1 "50ns" 1 "200" 0 "Trapezoidal" 0 "2" 0 "1 us" 0 "1e-8" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <.TR TR1 1 -30 230 0 99 0 0 "lin" 1 "0ns" 1 "10ns" 1 "200" 0 "Trapezoidal" 0 "2" 0 "1 us" 0 "1e-8" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
 </Components>
 <Wires>
   <190 310 190 320 "" 0 0 0 "">

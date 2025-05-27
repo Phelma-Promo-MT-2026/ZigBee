@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-308,-842,3377,1726,0.51656,90,381>
+  <View=-285,-842,2787,1244,0.625038,93,412>
   <Grid=10,10,1>
   <DataSet=vco.dat>
   <DataDisplay=vco.dpl>
@@ -40,16 +40,14 @@
   <GND * 1 790 1020 0 0 0 0>
   <IProbe Pr1 1 790 830 -33 -26 0 3>
   <GND * 1 520 790 0 0 0 0>
-  <SpicePar SpicePar1 1 530 320 -28 18 0 0 "w=18.4u" 1 "l=18.4u" 1 "Io=1.5mA" 1>
+  <SpicePar SpicePar1 1 530 320 -28 18 0 0 "w=18.3u" 1 "l=18.3u" 1 "Io=1.5mA" 1>
   <GND * 1 590 1030 0 0 0 0>
   <GND * 1 580 960 0 0 0 0>
   <IProbe Pr2 1 590 840 -35 -26 0 3>
   <Lib sg13_lv_nmos12 1 590 960 -92 -22 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib cap_cmim4 1 560 790 -129 -16 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "200u" 1 "200u" 1>
-  <Lib cap_cmim3 1 820 300 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "l" 1 "w" 1>
   <Lib rhigh1 1 590 750 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "2.1u" 1 "4.1u" 1 "1" 1>
   <GND * 1 590 640 0 0 0 2>
-  <Vdc V6 1 590 660 -51 -26 0 3 "0.6" 1>
+  <Vdc V6 1 590 660 -51 -26 0 3 "1" 1>
   <Vdc Vctrl 1 810 70 -51 -26 0 3 "0" 1>
   <NutmegEq NutmegEq1 1 -250 -100 -30 18 0 0 "SP1" 1 "ReY11=real(y_1_1)" 1 "ImY11=imag(y_1_1)" 1 "Ls=-1/(ImY11*2*pi*frequency)" 1 "Rp=1/ReY11" 1 "Q=abs(ImY11/ReY11)" 1 "Cs=ImY11/(2*pi*frequency)" 1 "ReZ11=real(z_1_1)" 1 "Rs=ReZ11" 1>
   <.SP SP1 0 -270 110 0 70 0 0 "lin" 1 "1 GHz" 1 "8 GHz" 0 "9001" 0 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
@@ -80,8 +78,6 @@
   <SpicePar SpicePar2 1 -100 260 -28 18 0 0 "w=18.8u" 1 "l=18.8u" 1 "Io=1.5mA" 1 "U=0.8V" 1>
   <GND * 1 1330 670 0 0 0 0>
   <Lib sg13_lv_nmos13 1 790 960 32 -32 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "40u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib cap_cmim5 1 190 500 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "200u" 1 "200u" 1>
-  <Lib cap_cmim6 1 1270 570 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "200u" 1 "200u" 1>
   <Lib sg13_lv_nmos18 1 1190 450 61 -42 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "65u" 1 "130n" 1 "10" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos19 1 1190 740 45 -24 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "5.3u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos20 1 330 430 -154 -42 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "65u" 1 "130n" 1 "10" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
@@ -90,6 +86,10 @@
   <Lib rsil2 1 120 540 -60 -27 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rsil" 0 "1u" 1 "4.1u" 1 "1" 0>
   <Lib rsil3 1 1330 610 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rsil" 0 "1u" 1 "4.1u" 1 "1" 0>
   <INCLSCR INCLSCR1 1 -170 -200 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <Lib cap_cmim4 1 560 790 -129 -16 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
+  <Lib cap_cmim6 1 1270 570 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
+  <Lib cap_cmim5 1 190 500 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
+  <Lib cap_cmim3 1 820 300 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.2u" 1 "18.2u" 1>
 </Components>
 <Wires>
   <810 220 830 220 "" 0 0 0 "">
@@ -214,11 +214,11 @@
 	  <Mkr 3.07488e-08 724 -419 3 0 0>
 	<"ngspice/tran.v(mos1)" #0000ff 0 3 0 0 0>
   </Rect>
-  <Rect 1511 1176 1052 659 3 #c0c0c0 1 00 1 1e-08 2e-09 5.5e-08 1 0.475407 0.05 0.883829 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+  <Rect 1471 1176 1052 659 3 #c0c0c0 1 00 1 1e-08 2e-09 5.5e-08 1 0.475407 0.05 0.883829 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.v(vout_p)" #0000ff 0 3 0 0 0>
 	  <Mkr 2.82609e-08 486 -121 3 0 0>
-	  <Mkr 4.6412e-08 911 -221 3 0 0>
-	  <Mkr 4.7476e-08 936 -548 3 0 0>
+	  <Mkr 4.62835e-08 821 -251 3 0 0>
+	  <Mkr 4.91988e-08 936 -538 3 0 0>
 	<"ngspice/tran.v(vou_m)" #ff0000 1 3 0 0 0>
   </Rect>
 </Diagrams>

@@ -55,7 +55,6 @@
   <GND * 1 270 1040 0 0 0 0>
   <GND * 1 260 970 0 0 0 0>
   <Lib sg13_lv_nmos5 1 270 970 -92 -22 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib cap_cmim1 1 240 800 -129 -16 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "200u" 1 "200u" 1>
   <Lib rhigh1 1 270 760 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "2.1u" 1 "4.1u" 1 "1" 1>
   <GND * 1 890 460 0 0 0 0>
   <Vdc V3 1 880 270 -50 -26 0 3 "1.2" 1>
@@ -74,8 +73,6 @@
   <GND * 1 -200 620 0 0 1 2>
   <GND * 1 1010 680 0 0 0 0>
   <Lib sg13_lv_nmos6 1 470 970 32 -32 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "40u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib cap_cmim3 1 -130 510 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "200u" 1 "200u" 1>
-  <Lib cap_cmim4 1 950 580 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "200u" 1 "200u" 1>
   <Lib sg13_lv_nmos7 1 870 460 61 -42 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "65u" 1 "130n" 1 "10" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos8 1 870 750 45 -24 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "5.3u" 1 "130n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos9 1 10 440 -154 -42 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "65u" 1 "130n" 1 "10" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
@@ -83,13 +80,16 @@
   <Lib rhigh2 1 490 150 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "3.1u" 1 "1.6u" 1 "1" 1>
   <Lib rsil1 1 -200 550 -60 -27 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rsil" 0 "1u" 1 "4.1u" 1 "1" 0>
   <Lib rsil2 1 1010 620 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rsil" 0 "1u" 1 "4.1u" 1 "1" 0>
-  <Lib cap_cmim2 1 500 310 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.4u" 1 "18.4u" 1>
   <Port Vout_M 1 -290 510 -23 12 0 0 "1" 1 "analog" 0>
   <Port V_bias 1 270 720 -23 12 0 0 "3" 1 "analog" 0>
   <Port Vctrl 1 490 70 -23 12 0 0 "4" 1 "analog" 0>
   <Port Vmos_M 1 300 430 -23 12 0 0 "5" 1 "analog" 0>
   <Port Vout_P 1 1120 580 4 -46 0 2 "2" 1 "analog" 0>
   <Port P1 1 720 440 -23 12 0 0 "6" 1 "analog" 0>
+  <Lib cap_cmim2 1 500 310 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.2u" 1 "18.2u" 1>
+  <Lib cap_cmim4 1 950 580 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
+  <Lib cap_cmim3 1 -130 510 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
+  <Lib cap_cmim1 1 240 800 -129 -16 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
 </Components>
 <Wires>
   <460 400 720 400 "" 0 0 0 "">
