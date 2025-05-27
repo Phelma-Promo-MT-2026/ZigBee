@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-412,-60,1682,846,0.931567,0,0>
+  <View=-453,-80,1236,826,0.931567,0,0>
   <Grid=10,10,1>
   <DataSet=pt_fonc_balun.dat>
   <DataDisplay=pt_fonc_balun.dpl>
@@ -30,7 +30,6 @@
   <GND * 1 930 390 0 0 0 0>
   <GND * 1 730 760 0 0 0 0>
   <IProbe Pr2 1 790 440 -33 -26 0 3>
-  <Lib sg13_lv_nmos4 1 790 330 -141 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Vdc V5 1 70 20 18 -26 0 1 "1.2" 1>
   <GND * 1 70 50 0 0 0 0>
   <GND * 1 150 50 0 0 0 0>
@@ -42,28 +41,27 @@
   <R_SPICE R2 1 790 240 15 -26 0 1 "6k" 1 "" 0 "" 0 "" 0 "" 0 "2" 0 "R" 0>
   <.TR TR1 1 -230 50 0 99 0 0 "lin" 1 "0" 1 "5 ns" 1 "20000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <R_SPICE R3 1 730 390 -26 -83 0 2 "40k" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
-  <Lib sg13_lv_pmos1 1 190 340 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.1u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <SpicePar SpicePar1 1 540 -10 -28 18 0 0 "N1=30u" 1 "N2=5u" 1 "N3=4u" 1 "vbias=1" 1>
   <Lib sg13_lv_pmos2 1 390 340 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.27u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos7 1 490 590 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos5 1 670 590 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos12 1 790 590 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos13 5 990 590 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos9 5 990 270 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.74u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos3 1 670 330 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Vac V4 1 510 360 18 -26 0 1 "0.8" 1 "2.45G" 0 "0" 0 "0" 0 "vbias" 0 "0" 0>
   <Vac V3 1 930 360 18 -26 0 1 "-0.8" 1 "2.45G" 0 "0" 0 "0" 0 "vbias" 0 "0" 0>
   <INCLSCR INCLSCR1 1 320 10 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
+  <Lib sg13_lv_nmos13 5 990 590 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos12 1 790 590 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos5 1 670 590 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos4 1 800 320 -141 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos3 1 670 330 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos9 5 990 270 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.74u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_pmos1 1 190 340 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.1u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos7 1 490 590 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N3" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <730 140 730 160 "" 0 0 0 "">
   <670 160 730 160 "" 0 0 0 "">
   <670 160 670 210 "" 0 0 0 "">
   <670 270 670 280 "" 0 0 0 "">
-  <790 270 790 280 "" 0 0 0 "">
   <760 390 790 390 "" 0 0 0 "">
   <740 330 740 340 "" 0 0 0 "">
-  <740 330 780 330 "" 0 0 0 "">
   <670 390 700 390 "" 0 0 0 "">
   <670 390 670 410 "" 0 0 0 "">
   <680 330 740 330 "" 0 0 0 "">
@@ -73,15 +71,10 @@
   <1020 270 1020 280 "" 0 0 0 "">
   <1000 270 1020 270 "" 0 0 0 "">
   <990 330 990 410 "" 0 0 0 "">
-  <790 270 940 270 "" 0 0 0 "">
+  <790 270 800 270 "" 0 0 0 "">
   <990 160 990 220 "" 0 0 0 "">
-  <490 650 490 730 "" 0 0 0 "">
-  <460 590 480 590 "" 0 0 0 "">
-  <460 590 460 640 "" 0 0 0 "">
-  <540 590 550 590 "" 0 0 0 "">
   <550 590 610 590 "" 0 0 0 "">
   <550 530 550 590 "" 0 0 0 "">
-  <490 530 490 540 "" 0 0 0 "">
   <490 530 550 530 "" 0 0 0 "">
   <730 730 730 760 "" 0 0 0 "">
   <730 160 790 160 "" 0 0 0 "">
@@ -100,7 +93,6 @@
   <700 730 730 730 "" 0 0 0 "">
   <700 590 700 730 "" 0 0 0 "">
   <680 590 700 590 "" 0 0 0 "">
-  <490 730 670 730 "" 0 0 0 "">
   <670 730 700 730 "" 0 0 0 "">
   <670 650 670 730 "" 0 0 0 "">
   <610 590 620 590 "" 0 0 0 "">
@@ -126,7 +118,19 @@
   <260 340 340 340 "" 0 0 0 "">
   <390 390 390 430 "" 0 0 0 "">
   <190 470 190 520 "" 0 0 0 "">
-  <840 330 930 330 "En" 930 300 60 "">
+  <790 320 790 330 "" 0 0 0 "">
+  <740 330 790 330 "" 0 0 0 "">
+  <800 380 800 390 "" 0 0 0 "">
+  <790 390 800 390 "" 0 0 0 "">
+  <850 320 850 330 "" 0 0 0 "">
+  <850 330 930 330 "En" 930 300 50 "">
+  <460 590 460 640 "" 0 0 0 "">
+  <460 590 480 590 "" 0 0 0 "">
+  <490 730 670 730 "" 0 0 0 "">
+  <490 650 490 730 "" 0 0 0 "">
+  <540 590 550 590 "" 0 0 0 "">
+  <490 530 490 540 "" 0 0 0 "">
+  <800 270 940 270 "" 0 0 0 "">
   <70 -10 70 -10 "VDD" 100 -40 0 "">
   <150 -10 150 -10 "Vpol" 180 -40 0 "">
   <400 340 400 340 "VDD" 430 310 0 "">
@@ -142,7 +146,7 @@
   <Rect -330 440 240 160 3 #c0c0c0 1 00 0 0 1e-09 2e-09 1 0.160459 0.2 0.6 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.v(s)" #0000ff 1 3 0 0 0>
 	  <Mkr 1.4999e-09 241 -193 5 0 0>
-	  <Mkr 1.29989e-09 226 -271 5 0 0>
+	  <Mkr 1.29989e-09 256 -21 5 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

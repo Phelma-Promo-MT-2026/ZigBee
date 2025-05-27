@@ -43,14 +43,7 @@
   <GND * 1 420 630 0 0 0 0>
   <GND * 1 690 750 0 0 0 0>
   <IProbe Pr2 1 750 430 -33 -26 0 3>
-  <Lib sg13_lv_nmos5 1 630 320 161 -34 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "2.94u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos6 1 750 320 -222 -46 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "2.94u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib rppd1 1 860 220 -196 173 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "1.77u" 1 "0.13u" 1 "1" 1>
-  <Lib sg13_lv_nmos2 5 950 580 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "29.4u" 0 "0.13u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos1 5 950 260 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "2.94u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos3 5 750 580 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "29.4u" 0 "0.130u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos4 5 630 580 132 -43 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "29.4u" 0 "0.130u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos7 5 450 580 67 31 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "29.4u" 0 "0.13u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib rppd2 1 790 390 -110 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "1u" 1 "21.2u" 1 "1" 1>
   <Lib rppd3 1 910 390 -110 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "1u" 1 "21.2u" 1 "1" 1>
   <Idc Ip1 0 -50 270 -59 -26 0 3 "50u" 1>
@@ -59,21 +52,24 @@
   <Port VDD 1 110 100 -53 -23 0 3 "4" 1 "analog" 0>
   <IProbe Pr3 1 140 400 -33 -26 0 3>
   <IProbe Pr4 1 340 420 -33 -26 0 3>
-  <Lib sg13_lv_pmos1 1 140 300 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.15u" 1 "0.26u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_pmos2 1 340 300 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.5u" 1 "0.26u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 140 480 0 0 0 0>
+  <Lib sg13_lv_nmos1 5 950 260 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.74u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos5 1 630 320 161 -34 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_pmos2 1 340 300 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.27u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_pmos1 1 140 300 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.1u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos6 1 750 320 -222 -46 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos7 5 450 580 67 31 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "4u" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos4 5 630 580 132 -43 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "4u" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos3 5 750 580 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "4u" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos2 5 950 580 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "4u" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <690 130 690 150 "" 0 0 0 "">
   <630 150 690 150 "" 0 0 0 "">
-  <950 640 950 720 "" 0 0 0 "">
-  <960 580 980 580 "" 0 0 0 "">
-  <980 580 980 640 "" 0 0 0 "">
   <750 260 750 270 "" 0 0 0 "">
   <700 320 700 330 "" 0 0 0 "">
   <700 320 740 320 "" 0 0 0 "">
   <630 380 630 400 "" 0 0 0 "">
-  <640 320 700 320 "" 0 0 0 "">
   <750 380 750 400 "" 0 0 0 "">
   <570 520 570 580 "" 0 0 0 "">
   <980 260 980 270 "" 0 0 0 "">
@@ -88,11 +84,8 @@
   <690 720 750 720 "" 0 0 0 "">
   <690 720 690 750 "" 0 0 0 "">
   <750 150 950 150 "" 0 0 0 "">
-  <860 580 900 580 "" 0 0 0 "">
-  <860 520 860 580 "" 0 0 0 "">
   <570 520 680 520 "" 0 0 0 "">
   <800 320 890 320 "En" 890 290 60 "">
-  <780 720 950 720 "" 0 0 0 "">
   <780 580 780 720 "" 0 0 0 "">
   <760 580 780 580 "" 0 0 0 "">
   <750 720 780 720 "" 0 0 0 "">
@@ -108,13 +101,10 @@
   <630 640 630 720 "" 0 0 0 "">
   <570 580 580 580 "" 0 0 0 "">
   <630 460 630 530 "" 0 0 0 "">
-  <480 320 580 320 "" 0 0 0 "">
   <470 320 480 320 "" 0 0 0 "">
-  <950 400 950 530 "" 0 0 0 "">
   <950 400 1030 400 "" 0 0 0 "">
   <730 380 750 380 "" 0 0 0 "">
   <630 380 650 380 "" 0 0 0 "">
-  <630 260 630 270 "" 0 0 0 "">
   <630 150 630 180 "" 0 0 0 "">
   <750 150 750 180 "" 0 0 0 "">
   <420 580 420 630 "" 0 0 0 "">
@@ -136,11 +126,21 @@
   <140 430 140 480 "" 0 0 0 "">
   <340 450 340 520 "" 0 0 0 "">
   <340 520 450 520 "" 0 0 0 "">
+  <640 320 700 320 "" 0 0 0 "">
+  <480 320 580 320 "" 0 0 0 "">
+  <630 260 630 270 "" 0 0 0 "">
+  <980 580 980 640 "" 0 0 0 "">
+  <960 580 980 580 "" 0 0 0 "">
+  <780 720 950 720 "" 0 0 0 "">
+  <950 640 950 720 "" 0 0 0 "">
+  <860 520 860 580 "" 0 0 0 "">
+  <860 580 900 580 "" 0 0 0 "">
+  <950 400 950 530 "" 0 0 0 "">
   <110 100 110 100 "VDD" 140 70 0 "">
-  <350 300 350 300 "VDD" 380 270 0 "">
   <690 130 690 130 "VDD" 720 100 0 "">
   <470 320 470 320 "Ep" 500 290 0 "">
   <80 300 80 300 "VDD" 100 270 0 "">
+  <350 300 350 300 "VDD" 380 270 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
