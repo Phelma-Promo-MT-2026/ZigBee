@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=0,-12,1634,895,1.21,269,127>
+  <View=201,27,1646,1019,1.15458,95,111>
   <Grid=10,10,1>
   <DataSet=impedance_mixer_v1.dat>
   <DataDisplay=impedance_mixer_v1.dpl>
@@ -43,11 +43,15 @@
   <930 350 1000 350 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Smith 1080 678 238 238 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+  <Smith 1120 578 238 238 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(s_1_1)" #0000ff 0 3 0 0 0>
 	  <Mkr 1.48312e+09 298 -176 3 0 0>
 	<"ngspice/ac.v(s_2_2)" #ff0000 1 3 0 0 0>
   </Smith>
+  <Rect 1120 800 240 160 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.v(y_1_1)" #0000ff 1 3 0 0 0>
+	  <Mkr 2.41258e+09 255 -233 5 0 0>
+  </Rect>
 </Diagrams>
 <Paintings>
 </Paintings>
