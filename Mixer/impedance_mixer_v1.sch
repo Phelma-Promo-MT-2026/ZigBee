@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=201,27,1646,1019,1.15458,95,111>
+  <View=41,-12,1673,889,0.989449,0,1>
   <Grid=10,10,1>
   <DataSet=impedance_mixer_v1.dat>
   <DataDisplay=impedance_mixer_v1.dpl>
@@ -28,11 +28,11 @@
   <INCLSCR INCLSCR1 1 290 180 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs" 1 "" 0 "" 0>
   <Pac P1 1 430 340 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <GND * 1 1000 410 0 0 0 0>
-  <Pac P3 1 1000 380 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <GND * 1 950 450 0 0 0 0>
   <Pac P4 1 950 420 18 -26 0 1 "4" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <Sub SUB1 1 230 -220 -26 248 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
-  <.SP SP1 1 1150 180 0 70 0 0 "lin" 1 "1 MHz" 1 "5G Hz" 1 "200" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
+  <.SP SP1 1 930 80 0 70 0 0 "lin" 1 "1 MHz" 1 "5G Hz" 1 "200" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
+  <Pac P3 1 980 380 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
 </Components>
 <Wires>
   <700 180 750 180 "" 0 0 0 "">
@@ -40,7 +40,8 @@
   <430 430 560 430 "" 0 0 0 "">
   <430 310 560 310 "" 0 0 0 "">
   <930 390 950 390 "" 0 0 0 "">
-  <930 350 1000 350 "" 0 0 0 "">
+  <980 410 1000 410 "" 0 0 0 "">
+  <930 350 980 350 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Smith 1120 578 238 238 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
