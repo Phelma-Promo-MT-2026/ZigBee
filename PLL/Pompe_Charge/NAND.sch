@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-79,24,1434,836,1.03941,0,0>
+  <View=-54,24,1409,836,0.812808,0,0>
   <Grid=1,1,1>
   <DataSet=NAND.dat>
   <DataDisplay=NAND.dpl>
@@ -29,7 +29,6 @@
   <Vdc V1 1 1040 160 18 -26 0 1 "1.2 V" 1>
   <GND * 1 1040 230 0 0 0 0>
   <GND * 1 760 770 0 0 0 0>
-  <INCLSCR INCLSCR1 1 320 80 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Port A 1 390 520 -23 12 0 0 "2" 1 "analog" 0>
   <Port B 1 390 670 -23 12 0 0 "3" 1 "analog" 0>
   <Port Vout 1 900 370 4 12 1 2 "1" 1 "analog" 0>
@@ -37,6 +36,7 @@
   <Lib sg13_lv_pmos2 1 590 260 45 -101 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.3 u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos2 1 760 520 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.15 u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 1 760 670 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.15 u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <INCLSCR INCLSCR1 1 326 138 -60 16 0 0 "\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <1040 190 1040 230 "" 0 0 0 "">
