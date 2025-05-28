@@ -28,7 +28,7 @@
   <Text -15 -10 12 #aa0000 0 "VCO\n">
 </Symbol>
 <Components>
-  <SPICEINIT SPICEINIT1 1 170 620 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/VCO.osdi\n" 1>
+  <SPICEINIT SPICEINIT1 1 170 620 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/VCO.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/psp103_nqs.osdi" 1>
   <Port P1 1 500 540 -23 12 0 0 "1" 1 "analog" 0>
   <GND * 1 580 540 0 0 0 1>
   <Port P2 1 500 600 -23 12 0 0 "2" 1 "analog" 0>

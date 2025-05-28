@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-703,-130,803,706,0.789474,0,0>
+  <View=-591,-130,690,706,1.04067,0,0>
   <Grid=10,10,1>
   <DataSet=Diviseur_par_2_symbole.dat>
   <DataDisplay=Diviseur_par_2_symbole.dpl>
@@ -49,10 +49,10 @@
   <Lib sg13_lv_nmos4 1 -190 570 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "15u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos5 1 -190 380 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "10u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos6 1 30 360 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "8u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <INCLSCR INCLSCR1 1 -430 -60 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Port Out 1 550 400 4 -46 0 2 "1" 1 "analog" 0>
   <Port H 1 -70 360 -23 12 0 0 "2" 1 "analog" 0>
   <Port H_Barre 1 -260 390 -23 12 0 0 "3" 1 "analog" 0>
+  <INCLSCR INCLSCR1 1 -460 -70 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <-160 70 -30 70 "" 0 0 0 "">

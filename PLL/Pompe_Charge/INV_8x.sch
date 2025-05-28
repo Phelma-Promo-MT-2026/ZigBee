@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-104,82,1573,844,1.77156,756,301>
+  <View=129,44,1266,786,1.17251,0,0>
   <Grid=10,10,1>
   <DataSet=INV_8x.dat>
   <DataDisplay=INV_8x.dpl>
@@ -30,9 +30,9 @@
   <GND * 1 750 720 0 0 0 0>
   <Port Vout1 1 930 500 4 12 1 2 "1" 1 "analog" 0>
   <Port Vin1 1 500 500 -23 12 0 0 "2" 1 "analog" 0>
-  <INCLSCR INCLSCR1 1 400 100 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Lib sg13_lv_pmos1 1 750 400 45 -101 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "2.4 u" 1 "0.13 u" 1 "2" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 1 750 590 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "1.2u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <INCLSCR INCLSCR2 1 400 228 -60 16 0 0 ".LIB /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/lib/cornerMOSlv.lib mos_tt\n" 0 "" 0 "" 0>
 </Components>
 <Wires>
   <1000 330 1000 370 "" 0 0 0 "">

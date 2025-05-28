@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=356,54,1078,442,2.17755,0,0>
+  <View=394,45,991,435,2.23283,0,0>
   <Grid=1,1,1>
   <DataSet=AND.dat>
   <DataDisplay=AND.dpl>
@@ -25,11 +25,12 @@
   <.PortSym 48 0 1 0 A>
 </Symbol>
 <Components>
-  <Port A 1 517 208 -23 12 0 0 "1" 1 "analog" 0>
-  <Port B 1 516 236 -23 12 0 0 "2" 1 "analog" 0>
   <Port S 1 904 223 4 12 1 2 "3" 1 "analog" 0>
   <Sub SUB2 1 565 163 108 88 0 0 "INV_2x.sch" 0>
-  <Sub SUB1 1 460 210 -26 52 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/NAND.sch" 0>
+  <Sub SUB1 1 460 213 -26 52 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/NAND.sch" 0>
+  <Port A 1 517 213 -23 12 0 0 "1" 1 "analog" 0>
+  <Port B 1 516 243 -23 12 0 0 "2" 1 "analog" 0>
+  <INCLSCR INCLSCR1 1 538 124 -60 16 0 0 ".LIB /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/lib/cornerMOSlv.lib mos_tt\n" 0 "" 0 "" 0>
 </Components>
 <Wires>
   <731 223 755 223 "" 0 0 0 "">

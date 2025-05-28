@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=9,-188,1751,778,0.683013,0,0>
+  <View=72,-140,1397,725,1.00604,0,0>
   <Grid=10,10,1>
   <DataSet=Diviseur_par_4_symbole.dat>
   <DataDisplay=Diviseur_par_4_symbole.dpl>
@@ -27,11 +27,11 @@
 <Components>
   <Port H_barre1 1 220 380 12 4 0 1 "1" 1 "analog" 0>
   <Port H1 1 340 400 12 4 0 1 "2" 1 "analog" 0>
-  <INCLSCR INCLSCR1 1 180 160 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
-  <Sub SUB1 1 650 260 -26 88 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
   <Sub DIVFREQ1 1 360 150 64 208 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/freq_div_new/Diviseur_par_2_symbole.sch" 0>
   <Sub DIVFREQ2 1 890 150 64 208 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/freq_div_new/Diviseur_par_2_symbole.sch" 0>
   <Port Vout1 1 1310 270 4 -46 0 2 "3" 1 "analog" 0>
+  <INCLSCR INCLSCR1 1 325 90 -60 16 0 0 ".LIB /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/lib/cornerMOSlv.lib mos_tt\n" 0 "" 0 "" 0>
+  <Sub SUB1 1 650 260 -26 155 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
 </Components>
 <Wires>
   <840 270 840 320 "" 0 0 0 "">
