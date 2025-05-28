@@ -1,6 +1,10 @@
 <Qucs Schematic 25.1.1>
 <Properties>
+<<<<<<< Updated upstream
   <View=-762,-326,431,453,1.11735,0,0>
+=======
+  <View=-1024,-309,930,823,0.805015,0,67>
+>>>>>>> Stashed changes
   <Grid=1,1,1>
   <DataSet=Bascule_D.dat>
   <DataDisplay=Bascule_D.dpl>
@@ -36,6 +40,10 @@
   <Port RESET 1 -666 348 -23 12 0 0 "2" 1 "analog" 0>
   <Sub NAND2 1 46 -33 -23 52 0 0 "NAND.sch" 0>
   <Sub SUB5 1 -760 288 38 88 0 0 "INV_2x.sch" 0>
+<<<<<<< Updated upstream
+=======
+  <INCLSCR INCLSCR1 1 656 -291 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+>>>>>>> Stashed changes
   <Sub NAND3 1 -414 -103 -23 52 0 0 "NAND.sch" 0>
   <Sub SUB3 1 -479 107 -26 72 0 0 "NAND3.sch" 0>
   <Sub SUB2 1 -501 238 -26 72 0 0 "NAND3.sch" 0>
