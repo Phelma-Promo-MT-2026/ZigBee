@@ -16,7 +16,6 @@
 <Symbol>
 </Symbol>
 <Components>
-  <INCLSCR INCLSCR2 1 440 220 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs" 1 "" 0 "" 0>
   <NutmegEq NutmegEq1 1 600 330 -30 18 0 0 "ALL" 1 "vout=VOUTP-VOUTN" 1>
   <GND * 1 1040 440 0 0 0 0>
   <Vdc V2 1 1040 410 18 -26 0 1 "1.2 V" 1>
@@ -29,9 +28,10 @@
   <R_SPICE R2 1 860 640 -24 42 0 0 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <Vac V6 1 1160 780 18 -26 0 1 "-2 V" 1 "2.44 GHz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
   <.TR TR1 1 370 320 0 99 0 0 "lin" 1 "0" 1 "280 ns" 1 "13500" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <Vac V3 1 810 670 18 -26 0 1 "-0.4 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
   <Sub SUB1 1 620 -10 -26 248 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
   <Vac V4 1 750 550 18 -26 0 1 "0.4V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
-  <Vac V3 1 810 670 18 -26 0 1 "-0.4 V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
+  <INCLSCR INCLSCR1 1 790 40 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <1140 380 1140 410 "" 0 0 0 "">

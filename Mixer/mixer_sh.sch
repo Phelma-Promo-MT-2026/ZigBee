@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-1066,105,1025,1168,0.96162,438,178>
+  <View=-1149,-7,1246,1278,0.794727,266,126>
   <Grid=10,10,1>
   <DataSet=mixer_sh.dat>
   <DataDisplay=mixer_sh.dpl>
@@ -42,7 +42,6 @@
 <Components>
   <GND * 1 250 520 0 0 0 2>
   <GND * 1 480 520 0 0 0 2>
-  <INCLSCR INCLSCR2 1 -100 170 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs" 1 "" 0 "" 0>
   <GND * 1 370 730 0 0 0 0>
   <Lib sg13_lv_nmos5 1 530 540 95 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos2 1 450 540 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
@@ -74,6 +73,7 @@
   <R R2 0 -420 730 15 -26 0 1 "20k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Lib cap_cmim1 1 -100 710 -30 -53 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 0 "81.8u" 0>
   <Lib cap_cmim2 1 740 710 -32 -53 1 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 0 "81.8u" 0>
+  <INCLSCR INCLSCR2 1 -690 180 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <250 520 250 540 "" 0 0 0 "">
