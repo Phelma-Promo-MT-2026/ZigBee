@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-286,-86,1309,784,0.985981,0,0>
+  <View=-379,-40,1216,816,0.985981,0,0>
   <Grid=10,10,1>
   <DataSet=Balun.dat>
   <DataDisplay=Balun.dpl>
@@ -41,15 +41,11 @@
   <IProbe Pr3 1 -120 400 -33 -26 0 3>
   <IProbe Pr4 1 80 420 -33 -26 0 3>
   <GND * 1 -120 480 0 0 0 0>
-  <Lib sg13_lv_pmos2 1 80 300 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.27u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_pmos1 1 -120 300 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.05u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Port Ep 1 280 320 -23 12 0 0 "1" 1 "in" 0>
   <Lib cap_cmim1 1 300 320 -26 -81 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 1 "81.8u" 1>
   <GND * 1 600 330 0 0 0 0>
   <IProbe Pr1 1 530 430 -33 -26 0 3>
   <IProbe Pr2 1 650 430 -33 -26 0 3>
-  <Lib sg13_lv_nmos5 1 530 320 113 -80 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_nmos6 1 650 320 -194 -89 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib rhigh1 1 590 380 -21 -140 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.0u" 1 "2.53u" 1 "1" 1>
   <GND * 1 320 630 0 0 0 0>
   <GND * 1 590 750 0 0 0 0>
@@ -58,7 +54,6 @@
   <Lib sg13_lv_nmos3 5 650 580 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "4u" 0 "1.48u" 0 "2" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib cap_cmim2 1 850 320 24 -72 1 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 1 "81.8u" 1>
   <GND * 1 980 190 0 0 0 0>
-  <Lib sg13_lv_nmos1 5 950 180 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.74u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib rppd2 1 690 280 -110 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "1u" 1 "21.2u" 1 "1" 1>
   <Lib rppd3 1 810 280 -110 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "1u" 1 "21.2u" 1 "1" 1>
   <GND * 1 390 400 0 0 0 0>
@@ -67,6 +62,11 @@
   <Lib rhigh2 1 390 360 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "0.927u" 1 "4.62u" 1 "1" 1>
   <Lib rhigh5 1 760 280 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.546u" 1 "1.544u" 1 "1" 1>
   <Lib rhigh4 1 760 360 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "0.927u" 1 "4.62u" 1 "1" 1>
+  <Lib sg13_lv_nmos5 1 530 320 113 -80 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "6" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos6 1 650 320 -194 -89 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "6" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_nmos1 5 950 180 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.74u" 0 "6" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_pmos1 1 -120 300 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.15u" 1 "0.26u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_pmos2 1 80 300 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.273u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <950 400 1030 400 "" 0 0 0 "">
@@ -145,11 +145,11 @@
   <650 180 650 270 "" 0 0 0 "">
   <650 180 900 180 "" 0 0 0 "">
   <110 100 110 100 "VDD" 140 70 0 "">
-  <90 300 90 300 "VDD" 120 270 0 "">
   <390 240 390 240 "VDD" 420 210 0 "">
+  <760 240 760 240 "VDD" 790 210 0 "">
   <-180 300 -180 300 "VDD" -160 270 0 "">
   <590 30 590 30 "VDD" 620 0 0 "">
-  <760 240 760 240 "VDD" 790 210 0 "">
+  <90 300 90 300 "VDD" 120 270 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
