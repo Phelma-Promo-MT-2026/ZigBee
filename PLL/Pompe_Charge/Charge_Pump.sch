@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-912,-419,2960,2028,1.36155,1544,203>
+  <View=-5889,-2730,6587,3322,0.524936,3134,1143>
   <Grid=1,1,1>
   <DataSet=Charge_Pump.dat>
   <DataDisplay=Charge_Pump.dpl>
@@ -37,7 +37,6 @@
   <GND * 1 405 561 0 0 0 0>
   <Vdc V10 1 529 602 18 -26 0 1 "1.2 V" 1>
   <GND * 1 528 646 0 0 0 0>
-  <Sub SUB8 1 1050 291 -26 28 0 0 "INV.sch" 0>
   <GND * 1 2105 392 0 0 0 0>
   <GND * 1 2206 471 0 0 0 0>
   <C C2 1 2206 426 17 -26 0 1 "2.18 pF" 1 "" 0 "neutral" 0>
@@ -50,17 +49,18 @@
   <Lib sg13_lv_pmos1 1 1693 130 43 -32 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.7u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <.TR TR1 1 1127 -276 0 99 0 0 "lin" 1 "1 us" 1 "1.5 us" 1 "100" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <Lib sg13_lv_pmos2 1 1693 -9 41 -40 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "1.7u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Sub SUB11 1 1360 291 -6 28 0 0 "INV_8x.sch" 0>
-  <Sub SUB14 1 1431 130 -6 28 0 0 "INV_8x.sch" 0>
-  <Sub SUB9 1 1017 70 114 88 0 0 "INV_2x.sch" 0>
-  <Sub SUB5 1 1011 130 -26 28 0 0 "INV.sch" 0>
   <Vrect V9 1 405 534 18 -26 0 1 "1.2 V" 1 "50 ns" 1 "50 ns" 1 "0.01 ns" 0 "0.01 ns" 0 "0 ns" 0 "0 V" 1>
-  <Sub SUB12 1 1073 231 114 88 0 0 "INV_2x.sch" 0>
-  <Sub SUB7 1 892 291 -26 28 0 0 "INV.sch" 0>
   <Sub SUB3 1 939 291 -303 20 0 2 "AND.sch" 0>
   <Sub SUB4 1 463 540 -26 37 1 0 "Bascule_D.sch" 0>
   <Sub SUB1 1 463 17 -26 166 0 0 "Bascule_D.sch" 0>
   <INCLSCR INCLSCR1 1 367 -175 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <Sub SUB12 1 1073 231 114 88 0 0 "INV_2x.sch" 0>
+  <Sub SUB9 1 1017 70 114 88 0 0 "INV_2x.sch" 0>
+  <Sub SUB14 1 1431 130 -6 28 0 0 "INV_8x.sch" 0>
+  <Sub SUB11 1 1360 291 -6 28 0 0 "INV_8x.sch" 0>
+  <Sub SUB7 1 892 291 -26 28 0 0 "INV.sch" 0>
+  <Sub SUB5 1 1011 130 -26 28 0 0 "INV.sch" 0>
+  <Sub SUB8 1 1050 291 -26 28 0 0 "INV.sch" 0>
 </Components>
 <Wires>
   <425 17 597 17 "" 0 0 0 "">
@@ -139,22 +139,6 @@
   <1600 -9 1600 70 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1616 1461 240 160 3 #c0c0c0 1 00 1 2e-06 2e-07 3e-06 1 -1e-06 1e-06 1e-06 1 -1 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/tran.i(pr2)" #0000ff 0 3 0 0 0>
-  </Rect>
-  <Rect 1950 1994 240 160 3 #c0c0c0 1 00 1 1e-06 1e-07 1.5e-06 0 0 0.3 1.5 1 -1 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/tran.v(vvco)" #5555ff 2 3 0 0 0>
-  </Rect>
-  <Rect 1580 1706 240 160 3 #c0c0c0 1 00 1 2e-06 2e-07 3e-06 1 -1e-06 1e-06 1e-06 1 -1 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/tran.i(pr3)" #0000ff 0 3 0 0 0>
-  </Rect>
-  <Rect 1936 1763 240 160 3 #c0c0c0 1 00 1 1e-06 1e-07 1.5e-06 1 -0.12 0.5 1.32 0 -1 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/tran.v(fref)" #ff0000 3 3 0 0 0>
-	<"ngspice/tran.v(fdiv)" #00aa00 3 3 0 0 0>
-  </Rect>
-  <Rect 1935 1603 240 160 3 #c0c0c0 1 00 1 1e-06 1e-07 1.5e-06 1 -0.0001 0.0001 0.000129426 1 -1 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/tran.i(pr1)" #0055ff 1 3 0 0 0>
-  </Rect>
 </Diagrams>
 <Paintings>
 </Paintings>
