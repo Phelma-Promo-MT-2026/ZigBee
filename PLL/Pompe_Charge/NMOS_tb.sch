@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-132,-172,1743,834,0.839054,0,0>
+  <View=350,-14,1619,666,1.24054,0,0>
   <Grid=1,1,1>
   <DataSet=NMOS_tb.dat>
   <DataDisplay=NMOS_tb.dpl>
