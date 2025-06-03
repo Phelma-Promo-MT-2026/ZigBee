@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-87,65,1102,725,1,0,0>
+  <View=-118,74,977,682,1.08584,0,0>
   <Grid=10,10,1>
   <DataSet=Diviseur_par_2-digital_symbole.dat>
   <DataDisplay=Diviseur_par_2-digital_symbole.dpl>
@@ -26,14 +26,14 @@
 </Symbol>
 <Components>
   <Port Vin 1 190 440 -23 12 0 0 "1" 1 "analog" 0>
-  <Sub SUB1 1 150 340 -26 166 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
   <GND * 1 740 550 0 0 0 0>
   <GND * 1 380 550 0 0 0 0>
-  <Sub SUB2 1 510 340 -26 166 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
-  <Sub SUB3 1 720 180 -246 -45 0 2 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/INV.sch" 0>
-  <Sub SUB4 1 440 420 -26 28 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/INV.sch" 0>
   <Port Vout 1 890 250 4 12 1 2 "2" 1 "analog" 0>
   <INCLSCR INCLSCR1 1 -10 130 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <Sub SUB4 1 440 420 -26 28 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/INV.sch" 0>
+  <Sub SUB3 1 720 180 -246 -45 0 2 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/INV.sch" 0>
+  <Sub SUB2 1 760 400 -26 166 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
+  <Sub SUB1 1 380 390 -26 166 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
 </Components>
 <Wires>
   <190 420 190 440 "" 0 0 0 "">
@@ -41,20 +41,29 @@
   <400 180 550 180 "" 0 0 0 "">
   <400 180 400 230 "" 0 0 0 "">
   <280 230 400 230 "" 0 0 0 "">
-  <190 420 285 420 "" 0 0 0 "">
   <280 230 280 340 "" 0 0 0 "">
-  <280 340 284 340 "" 0 0 0 "">
   <190 440 190 640 "" 0 0 0 "">
   <190 640 470 640 "" 0 0 0 "">
-  <490 340 644 340 "" 0 0 0 "">
   <890 180 890 250 "" 0 0 0 "">
-  <850 340 890 340 "" 0 0 0 "">
   <470 420 470 640 "" 0 0 0 "">
   <470 420 490 420 "" 0 0 0 "">
-  <610 420 645 420 "" 0 0 0 "">
-  <740 498 740 550 "" 0 0 0 "">
-  <380 498 380 550 "" 0 0 0 "">
-  <890 250 890 340 "" 0 0 0 "">
+  <580 370 730 370 "" 0 0 0 "">
+  <190 420 330 420 "" 0 0 0 "">
+  <330 390 330 420 "" 0 0 0 "">
+  <330 390 350 390 "" 0 0 0 "">
+  <280 340 310 340 "" 0 0 0 "">
+  <310 340 310 360 "" 0 0 0 "">
+  <310 360 350 360 "" 0 0 0 "">
+  <420 360 580 360 "" 0 0 0 "">
+  <580 360 580 370 "" 0 0 0 "">
+  <610 420 730 420 "" 0 0 0 "">
+  <730 400 730 420 "" 0 0 0 "">
+  <350 550 380 550 "" 0 0 0 "">
+  <350 420 350 550 "" 0 0 0 "">
+  <730 550 740 550 "" 0 0 0 "">
+  <730 430 730 550 "" 0 0 0 "">
+  <890 250 890 370 "" 0 0 0 "">
+  <800 370 890 370 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
