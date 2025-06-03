@@ -23,7 +23,6 @@
   <INCLSCR INCLSCR1 1 -65 -190 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_wcs\n" 0 "" 0 "" 0>
   <.TR TR1 0 1095 -220 0 99 0 0 "lin" 1 "0" 1 "280 ns" 1 "13500" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <.CUSTOMSIM CUSTOM3 1 710 -210 0 41 0 0 "tran 50p 100n 0\nlet diff_MIXER = v(VOUTP_MIXER)- v(VOUTN_MIXER)\nlinearize diff_MIXER	\nfft diff_MIXER	\nlet s_mixer=mag(diff_MIXER)\nplot s_mixer\n" 1 "s_mixer;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
-  <Sub SUB2 5 290 -410 -26 768 0 0 "/home/userproj/QucsWorkspace/Zigbee/Mixer/mixer_sh.sch" 0>
   <Sub SUB3 1 820 460 43 -26 0 1 "/home/userproj/QucsWorkspace/Zigbee/PLL/PLL_verilog_A/symbole/VCOsarah.sch" 0>
   <GND * 1 520 310 0 0 0 0>
   <Vac V3 1 520 280 18 -26 1 3 "vi" 1 "2.45G" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
@@ -40,7 +39,8 @@
   <Vac V7 0 440 930 18 -26 1 3 "vi" 1 "2.45G" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
   <GND * 0 340 830 0 0 0 0>
   <Vac V8 0 340 800 18 -26 0 1 "vi" 1 "2.45G" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
-  <Vdc V4 1 110 195 18 -26 0 1 "0.53 V" 1>
+  <Sub SUB2 5 290 -410 -26 768 0 0 "/home/userproj/QucsWorkspace/Zigbee/Mixer/mixer_sh.sch" 0>
+  <Vdc V4 1 110 195 18 -26 0 1 "0.48 V" 1>
 </Components>
 <Wires>
   <830 350 830 420 "VOLNEG" 860 365 46 "">
@@ -56,14 +56,14 @@
   <440 890 440 900 "" 0 0 0 "">
   <340 770 540 770 "VIN" 440 740 70 "">
   <200 170 200 170 "VDD" 230 140 0 "">
-  <810 10 810 10 "VDD" 840 -20 0 "">
-  <990 160 990 160 "VOUTP_MIXER" 990 130 0 "">
-  <990 200 990 200 "VOUTN_MIXER" 990 170 0 "">
   <815 500 815 500 "VCTRL" 870 510 0 "">
   <730 660 730 660 "VDD" 760 630 0 "">
   <910 810 910 810 "VOUTP_MIXER" 940 780 0 "">
   <910 850 910 850 "VOUTN_MIXER" 940 820 0 "">
   <110 165 110 165 "VCTRL" 140 135 0 "">
+  <810 10 810 10 "VDD" 840 -20 0 "">
+  <990 160 990 160 "VOUTP_MIXER" 990 130 0 "">
+  <990 200 990 200 "VOUTN_MIXER" 990 170 0 "">
 </Wires>
 <Diagrams>
   <Rect 1100 900 240 160 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
