@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-643,-231,2705,1155,0.826446,294,179>
+  <View=-614,-263,2012,1147,0.599006,0,1>
   <Grid=10,10,1>
   <DataSet=Mixer_v1_VCOm.dat>
   <DataDisplay=Mixer_v1_VCOm.dpl>
