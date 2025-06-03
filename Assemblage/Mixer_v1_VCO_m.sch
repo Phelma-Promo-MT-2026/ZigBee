@@ -2,8 +2,8 @@
 <Properties>
   <View=-614,-263,2012,1147,0.599006,0,1>
   <Grid=10,10,1>
-  <DataSet=Mixer_v1_VCOm.dat>
-  <DataDisplay=Mixer_v1_VCOm.dpl>
+  <DataSet=Mixer_v1_VCO_m.dat>
+  <DataDisplay=Mixer_v1_VCO_m.dpl>
   <OpenDisplay=0>
   <Script=Mixer_v1_VCOm.m>
   <RunScript=0>
