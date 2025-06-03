@@ -1,26 +1,31 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module VCO(Vctrl, vss, Vout);
+module VCO(Vctrl, vss, VoutDiv, VoutVCO);
 	//déclaration de variables
 	input Vctrl;
 	inout vss;
-	output Vout;
-	electrical Vctrl, vss, Vout;
-	parameter real Ko = 524E6, fo = 10E6, Wo = 2*`M_PI*fo;
-	real W_VCO, phi;
+	output VoutDiv, VoutVCO;
+	electrical Vctrl, vss, VoutDiv, VoutVCO;
+	parameter real KoVCO = 524E6, KoDiv = 2E6, foVCO = 2.4E9, WoVCO = 2*`M_PI*foVCO, foDiv = 10E6, WoDiv = 2*`M_PI*foDiv;
+	real W_VCODiv, phiDiv, W_VCO, phiVCO;
 
 	analog begin
 		if(V(Vctrl, vss) > 1.2) begin
-			W_VCO = Wo + Ko*1.2;
+			W_VCODiv = WoDiv + KoDiv*1.2;
+			W_VCO = WoVCO + KoVCO*1.2;
 		end
 		else if(V(Vctrl, vss) < 0) begin
-			W_VCO = Wo;
+			W_VCODiv = WoDiv;
+			W_VCO = WoVCO;
 		end		
 		else begin
-			W_VCO = Wo + (Ko*V(Vctrl, vss));
+			W_VCODiv = WoDiv + (KoDiv*V(Vctrl, vss));
+			W_VCO = WoVCO + (KoVCO*V(Vctrl, vss));
 		end
-		phi = idt(W_VCO, 0.0);
-		V(Vout, vss) <+ 0.6 + 0.6*cos(phi);
+		phiDiv = idt(W_VCODiv, 0.0);
+		phiVCO = idt(W_VCO, 0.0);
+		V(VoutDiv, vss) <+ 0.6 + 0.6*cos(phiDiv);
+		V(VoutVCO, vss) <+ 0.6 + 0.6*cos(phiVCO);
 	end
 endmodule

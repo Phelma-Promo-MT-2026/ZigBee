@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=46,-91,773,383,1.83609,0,0>
+  <View=47,-35,784,446,1.80868,0,0>
   <Grid=10,10,1>
   <DataSet=PDC.dat>
   <DataDisplay=PDC.dpl>
@@ -31,12 +31,12 @@
   <.PortSym 40 0 3 180 P3>
 </Symbol>
 <Components>
-  <SPICEINIT SPICEINIT1 1 130 250 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/PDC.osdi" 1>
-  <SpiceModel SpiceModel1 1 120 150 -29 18 0 0 ".MODEL pdc1 charge_pump()" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
-  <SPICE_dev X1 1 470 90 -26 -102 0 0 "3" 0 "N" 0 "pdc1" 1 "" 0>
-  <Port P1 1 430 60 -23 12 0 0 "1" 1 "analog" 0>
-  <Port P3 1 430 120 -23 12 0 0 "3" 1 "analog" 0>
-  <Port P2 1 510 60 4 12 1 2 "2" 1 "analog" 0>
+  <SPICE_dev X1 1 360 280 -26 -102 0 0 "3" 0 "N" 0 "pdc1" 1 "" 0>
+  <Port P1 1 320 250 -23 12 0 0 "1" 1 "analog" 0>
+  <Port P3 1 320 310 -23 12 0 0 "3" 1 "analog" 0>
+  <Port P2 1 400 250 4 12 1 2 "2" 1 "analog" 0>
+  <SpiceModel SpiceModel1 1 120 240 -29 18 0 0 ".MODEL pdc1 charge_pump()" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
+  <SPICEINIT SPICEINIT1 1 120 320 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/PDC.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/psp103_nqs.osdi" 1>
 </Components>
 <Wires>
 </Wires>
