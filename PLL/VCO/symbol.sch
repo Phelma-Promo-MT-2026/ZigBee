@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-738,-395,2314,1281,0.536142,0,0>
+  <View=-739,-185,1588,1107,0.748494,0,180>
   <Grid=10,10,1>
   <DataSet=symbol.dat>
   <DataDisplay=symbol.dpl>
@@ -21,7 +21,6 @@
   <Line 60 -20 20 0 #000000 1 1>
   <Text 60 0 12 #000000 0 "Vs-\n\n">
   <Text 60 -40 12 #000000 0 "Vs+\n\n">
-  <.PortSym 90 20 1 180 Vout_M>
   <.PortSym 40 50 5 90 Vmos_M>
   <Line -90 20 30 0 #000000 1 1>
   <Text -90 20 9 #000000 0 "Vctrl\n">
@@ -33,6 +32,7 @@
   <.PortSym 40 -50 6 0 P1>
   <Line 40 -50 0 20 #000000 1 1>
   <Line 40 30 0 20 #000000 1 1>
+  <.PortSym 80 20 1 180 Vout_M>
 </Symbol>
 <Components>
   <GND * 1 490 -120 0 0 0 2>
@@ -83,13 +83,13 @@
   <Port Vout_M 1 -290 510 -23 12 0 0 "1" 1 "analog" 0>
   <Port V_bias 1 270 720 -23 12 0 0 "3" 1 "analog" 0>
   <Port Vctrl 1 490 70 -23 12 0 0 "4" 1 "analog" 0>
-  <Port Vmos_M 1 300 430 -23 12 0 0 "5" 1 "analog" 0>
   <Port Vout_P 1 1120 580 4 -46 0 2 "2" 1 "analog" 0>
-  <Port P1 1 720 440 -23 12 0 0 "6" 1 "analog" 0>
   <Lib cap_cmim2 1 500 310 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.2u" 1 "18.2u" 1>
   <Lib cap_cmim4 1 950 580 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
   <Lib cap_cmim3 1 -130 510 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
   <Lib cap_cmim1 1 240 800 -129 -16 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
+  <Port Vmos_M 1 300 420 -23 12 0 0 "5" 1 "analog" 0>
+  <Port P1 1 720 420 -23 12 0 0 "6" 1 "analog" 0>
 </Components>
 <Wires>
   <460 400 720 400 "" 0 0 0 "">
@@ -147,10 +147,10 @@
   <270 900 270 920 "" 0 0 0 "">
   <260 800 270 800 "" 0 0 0 "">
   <200 800 220 800 "" 0 0 0 "">
-  <300 390 300 430 "" 0 0 0 "">
+  <300 390 300 420 "" 0 0 0 "">
   <300 460 300 470 "" 0 0 0 "">
   <130 460 300 460 "" 0 0 0 "">
-  <720 400 720 440 "" 0 0 0 "">
+  <720 400 720 420 "" 0 0 0 "">
   <880 460 890 460 "" 0 0 0 "">
   <870 410 880 410 "" 0 0 0 "">
   <720 460 720 470 "" 0 0 0 "">
@@ -182,8 +182,8 @@
   <-290 510 -200 510 "" 0 0 0 "">
   <1010 580 1120 580 "" 0 0 0 "">
   <490 70 490 110 "" 0 0 0 "">
-  <300 430 300 460 "" 0 0 0 "">
-  <720 440 720 460 "" 0 0 0 "">
+  <300 420 300 460 "" 0 0 0 "">
+  <720 420 720 460 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
