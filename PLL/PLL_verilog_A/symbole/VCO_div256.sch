@@ -2,8 +2,8 @@
 <Properties>
   <View=92,430,853,927,1.75164,0,0>
   <Grid=5,5,1>
-  <DataSet=VCO.dat>
-  <DataDisplay=VCO.dpl>
+  <DataSet=VCO_div256.dat>
+  <DataDisplay=VCO_div256.dpl>
   <OpenDisplay=0>
   <Script=VCO.m>
   <RunScript=0>
