@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-256,-266,1755,813,0.782198,0,0>
+  <View=-256,-257,1761,825,0.779871,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_GC_mixer_v1_balun.dat>
   <DataDisplay=LNA_GC_mixer_v1_balun.dpl>
@@ -34,8 +34,8 @@
   <Vac V4 1 60 320 18 -26 0 1 "42m" 1 "2.45G" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
   <Vac V5 1 160 370 18 -26 0 1 "-42m" 1 "2.45G" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
   <GND * 1 60 400 0 0 0 0>
-  <Sub SUB3 1 1050 160 -26 228 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/Balun.sch" 0>
   <INCLSCR INCLSCR1 1 -30 -50 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
+  <Sub SUB3 1 1050 160 -26 228 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/Balun.sch" 0>
 </Components>
 <Wires>
   <60 290 260 290 "VIN" 160 260 70 "">

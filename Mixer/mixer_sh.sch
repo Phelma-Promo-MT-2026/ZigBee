@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-773,114,1206,1176,0.794727,0,0>
+  <View=-767,114,1200,1177,0.555556,0,1>
   <Grid=10,10,1>
   <DataSet=mixer_sh.dat>
   <DataDisplay=mixer_sh.dpl>
@@ -42,7 +42,6 @@
 <Components>
   <GND * 1 250 520 0 0 0 2>
   <GND * 1 480 520 0 0 0 2>
-  <INCLSCR INCLSCR2 1 -100 170 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs" 1 "" 0 "" 0>
   <GND * 1 370 730 0 0 0 0>
   <Port VOL_NEG 1 360 540 12 4 0 1 "6" 1 "analog" 0>
   <Lib rhigh1 1 500 390 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.020u" 1 "240n" 1 "1" 1>
@@ -74,6 +73,7 @@
   <Lib sg13_lv_nmos8 1 320 990 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "11u" 1 "0.130u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib cap_cmim2 1 740 710 -32 -53 1 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 0 "81.8u" 0>
   <Lib cap_cmim1 1 -100 710 -30 -53 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 0 "81.8u" 0>
+  <INCLSCR INCLSCR3 1 -515 440 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_wcs\n" 0 "" 0 "" 0>
 </Components>
 <Wires>
   <250 520 250 540 "" 0 0 0 "">
