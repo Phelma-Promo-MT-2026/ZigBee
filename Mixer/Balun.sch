@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-322,-69,1273,788,0.985981,0,0>
+  <View=-374,-40,1221,816,0.985981,0,0>
   <Grid=10,10,1>
   <DataSet=Balun.dat>
   <DataDisplay=Balun.dpl>
@@ -38,11 +38,9 @@
   <Port En 1 890 320 4 12 1 2 "2" 1 "in" 0>
   <GND * 1 -120 480 0 0 0 0>
   <Port Ep 1 280 320 -23 12 0 0 "1" 1 "in" 0>
-  <Lib cap_cmim1 1 300 320 -26 -81 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 1 "81.8u" 1>
   <GND * 1 600 330 0 0 0 0>
   <GND * 1 320 630 0 0 0 0>
   <GND * 1 590 750 0 0 0 0>
-  <Lib cap_cmim2 1 850 320 24 -72 1 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "81.8u" 1 "81.8u" 1>
   <GND * 1 980 190 0 0 0 0>
   <GND * 1 390 400 0 0 0 0>
   <GND * 1 760 400 0 0 0 0>
@@ -63,6 +61,8 @@
   <Lib sg13_lv_nmos6 1 650 320 -194 -89 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 5 950 180 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.74u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos5 1 530 320 113 -80 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "30u" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Lib cap_cmim1 1 300 320 -26 -81 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "75u" 1 "75u" 1>
+  <Lib cap_cmim2 1 850 320 24 -72 1 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "75u" 1 "75u" 1>
 </Components>
 <Wires>
   <980 580 980 640 "" 0 0 0 "">
