@@ -2,10 +2,10 @@
 <Properties>
   <View=92,430,853,927,1.75164,0,0>
   <Grid=5,5,1>
-  <DataSet=VCO.dat>
-  <DataDisplay=VCO.dpl>
+  <DataSet=VCOsarah.dat>
+  <DataDisplay=VCOsarah.dpl>
   <OpenDisplay=0>
-  <Script=VCO.m>
+  <Script=VCOsarah.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Titre>
@@ -24,11 +24,11 @@
   <.PortSym -40 -5 1 0 P1>
   <Text -15 -10 12 #aa0000 0 "VCO\n">
   <Line 30 -20 10 0 #000080 2 1>
-  <.PortSym 40 -20 3 180 P3>
   <Line 30 25 10 0 #000080 2 1>
-  <.PortSym 40 25 2 180 P2>
-  <Text 15 35 9 #000000 90 "Vout">
-  <Text 15 -5 9 #000000 90 "VoutI">
+  <Text 15 35 9 #000000 90 "VoutI">
+  <Text 15 -5 9 #000000 90 "Vout">
+  <.PortSym 40 -20 2 180 P2>
+  <.PortSym 40 25 3 180 P3>
 </Symbol>
 <Components>
   <Port P1 1 350 660 -23 12 0 0 "1" 1 "analog" 0>

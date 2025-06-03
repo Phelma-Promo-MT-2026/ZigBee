@@ -19,17 +19,17 @@
   <GND * 1 -120 1040 0 0 0 3>
   <GND * 1 -120 1240 0 0 0 3>
   <GND * 1 -120 1320 0 0 0 3>
-  <Vdc V2 1 -90 1320 -26 18 0 0 "3.3 V" 1>
+  <Vdc V2 1 -90 1320 -26 18 0 0 "1.2 V" 1>
   <GND * 1 -120 960 0 0 0 3>
-  <Vdc V3 1 -90 960 -26 18 0 0 "3.3 V" 1>
+  <Vdc V3 1 -90 960 -26 18 0 0 "1.2 V" 1>
   <Sub SUB2 1 -160 1320 -26 -184 1 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
   <Sub SUB1 1 -160 960 -26 167 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
   <NutmegEq NutmegEq1 1 -105 760 -30 18 0 0 "ALL" 1 "Vdiv-Vref=v(vdiv)-v(vref)" 1>
   <Sub SUB4 1 305 1160 -303 -77 0 2 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/AND.sch" 0>
   <Vrect V4 1 -90 1040 -26 18 0 0 "1 V" 1 "0,208 ns" 1 "0,208 ns" 1 "1 ps" 0 "1 ps" 0 "0 ns" 0 "0 V" 0>
   <Vrect V5 1 -90 1240 -26 18 0 0 "1 V" 1 "0,416 ns" 1 "0,416 ns" 1 "1 ps" 0 "1 ps" 0 "0 ns" 0 "0 V" 0>
-  <.TR TR1 1 95 760 0 99 0 0 "lin" 1 "0" 1 "5 ns" 1 "2000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <INCLSCR INCLSCR1 1 -65 848 -60 16 0 0 ".LIB /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/lib/cornerMOSlv.lib mos_tt\n" 0 "" 0 "" 0>
+  <INCLSCR INCLSCR1 1 -70 848 -60 16 0 0 ".LIB /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/lib/cornerMOSlv.lib mos_tt\n" 0 "" 0 "" 0>
+  <.TR TR1 1 95 760 0 99 0 0 "lin" 1 "0" 1 "5 ns" 1 "2000" 0 "Trapezoidal" 0 "2" 0 "1 ps" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
 </Components>
 <Wires>
   <-60 1240 -25 1240 "vdiv" -40 1195 22 "">
@@ -57,7 +57,7 @@
   <Rect 335 1338 709 173 3 #c0c0c0 1 00 1 0 0.002 0.02 1 -0.00133686 0.001 0.00155712 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.v(up)" #0000ff 0 3 0 0 0>
   </Rect>
-  <Rect 335 920 710 172 3 #c0c0c0 1 00 1 0 0.002 0.02 1 -1.2 1 1.2 1 -1 1 1 315 0 225 1 0 0 "" "" "">
+  <Rect 335 920 710 172 3 #c0c0c0 1 00 1 0 5e-10 5e-09 1 -0.12 0.5 1.32 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.vdiv-vref" #0000ff 0 3 0 0 0>
   </Rect>
 </Diagrams>

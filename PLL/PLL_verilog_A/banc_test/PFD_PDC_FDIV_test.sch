@@ -24,15 +24,15 @@
   <GND * 1 386 451 0 0 0 3>
   <INCLSCR INCLSCR1 1 264 318 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <GND * 1 520 577 0 0 0 0>
-  <Sub SUB2 5 582 487 -26 52 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/symbole/PFD_PDC_analog.sch" 0>
   <.TR TR1 1 191 392 0 99 0 0 "lin" 1 "0" 1 "0.1 us" 1 "2000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <Vrect V2 1 520 547 18 -26 0 1 "1,2 V" 1 "0,053 us" 1 "0,053 us" 1 "1 ps" 0 "1 ps" 0 "0 ns" 0 "0 V" 1>
   <Vrect V1 1 416 451 -26 -103 1 0 "1,2 V" 1 "0,208 ps" 1 "0,208 ps" 1 "1 ps" 0 "1 ps" 0 "0 ns" 0 "0 V" 0>
+  <Sub SUB2 5 582 487 -26 52 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/symbole/PFD_PDC_analog.sch" 0>
 </Components>
 <Wires>
-  <446 451 542 451 "vin" 483 411 37 "">
   <520 516 520 517 "" 0 0 0 "">
   <520 516 543 516 "" 0 0 0 "">
+  <446 451 542 451 "vin" 483 411 37 "">
   <624 482 624 482 "vout" 658 451 0 "">
 </Wires>
 <Diagrams>
