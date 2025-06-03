@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-738,-395,2314,1281,0.536142,0,0>
+  <View=-563,-657,2961,1233,0.446525,0,0>
   <Grid=10,10,1>
   <DataSet=symbol.dat>
   <DataDisplay=symbol.dpl>
@@ -21,7 +21,6 @@
   <Line 60 -20 20 0 #000000 1 1>
   <Text 60 0 12 #000000 0 "Vs-\n\n">
   <Text 60 -40 12 #000000 0 "Vs+\n\n">
-  <.PortSym 90 20 1 180 Vout_M>
   <.PortSym 40 50 5 90 Vmos_M>
   <Line -90 20 30 0 #000000 1 1>
   <Text -90 20 9 #000000 0 "Vctrl\n">
@@ -30,9 +29,12 @@
   <Line -60 -10 -30 0 #000000 1 1>
   <Text -90 -30 9 #000000 0 "Vbias">
   <.PortSym 80 -20 2 180 Vout_P>
-  <.PortSym 40 -50 6 0 P1>
+  <.PortSym 40 -50 6 0 Vmos_P>
   <Line 40 -50 0 20 #000000 1 1>
   <Line 40 30 0 20 #000000 1 1>
+  <Text 50 40 12 #000000 0 "Vs-inter\n\n\n">
+  <Text 50 -60 12 #000000 0 "Vs+inter\n\n\n">
+  <.PortSym 80 20 1 180 Vout_M>
 </Symbol>
 <Components>
   <GND * 1 490 -120 0 0 0 2>
@@ -85,7 +87,7 @@
   <Port Vctrl 1 490 70 -23 12 0 0 "4" 1 "analog" 0>
   <Port Vmos_M 1 300 430 -23 12 0 0 "5" 1 "analog" 0>
   <Port Vout_P 1 1120 580 4 -46 0 2 "2" 1 "analog" 0>
-  <Port P1 1 720 440 -23 12 0 0 "6" 1 "analog" 0>
+  <Port Vmos_P 1 720 440 -23 12 0 0 "6" 1 "analog" 0>
   <Lib cap_cmim2 1 500 310 44 9 0 3 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "18.2u" 1 "18.2u" 1>
   <Lib cap_cmim4 1 950 580 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
   <Lib cap_cmim3 1 -130 510 -13 44 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "82u" 1 "82u" 1>
