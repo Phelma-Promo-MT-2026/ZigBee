@@ -1,6 +1,6 @@
-<Qucs Schematic 25.1.2>
+<Qucs Schematic 25.1.1>
 <Properties>
-  <View=-222,34,1092,766,1.19672,0,0>
+  <View=-227,34,1087,766,1.19672,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_single.dat>
   <DataDisplay=LNA_single.dpl>
@@ -34,7 +34,6 @@
   <Port Vout 1 830 250 4 -46 0 2 "3" 1 "out" 0>
   <Port Vin 1 550 590 -23 12 0 0 "2" 1 "in" 0>
   <Lib rhigh1_rf 1 440 520 -18 -92 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1u" 1 "2u" 1 "1" 1>
-  <Sub Li 1 630 500 -26 55 0 0 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
   <GND * 1 750 640 0 0 0 0>
   <GND * 1 610 530 0 0 0 0>
   <Port Vdd 1 260 130 -23 12 0 0 "1" 1 "in" 0>
@@ -42,12 +41,13 @@
   <GND * 1 300 580 0 0 0 0>
   <Lib nmos1 1 730 320 40 -42 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "106*10e-6" 1 "0.130u" 1 "11" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib nmos2 1 730 520 26 -63 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "106*10e-6" 1 "0.130u" 1 "11" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Sub Ls 1 710 620 55 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_1.6nH/Modele_Inductance_1.6nH.sch" 0>
-  <Sub Ll 1 710 170 55 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
   <GND * 1 730 700 0 0 0 0>
   <GND * 1 740 320 0 0 0 0>
   <GND * 1 740 520 0 0 0 0>
-  <INCLSCR INCLSCR1 1 40 90 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n.LIB cornerCAP.lib cap_typ\n.LIB cornerRES.lib res_wcs\n.LIB cornerRES.lib res_typ\n" 1 "" 0 "" 0>
+  <Sub Ls 1 710 620 89 -1 0 1 "/home/userproj/QucsWorkspace/ZigBee/Inductance/development/Modele_Inductance/Modele_1.6nH/Modele_Inductance_1.6nH.sch" 0>
+  <Sub Li 1 630 500 -26 89 0 0 "/home/userproj/QucsWorkspace/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Sub Ll 1 710 170 89 -1 0 1 "/home/userproj/QucsWorkspace/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <INCLSCR INCLSCR1 1 40 110 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n.LIB cornerCAP.lib cap_typ\n.LIB cornerRES.lib res_wcs\n.LIB cornerRES.lib res_typ\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <290 470 300 470 "" 0 0 0 "">
