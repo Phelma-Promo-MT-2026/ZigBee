@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=186,18,1470,756,1.22496,0,0>
+  <View=134,54,1442,856,1.20228,0,120>
   <Grid=10,10,1>
   <DataSet=fft_mixer_v1.dat>
   <DataDisplay=fft_mixer_v1.dpl>
@@ -16,32 +16,33 @@
 <Symbol>
 </Symbol>
 <Components>
-  <GND * 1 280 490 0 0 0 0>
   <.CUSTOMSIM CUSTOM1 1 780 110 0 41 0 0 "tran 50p 100n 0\nlet diff = v(VOUTP) - v(VOUTN)\nlinearize diff\nfft diff\nlet s=mag(diff)\nplot s" 1 "diff;s" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
   <GND * 1 620 290 0 0 0 0>
   <Vdc V3 1 620 260 18 -26 0 1 "1.2 V" 1>
   <GND * 1 740 690 0 0 0 0>
-  <Vac V4 1 740 660 18 -26 0 1 "-2 V" 1 "2.44G Hz" 0 "0" 0 "0" 0 "0" 0 "0" 0>
   <GND * 1 690 690 0 0 0 0>
-  <Vac V5 1 690 660 -48 -22 0 1 "2 V" 1 "2.44G Hz" 0 "0" 0 "0" 0 "0" 0 "0" 0>
   <R_SPICE R2 1 340 400 -26 15 0 0 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
-  <Vac V1 1 280 460 18 -26 0 1 "1m" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
   <R_SPICE R1 1 390 520 24 15 0 0 "50" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <GND * 1 340 630 0 0 0 0>
-  <Vac V2 1 340 590 18 -26 0 1 "-1m V" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
   <Sub SUB1 1 200 -130 104 518 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/mixer_sh.sch" 0>
   <INCLSCR INCLSCR1 1 340 110 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
+  <Vac V5 1 690 660 -48 -22 0 1 "2 V" 1 "2.44G Hz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <Vac V4 1 740 660 18 -26 0 1 "-2 V" 1 "2.44G Hz" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <GND * 1 250 490 0 0 0 0>
+  <Vac V1 1 250 460 18 -26 0 1 "vi" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
+  <Vac V2 1 340 590 18 -26 1 3 "vi" 1 "2.45 GHz" 0 "0" 0 "0" 0 "1.2" 0 "0" 0>
+  <SpicePar SpicePar1 1 260 300 -28 18 0 0 "vi=0.175" 1>
 </Components>
 <Wires>
   <620 230 720 230 "" 0 0 0 "">
   <720 230 720 290 "" 0 0 0 "">
   <370 400 530 400 "" 0 0 0 "">
-  <280 400 310 400 "" 0 0 0 "">
-  <280 400 280 430 "" 0 0 0 "">
   <340 620 340 630 "" 0 0 0 "">
   <420 520 530 520 "" 0 0 0 "">
   <340 520 360 520 "" 0 0 0 "">
   <340 520 340 560 "" 0 0 0 "">
+  <250 400 310 400 "" 0 0 0 "">
+  <250 400 250 430 "" 0 0 0 "">
   <900 440 900 440 "VOUTP" 930 410 0 "">
   <900 480 900 480 "VOUTN" 930 450 0 "">
 </Wires>
