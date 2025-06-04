@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-598,-380,1616,807,0.710806,0,0>
+  <View=-266,-212,1430,736,0.917412,0,0>
   <Grid=10,10,1>
   <DataSet=Bascule_D.dat>
   <DataDisplay=Bascule_D.dpl>
@@ -44,6 +44,7 @@
   <Port CLK 1 -30 190 -23 12 0 0 "3" 1 "analog" 0>
   <Port Q 1 1100 100 4 -46 0 2 "4" 1 "analog" 0>
   <Sub SUB11 1 -200 520 -26 88 0 0 "INV_2x.sch" 0>
+  <INCLSCR INCLSCR1 1 685 -62 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <120 140 120 490 "" 0 0 0 "">
