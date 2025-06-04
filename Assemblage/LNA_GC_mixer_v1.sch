@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-395,177,1961,1621,0.667722,0,120>
+  <View=-190,177,1756,1269,0.808429,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_GC_mixer_v1.dat>
   <DataDisplay=LNA_GC_mixer_v1.dpl>
@@ -41,13 +41,13 @@
   <R R2 1 1430 630 -26 15 0 0 "10" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C3 1 1560 620 17 -26 0 1 "6.5p" 1 "" 0 "neutral" 0>
   <C C4 1 1460 660 17 -26 0 1 "6.5p" 1 "" 0 "neutral" 0>
-  <.CUSTOMSIM CUSTOM1 0 730 230 0 41 0 0 "tran 50p 100n 0\nlet diff_MIXER = v(VOUTP_MIXER)- v(VOUTN_MIXER)\nlinearize diff_MIXER	\nfft diff_MIXER	\nlet s_mixer=mag(diff_MIXER)\nplot s_mixer\n" 1 "s_mixer;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
-  <NutmegEq NutmegEq1 1 1380 240 -30 18 0 0 "ALL" 1 "vout=VOUTP_MIXER-VOUTN_MIXER" 1 "VOUT_LNA=VOUTP_LNA-VOUTN_LNA" 1 "VOUT_flt=VOUTP_flt-VOUTN_flt" 1>
+  <.CUSTOMSIM CUSTOM1 1 730 230 0 41 0 0 "tran 50p 100n 0\nlet diff_MIXER = v(VOUTP_MIXER)- v(VOUTN_MIXER)\nlinearize diff_MIXER	\nfft diff_MIXER	\nlet s_mixer=mag(diff_MIXER)\nplot s_mixer\n" 1 "s_mixer;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
+  <NutmegEq NutmegEq1 0 1380 240 -30 18 0 0 "ALL" 1 "vout=VOUTP_MIXER-VOUTN_MIXER" 1 "VOUT_LNA=VOUTP_LNA-VOUTN_LNA" 1 "VOUT_flt=VOUTP_flt-VOUTN_flt" 1>
   <.CUSTOMSIM CUSTOM3 0 170 230 0 41 0 0 "tran 50p 100n 0\nlinearize v(vin)\nfft v(vin)\nlet s_vin=mag(v(vin))\nplot s_vin\n" 1 "s_vin;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
-  <.CUSTOMSIM CUSTOM2 0 420 230 0 41 0 0 "tran 50p 100n 0\nlet diff_LNA = v(VOUTP_LNA) - v(VOUTN_LNA)\nlinearize diff_LNA\nfft diff_LNA\nlet s_lna=mag(diff_LNA)\nplot s_lna\n" 1 "s_lna;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
-  <.TR TR1 1 1110 220 0 99 0 0 "lin" 1 "0" 1 "280 ns" 1 "13500" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <SpicePar SpicePar1 1 320 490 -28 18 0 0 "vi=1m" 1>
+  <.CUSTOMSIM CUSTOM2 1 420 230 0 41 0 0 "tran 50p 100n 0\nlet diff_LNA = v(VOUTP_LNA) - v(VOUTN_LNA)\nlinearize diff_LNA\nfft diff_LNA\nlet s_lna=mag(diff_LNA)\nplot s_lna\n" 1 "s_lna;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
+  <.TR TR1 0 1110 220 0 99 0 0 "lin" 1 "0" 1 "280 ns" 1 "13500" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <Vac V2 1 1190 830 -56 -15 0 1 "2 V" 1 "2.44G" 0 "0" 0 "0" 0 "0.8" 0 "0" 0>
+  <SpicePar SpicePar1 1 320 490 -28 18 0 0 "vi=5.5" 1>
 </Components>
 <Wires>
   <350 590 550 590 "VIN" 450 560 70 "">
@@ -88,7 +88,7 @@
   </Rect>
   <Rect 840 1170 240 160 3 #c0c0c0 1 00 1 0 2e+09 1.0005e+10 1 -0.000621175 0.005 0.00683432 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/custom2.ac.s_lna" #0000ff 0 3 0 0 0>
-	  <Mkr 2.4524e+09/0/0/0/0 119 -207 4 0 0>
+	  <Mkr 2.4524e+09 119 -207 4 0 0>
   </Rect>
   <Rect 1360 900 240 160 3 #c0c0c0 1 00 1 0 5e-08 2.8e-07 1 -0.0238321 0.02 0.0238425 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.vout_flt" #00ff7f 0 3 0 0 0>
@@ -97,15 +97,15 @@
   </Rect>
   <Rect 1370 1180 240 160 3 #c0c0c0 1 00 1 0 2e+09 1.0005e+10 1 -0.00116599 0.005 0.0128639 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/custom1.ac.s_mixer" #00ff00 0 3 0 0 0>
-	  <Mkr 9.77051e+06/0/0/0/0 60 -207 3 0 0>
+	  <Mkr 9.77051e+06 60 -207 3 0 0>
   </Rect>
   <Rect 290 900 240 160 3 #c0c0c0 1 00 0 0 1e-09 5e-09 1 1.1988 0.001 1.2012 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.v(vin)" #ff0000 0 3 0 0 0>
   </Rect>
   <Rect 272 1173 275 173 3 #c0c0c0 1 00 1 0 2e+09 1.0005e+10 1 -0.121313 0.5 1.33445 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/custom3.ac.s_vin" #ff0000 1 3 0 0 0>
-	  <Mkr 0/0/0/0/0 -202 -215 3 0 0>
-	  <Mkr 2.4524e+09/0/0/0/0 153 -47 5 0 0>
+	  <Mkr 0/0/0/0/0/0/0 -202 -215 3 0 0>
+	  <Mkr 2.4524e+09/0/0/0/0/0/0 153 -47 5 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
