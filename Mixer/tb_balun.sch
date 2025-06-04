@@ -24,8 +24,8 @@
   <GND * 1 430 480 0 0 0 0>
   <INCLSCR INCLSCR1 1 340 160 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n.LIB cornerRES.lib res_wcs\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ" 1 "" 0 "" 0>
   <Sub SUB1 1 340 220 -26 228 0 0 "/home/userproj/microelectronics/projects/ZigBee/Mixer/Balun.sch" 0>
-  <Vac V5 1 430 330 18 -26 0 1 "0.4" 1 "2.45G" 0 "0" 0 "0" 0 "1" 0 "0" 0>
-  <Vac V4 1 430 450 18 -26 0 1 "-0.4" 1 "2.45G" 0 "0" 0 "0" 0 "1" 0 "0" 0>
+  <Vac V5 1 430 330 18 -26 0 1 "0.001" 1 "2.45G" 0 "0" 0 "0" 0 "1" 0 "0" 0>
+  <Vac V4 1 430 450 18 -26 0 1 "-0.001" 1 "2.45G" 0 "0" 0 "0" 0 "1" 0 "0" 0>
 </Components>
 <Wires>
   <430 300 560 300 "" 0 0 0 "">
@@ -38,7 +38,7 @@
   <Rect 960 580 240 160 3 #c0c0c0 1 00 0 0 1e-09 5e-09 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tr1.tran.v(s)" #0000ff 1 3 0 0 0>
 	  <Mkr 1.87261e-09 170 -203 5 0 0>
-	  <Mkr 2.10078e-09 201 -113 5 0 0>
+	  <Mkr 2.08004e-09 201 -113 5 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
