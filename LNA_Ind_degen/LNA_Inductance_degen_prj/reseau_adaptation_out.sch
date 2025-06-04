@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=312,206,969,572,2.39328,0,0>
+  <View=329,224,986,590,2.39328,0,0>
   <Grid=10,10,1>
   <DataSet=reseau_adaptation_out.dat>
   <DataDisplay=reseau_adaptation_out.dpl>
@@ -29,6 +29,7 @@
   <Port In 1 530 370 -23 12 0 0 "1" 1 "in" 0>
   <Port Out 1 730 370 4 -46 0 2 "2" 1 "out" 0>
   <Port Gnd 1 690 430 12 4 0 1 "3" 1 "analog" 0>
+  <INCLSCR INCLSCR1 1 430 280 -60 16 0 0 "\n.LIB cornerCAP.lib cap_typ\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <620 370 690 370 "" 0 0 0 "">
