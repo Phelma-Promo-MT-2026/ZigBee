@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-479,-41,1114,787,1.1272,165,56>
+  <View=-467,-60,1222,846,0.931567,0,0>
   <Grid=10,10,1>
   <DataSet=pt_fonc_balun.dat>
   <DataDisplay=pt_fonc_balun.dpl>
@@ -36,8 +36,6 @@
   <IProbe Pr4 1 100 440 -33 -26 0 3>
   <IProbe Pr3 1 300 460 -33 -26 0 3>
   <GND * 1 100 520 0 0 0 0>
-  <Lib sg13_lv_pmos1 1 100 340 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.15u" 1 "0.26u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <Lib sg13_lv_pmos2 1 300 340 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.273u" 1 "0.13u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 430 430 0 0 0 0>
   <R_SPICE R1 1 730 390 -26 15 0 0 "5k" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
   <R_SPICE R2 1 670 240 15 -26 0 1 "6k" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "R" 1>
@@ -54,6 +52,8 @@
   <Vac V3 1 950 360 18 -26 0 1 "-0.001" 1 "2.45G" 0 "0" 0 "0" 0 "vbias" 0 "0" 0>
   <Lib sg13_lv_nmos4 1 790 320 -141 -121 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "N1" 0 "0.130u" 0 "1" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <GND * 1 730 330 0 0 0 0>
+  <Lib sg13_lv_pmos1 1 100 340 -119 20 0 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.75u" 1 "2.25u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib sg13_lv_pmos2 1 300 340 5 10 1 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "4.3u" 1 "2.25u" 1 "1" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <730 140 730 160 "" 0 0 0 "">
@@ -134,11 +134,11 @@
   <730 330 740 330 "" 0 0 0 "">
   <70 -10 70 -10 "VDD" 100 -40 0 "">
   <150 -10 150 -10 "Vpol" 180 -40 0 "">
-  <310 340 310 340 "VDD" 340 310 0 "">
   <430 320 430 320 "Ep" 460 290 0 "">
   <730 140 730 140 "VDD" 760 110 0 "">
   <1070 410 1070 410 "s" 1100 380 0 "">
   <40 340 40 340 "VDD" 60 310 0 "">
+  <310 340 310 340 "VDD" 340 310 0 "">
 </Wires>
 <Diagrams>
   <Rect -330 690 240 160 3 #c0c0c0 1 00 0 0 1e-09 2e-09 1 0.5 0.5 1.5 1 -1 1 1 315 0 225 1 0 0 "" "" "">
