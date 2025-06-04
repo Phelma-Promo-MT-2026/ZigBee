@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-331,-138,1128,645,1.07791,0,0>
+  <View=-302,-101,1157,868,1.07791,0,200>
   <Grid=5,5,1>
   <DataSet=Symbole_LNA_CG_Diff.dat>
   <DataDisplay=Symbole_LNA_CG_Diff.dpl>
@@ -44,7 +44,6 @@
   <Lib mn4 1 420 190 -100 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 420 570 0 0 0 0>
   <GND * 1 160 570 0 0 0 0>
-  <Lib cap_cmim6 1 360 530 -85 15 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
   <GND * 1 780 200 0 0 0 0>
   <GND * 1 780 390 0 0 0 0>
   <Lib mn1 1 740 190 -100 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
@@ -72,6 +71,7 @@
   <SpicePar SpicePar1 0 -55 125 -28 18 0 0 "w1=58.8u" 1 "l1=130n" 1 "w2=3.3u" 1 "l2=2*l1" 1>
   <Lib mn3 1 160 380 -60 -48 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "5.8u" 1 "260n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib rpol1 1 320 330 -138 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3.006u" 1 "23.615u" 1 "1" 1>
+  <Lib cap_cmim6 1 360 530 -85 15 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
 </Components>
 <Wires>
   <460 190 460 200 "" 0 0 0 "">
@@ -84,9 +84,6 @@
   <360 490 420 490 "" 0 0 0 "">
   <160 460 160 570 "" 0 0 0 "">
   <140 460 160 460 "" 0 0 0 "">
-  <360 570 420 570 "" 0 0 0 "">
-  <360 550 360 570 "" 0 0 0 "">
-  <360 490 360 510 "" 0 0 0 "">
   <780 190 780 200 "" 0 0 0 "">
   <750 190 780 190 "" 0 0 0 "">
   <780 380 780 390 "" 0 0 0 "">
@@ -149,6 +146,9 @@
   <160 440 160 460 "" 0 0 0 "">
   <210 380 220 380 "" 0 0 0 "">
   <160 320 160 330 "" 0 0 0 "">
+  <360 570 420 570 "" 0 0 0 "">
+  <360 550 360 570 "" 0 0 0 "">
+  <360 490 360 510 "" 0 0 0 "">
   <270 490 270 490 "Entreeplus" 305 460 0 "">
   <590 490 590 490 "Entreemoins" 625 460 0 "">
 </Wires>

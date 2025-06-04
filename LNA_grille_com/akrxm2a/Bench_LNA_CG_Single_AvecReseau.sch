@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-239,94,1190,861,1.10039,0,0>
+  <View=-350,94,1190,882,1.94941,0,318>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Single_AvecReseau.dat>
   <DataDisplay=Bench_LNA_CG_Single_AvecReseau.dpl>
@@ -37,11 +37,11 @@
   <GND * 1 310 710 0 0 0 0>
   <INCLSCR INCLSCR1 1 220 150 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
   <Pac P1 1 130 470 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
-  <Pac P2 1 420 470 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
   <Pac P3 1 110 740 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
   <Pac P4 1 390 740 18 -26 0 1 "4" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
   <NutmegEq NutmegEq1 1 750 176 -30 18 0 0 "SP1" 1 "G1=dB(s_2_1)+10*log10(5000/50)" 1 "G2=dB(s_4_3)" 1>
   <.SP SP1 1 420 140 0 70 0 0 "lin" 1 "1 MHz" 1 "5 GHz" 1 "5000" 1 "yes" 1 "1" 1 "2" 1 "no" 0 "no" 0>
+  <Pac P2 1 420 470 18 -26 0 1 "2" 1 "5000 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
 </Components>
 <Wires>
   <-10 180 -10 190 "" 0 0 0 "">
@@ -71,21 +71,22 @@
   <-100 180 -100 180 "Vpol" -70 150 0 "">
 </Wires>
 <Diagrams>
-  <Smith -140 560 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/ac.v(s_3_3)" #ff0000 0 3 0 0 0>
-	  <Mkr 2.45e+09 21 -192 3 0 0>
-	<"ngspice/ac.v(s_4_4)" #ff00ff 0 3 0 0 0>
-  </Smith>
-  <Smith -140 820 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/ac.v(s_3_3)" #0000ff 0 3 0 0 0>
-	<"ngspice/ac.v(s_4_4)" #ff0000 0 3 0 0 0>
-  </Smith>
   <Rect 609 570 482 265 3 #c0c0c0 1 00 1 -1 0.2 1 0 -60 50 30.0955 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g1" #ff0000 0 3 0 0 0>
 	  <Mkr 2.477e+09 335 -222 3 0 0>
 	<"ngspice/ac.g2" #00aa00 0 3 0 0 0>
 	  <Mkr 2.465e+09 122 -77 3 0 0>
   </Rect>
+  <Smith -170 580 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.v(s_3_3)" #ff0000 0 3 0 0 0>
+	  <Mkr 2.45e+09 -19 -252 3 0 0>
+	<"ngspice/ac.v(s_4_4)" #ff00ff 0 3 0 0 0>
+	  <Mkr 2.45e+09 74 -185 3 0 0>
+  </Smith>
+  <Smith -180 830 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.v(s_3_3)" #0000ff 0 3 0 0 0>
+	<"ngspice/ac.v(s_4_4)" #ff0000 0 3 0 0 0>
+  </Smith>
 </Diagrams>
 <Paintings>
 </Paintings>

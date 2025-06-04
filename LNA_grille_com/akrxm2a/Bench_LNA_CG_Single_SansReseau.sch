@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-237,90,1157,838,1.12834,0,0>
+  <View=-185,30,1262,867,1.12834,60,60>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Single_SansReseau.dat>
   <DataDisplay=Bench_LNA_CG_Single_SansReseau.dpl>
@@ -32,8 +32,8 @@
   <Pac P2 1 390 460 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
   <C_SPICE Cres 1 300 370 17 -26 0 1 "1.41p" 1 "" 0 "" 0 "" 0 "" 0 "2" 1 "C" 1>
   <Sub A1 5 20 320 195 82 0 0 "Symbole_LNA_CG_Single.sch" 0>
-  <.SP SP1 1 380 140 0 70 0 0 "lin" 1 "1 MHz" 1 "5 GHz" 1 "5000" 1 "yes" 1 "1" 1 "2" 1 "no" 0 "no" 0>
   <NutmegEq NutmegEq1 1 620 146 -30 18 0 0 "SP1" 1 "G0=dB(s_2_1)+10*log10(5000/50)" 1 "NF_db=10*log10(nf)" 1>
+  <.SP SP1 1 390 80 0 70 0 0 "lin" 1 "1 MHz" 1 "5 GHz" 1 "5000" 1 "yes" 1 "1" 1 "2" 1 "no" 0 "no" 0>
 </Components>
 <Wires>
   <-10 180 -10 190 "" 0 0 0 "">
@@ -59,13 +59,13 @@
 <Diagrams>
   <Smith -130 500 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(s_1_1)" #0000ff 1 3 0 0 0>
-	  <Mkr 2.45e+09 249 -200 3 0 0>
+	  <Mkr 2.45e+09 29 -200 3 0 0>
 	<"ngspice/ac.v(s_2_2)" #00ffff 1 3 0 0 0>
-	  <Mkr 2.45e+09 227 -201 3 0 0>
+	  <Mkr 2.45e+09 7 29 3 0 0>
   </Smith>
   <Rect 569 520 482 265 3 #c0c0c0 1 00 1 0 5e+08 5e+09 0 -60 50 30.0955 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g0" #0000ff 0 3 0 0 0>
-	  <Mkr 2.411e+09 18 -205 3 0 0>
+	  <Mkr 2.411e+09 108 -135 3 0 0>
   </Rect>
   <Rect 165 797 415 217 3 #c0c0c0 1 00 1 0 1e+09 5e+09 1 -15.3037 100 231.209 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(nf)" #ff0000 1 3 0 0 0>
