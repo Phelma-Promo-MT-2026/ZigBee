@@ -1,0 +1,12 @@
+.SUBCKT TOP
+M1 $1 caca $2 0 sg13_lv_nmos L=0.13u W=10u AS=3.4p AD=1.9p PS=20.68u PD=10.38u
+M2 $2 Vin $3 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M3 $3 Vin $4 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M4 $4 Vin $5 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M5 $5 Vin $6 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M6 $6 Vin $7 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M7 $7 Vin $8 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M8 $8 Vin $9 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M9 $9 Vin $10 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=1.9p PS=10.38u PD=10.38u
+M10 $10 Vin Source 0 sg13_lv_nmos L=0.13u W=10u AS=1.9p AD=3.4p PS=10.38u PD=20.68u
+.ENDS TOP
