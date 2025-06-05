@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=989,347,2068,926,1.45769,0,0>
+  <View=1080,370,1980,926,1.56475,0,0>
   <Grid=10,10,1>
   <DataSet=INV_2x.dat>
   <DataDisplay=INV_2x.dpl>
@@ -32,7 +32,7 @@
   <Port Vin1 1 1260 640 -23 12 0 0 "2" 1 "analog" 0>
   <Lib sg13_lv_pmos1 1 1510 540 45 -101 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_pmos" 0 "0.6 u" 1 "0.13 u" 1 "2" 0 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 1 1510 730 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.3u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <INCLSCR INCLSCR1 1 1259 429 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR1 1 1235 438 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <1760 470 1760 510 "" 0 0 0 "">

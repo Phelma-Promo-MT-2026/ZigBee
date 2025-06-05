@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-195,90,1605,1056,0.873706,0,0>
+  <View=-31,90,1449,1056,0.900621,0,0>
   <Grid=10,10,1>
   <DataSet=NAND3.dat>
   <DataDisplay=NAND3.dpl>
@@ -44,7 +44,7 @@
   <Lib sg13_lv_nmos2 1 910 520 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.15u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos1 1 910 670 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.15u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib sg13_lv_nmos3 1 910 900 55 -121 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "0.15u" 1 "0.13 u" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
-  <INCLSCR INCLSCR1 1 249 249 -60 16 0 0 "\n.LIB cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
+  <INCLSCR INCLSCR1 1 115 188 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <1010 190 1010 230 "" 0 0 0 "">
