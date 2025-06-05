@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=43,-12,774,513,1.82603,0,89>
+  <View=43,-37,774,355,2.15479,0,0>
   <Grid=10,10,1>
   <DataSet=PDC.dat>
   <DataDisplay=PDC.dpl>
@@ -35,7 +35,7 @@
   <SPICE_dev X1 1 580 140 -26 -102 0 0 "3" 0 "N" 0 "pdc1" 1 "" 0>
   <Port P1 1 540 110 -23 12 0 0 "1" 1 "analog" 0>
   <Port P2 1 620 110 4 12 1 2 "2" 1 "analog" 0>
-  <SPICEINIT SPICEINIT1 1 120 40 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/PDC.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/psp103_nqs.osdi" 1>
+  <SPICEINIT SPICEINIT1 1 120 40 -32 18 0 0 "osdi /home/userproj/microelectronics/projects/ZigBee/PLL/PLL_verilog_A/osdi/PDC.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/psp103_nqs.osdi" 1>
   <Port P3 1 540 170 -23 12 0 0 "3" 1 "analog" 0>
 </Components>
 <Wires>

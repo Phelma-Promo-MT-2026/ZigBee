@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-614,-323,2318,1147,0.877005,612,0>
+  <View=-604,-263,2022,1147,0.599006,0,1>
   <Grid=10,10,1>
   <DataSet=Mixer_v1_VCO_m.dat>
   <DataDisplay=Mixer_v1_VCO_m.dpl>
@@ -16,7 +16,6 @@
 <Symbol>
 </Symbol>
 <Components>
-  <INCLSCR INCLSCR1 1 -65 -190 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_wcs\n" 0 "" 0 "" 0>
   <.TR TR1 1 1095 -220 0 99 0 0 "lin" 1 "0" 1 "280 ns" 1 "13500" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <.CUSTOMSIM CUSTOM3 0 710 -210 0 41 0 0 "tran 50p 100n 0\nlet diff_MIXER = v(VOUTP_MIXER)- v(VOUTN_MIXER)\nlinearize diff_MIXER	\nfft diff_MIXER	\nlet s_mixer=mag(diff_MIXER)\nplot s_mixer\n" 1 "s_mixer;" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
   <GND * 1 520 310 0 0 0 0>
@@ -41,12 +40,13 @@
   <C C1 1 1050 230 17 -26 0 1 "6.5p" 1 "" 0 "neutral" 0>
   <R R2 1 1120 160 -26 15 0 0 "10" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C2 1 1150 190 17 -26 0 1 "6.5p" 1 "" 0 "neutral" 0>
-  <SpicePar SpicePar1 1 290 -120 -28 18 0 0 "vi=1m" 1>
   <Sub SUB3 1 820 460 -74 -26 1 1 "/home/userproj/QucsWorkspace/Zigbee/PLL/PLL_verilog_A/symbole/VCOsarah.sch" 0>
   <Vdc V1 1 310 150 18 -26 0 1 "1.2 V" 1>
   <GND * 1 310 180 0 0 0 0>
   <GND * 1 220 175 0 0 0 0>
   <Vdc V4 1 220 145 18 -26 0 1 "0.48 V" 1>
+  <INCLSCR INCLSCR1 1 295 -170 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_wcs\n" 0 "" 0 "" 0>
+  <SpicePar SpicePar1 1 130 140 -28 18 0 0 "vi=1m" 1>
 </Components>
 <Wires>
   <830 350 830 420 "VOLNEG" 860 365 46 "">
@@ -75,15 +75,15 @@
 <Diagrams>
   <Rect 1100 900 240 160 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/custom3.ac.s_mixer" #0000ff 1 3 0 0 0>
-	  <Mkr 4.89502e+09 178 -207 3 0 0>
-	  <Mkr 9.77051e+06 -30 -257 3 0 0>
+	  <Mkr 4.89502e+09/0/0 178 -207 3 0 0>
+	  <Mkr 9.77051e+06/0/0 -30 -257 3 0 0>
   </Rect>
   <Rect 1260 267 289 157 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.vout" #0000ff 1 3 0 0 0>
   </Rect>
   <Rect 1270 520 240 160 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/custom3.ac.s_mixer" #0000ff 1 3 0 0 0>
-	  <Mkr 9.77051e+06 51 -141 3 0 0>
+	  <Mkr 9.77051e+06/0/0 51 -141 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
