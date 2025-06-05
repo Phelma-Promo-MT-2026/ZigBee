@@ -16,7 +16,7 @@
 <Symbol>
 </Symbol>
 <Components>
-  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=100u" 1 "l=100u" 1>
+  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=30u" 1 "l=30u" 1>
   <.SP SP1 1 350 600 0 70 0 0 "lin" 1 "25 MHz" 1 "10 GHz" 1 "400" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <NutmegEq NutmegEq1 1 120 430 -30 18 0 0 "SP1" 1 "Cmim=imag(y_1_1)/(2*pi*frequency)" 1>
   <INCLSCR INCLSCR1 1 150 320 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n" 1 "" 0 "" 0>
@@ -45,7 +45,7 @@
 <Diagrams>
   <Rect 600 720 240 160 3 #c0c0c0 1 00 1 0 2e+09 1e+10 1 7.4e-14 1e-16 7.5e-14 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.cmim" #0000ff 1 3 0 0 0>
-	  <Mkr 3.35e+09 36 -209 3 0 0>
+	  <Mkr 2.45e+09 36 -209 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
