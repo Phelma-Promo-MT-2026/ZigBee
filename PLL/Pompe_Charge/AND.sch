@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-411,-128,1342,597,1.21,175,0>
+  <View=-8,-39,880,501,1.6099,0,0>
   <Grid=10,10,1>
   <DataSet=AND.dat>
   <DataDisplay=AND.dpl>
@@ -33,6 +33,7 @@
   <Port B 1 60 290 -23 12 0 0 "2" 1 "analog" 0>
   <Sub SUB1 1 80 260 -26 52 0 0 "/home/userproj/microelectronics/projects/ZigBee/PLL/Pompe_Charge/NAND.sch" 0>
   <Port S 1 560 270 4 -46 0 2 "3" 1 "analog" 0>
+  <INCLSCR INCLSCR1 1 135 138 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
 </Components>
 <Wires>
   <60 290 136 290 "" 0 0 0 "">
