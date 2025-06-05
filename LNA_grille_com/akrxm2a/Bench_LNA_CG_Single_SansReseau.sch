@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-185,30,1262,867,1.12834,60,60>
+  <View=-286,37,1207,838,1.05368,0,0>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Single_SansReseau.dat>
   <DataDisplay=Bench_LNA_CG_Single_SansReseau.dpl>
@@ -65,7 +65,7 @@
   </Smith>
   <Rect 569 520 482 265 3 #c0c0c0 1 00 1 0 5e+08 5e+09 0 -60 50 30.0955 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g0" #0000ff 0 3 0 0 0>
-	  <Mkr 2.411e+09 108 -135 3 0 0>
+	  <Mkr 2.45e+09 108 -135 3 0 0>
   </Rect>
   <Rect 165 797 415 217 3 #c0c0c0 1 00 1 0 1e+09 5e+09 1 -15.3037 100 231.209 1 -1 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(nf)" #ff0000 1 3 0 0 0>
