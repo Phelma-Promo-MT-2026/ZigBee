@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-169,-100,1734,921,0.826446,0,0>
+  <View=-220,-76,1601,902,0.863869,0,0>
   <Grid=10,10,1>
-  <DataSet=Mixer_bonding.dat>
-  <DataDisplay=Mixer_bonding.dpl>
+  <DataSet=Mixer_bounding.dat>
+  <DataDisplay=Mixer_bounding.dpl>
   <OpenDisplay=0>
   <Script=Mixer_bonding.m>
   <RunScript=0>
@@ -14,14 +14,33 @@
   <FrameText3=Version :>
 </Properties>
 <Symbol>
-  <.PortSym 40 20 7 0 VOUT_P>
-  <.PortSym 40 60 8 0 VOUT_N>
-  <.PortSym 40 100 5 0 VDD>
-  <.PortSym 40 140 4 0 VRF_NEG>
-  <.PortSym 40 180 3 0 VRF_POS>
-  <.PortSym 40 220 6 0 VOL_NEG>
-  <.PortSym 40 260 1 0 VOL_POS1>
-  <.PortSym 40 300 2 0 GND>
+  <Line 420 60 -70 0 #000000 1 1>
+  <Line 420 180 -70 0 #000000 1 1>
+  <Text 430 170 9 #000000 0 "VREFNEG">
+  <Rectangle 420 20 230 200 #000000 1 1 #c0c0c0 1 0>
+  <Line 720 100 -70 0 #000000 1 1>
+  <Line 720 140 -70 0 #000000 1 1>
+  <Text 600 130 9 #000000 0 "VOUTN">
+  <Text 600 90 9 #000000 0 "VOUTP">
+  <Line 560 220 0 70 #000000 1 1>
+  <Line 510 220 0 70 #000000 1 1>
+  <Text 550 200 9 #000000 0 "VOLNEG">
+  <Text 490 200 9 #000000 0 "VOLPOS">
+  <Text 430 50 9 #000000 0 "VREFPOS">
+  <Line 590 -50 0 70 #000000 1 1>
+  <Text 580 20 9 #000000 0 "VDD">
+  <.PortSym 720 140 8 180 VOUT_N>
+  <.PortSym 720 100 7 180 VOUT_P>
+  <.PortSym 350 60 3 0 VRF_POS>
+  <.PortSym 590 -50 5 270 VDD>
+  <.PortSym 350 180 4 0 VRF_NEG>
+  <.PortSym 560 290 6 90 VOL_NEG>
+  <.PortSym 510 290 1 90 VOL_POS>
+  <.ID 510 74 SUB>
+  <Text 500 120 15 #000000 0 "MIXER">
+  <Line 480 -50 0 70 #000000 1 1>
+  <.PortSym 480 -50 2 270 GND>
+  <Text 470 20 9 #000000 0 "GND">
 </Symbol>
 <Components>
   <Lib rhigh1 1 1020 140 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.020u" 1 "240n" 1 "1" 1>
@@ -50,7 +69,7 @@
   <Lib cap_cmim2 1 420 460 -30 -53 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "75u" 0 "75u" 0>
   <Lib sg13_lv_nmos8 1 970 290 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "6" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
   <Port VOL_NEG 1 880 310 -26 36 0 1 "6" 1 "in" 0>
-  <Port VOL_POS1 1 480 290 -23 12 0 0 "1" 1 "in" 0>
+  <Port VOL_POS 1 480 290 -23 12 0 0 "1" 1 "in" 0>
   <Port GND 1 430 50 -53 -23 0 3 "2" 1 "analog" 0>
 </Components>
 <Wires>
