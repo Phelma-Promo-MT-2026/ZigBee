@@ -1,0 +1,23 @@
+* Qucs 25.1.2  /home/userproj/microelectronics/projects/ZigBee/LVS/qucs/nmos.sch
+.INCLUDE "/usr/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+
+.SUBCKT IHP_PDK_nonlinear_components_sg13_lv_nmos  gnd d g s b w=0.35u l=0.34u ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346e-6 z2=0.38e-6 wmin=0.15e-6 rfmode=0 pre_layout=1 mlist=1
+X1 d g s b  sg13_lv_nmos w={w} l={l} ng={ng} m={m} as={as} ad={ad} pd={pd} 
++ ps={ps} trise={trise} z1={z1} z2={z2} wmin={wmin} rfmode={rfmode} pre_layout={pre_layout} 
+.ENDS
+  
+.LIB "/home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib" mos_tt
+
+
+Xsg13_lv_nmos1 0  Vdd Vin 0 gnd IHP_PDK_nonlinear_components_sg13_lv_nmos w=100U l=0.130U ng=10 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+
+.control
+
+op
+print v(Vdd) v(Vin)   > spice4qucs.dc1.ngspice.dc.print
+destroy all
+reset
+
+exit
+.endc
+.END
