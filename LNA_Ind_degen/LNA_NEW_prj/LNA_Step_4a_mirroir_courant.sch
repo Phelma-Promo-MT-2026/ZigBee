@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=16,-131,1496,686,1.0625,0,0>
+  <View=3,-131,1483,686,1.0625,0,0>
   <Grid=10,10,1>
-  <DataSet=LNA_Step_5_mirroir_courant.dat>
-  <DataDisplay=LNA_Step_5_mirroir_courant.dpl>
+  <DataSet=LNA_Step_4a_mirroir_courant.dat>
+  <DataDisplay=LNA_Step_4a_mirroir_courant.dpl>
   <OpenDisplay=0>
   <Script=cascode_polarisation_entree.m>
   <RunScript=0>
@@ -35,9 +35,9 @@
   <Lib Rrf 1 430 380 -18 -101 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1u" 1 "2u" 1 "1" 1>
   <Lib nmos1 1 780 380 40 -63 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "106u" 1 "0.130u" 1 "11" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 270 440 0 0 0 0>
-  <Idc I1 1 270 230 -59 -26 0 3 "1 mA" 1>
+  <Idc I1 1 270 230 -59 -26 0 3 "4.49 mA" 1>
   <.DC DC1 1 1100 30 0 99 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
-  <Lib nmos3 1 270 380 -153 -44 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "23.15u" 1 "700n" 1 "2" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib nmos3 1 270 380 -153 -44 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "58.000u" 1 "0.2u" 1 "4" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
 </Components>
 <Wires>
   <780 550 780 620 "" 0 0 0 "">
