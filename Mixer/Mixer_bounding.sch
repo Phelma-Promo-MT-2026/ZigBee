@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-220,-76,1601,902,0.863869,0,0>
+  <View=-220,-76,1601,902,0.863869,0,1>
   <Grid=10,10,1>
   <DataSet=Mixer_bounding.dat>
   <DataDisplay=Mixer_bounding.dpl>
@@ -29,27 +29,22 @@
   <Text 430 50 9 #000000 0 "VREFPOS">
   <Line 590 -50 0 70 #000000 1 1>
   <Text 580 20 9 #000000 0 "VDD">
-  <.PortSym 720 140 8 180 VOUT_N>
-  <.PortSym 720 100 7 180 VOUT_P>
-  <.PortSym 350 60 3 0 VRF_POS>
-  <.PortSym 590 -50 5 270 VDD>
-  <.PortSym 350 180 4 0 VRF_NEG>
-  <.PortSym 560 290 6 90 VOL_NEG>
-  <.PortSym 510 290 1 90 VOL_POS>
   <.ID 510 74 SUB>
   <Text 500 120 15 #000000 0 "MIXER">
   <Line 480 -50 0 70 #000000 1 1>
-  <.PortSym 480 -50 2 270 GND>
   <Text 470 20 9 #000000 0 "GND">
+  <.PortSym 590 -50 8 0 VDD>
+  <.PortSym 480 -50 7 180 GND>
+  <.PortSym 350 60 1 0 VRF_POS>
+  <.PortSym 350 180 2 0 VRF_NEG>
+  <.PortSym 560 290 6 90 VOL_NEG>
+  <.PortSym 510 290 5 90 VOL_POS>
+  <.PortSym 720 140 4 180 VOUT_N>
+  <.PortSym 720 100 3 180 VOUT_P>
 </Symbol>
 <Components>
   <Lib rhigh1 1 1020 140 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.020u" 1 "240n" 1 "1" 1>
   <Lib rhigh2 1 730 140 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.020u" 1 "240n" 1 "1" 1>
-  <Port VOUT_P 1 730 200 -87 3 0 0 "7" 1 "out" 0>
-  <Port VOUT_N 1 1020 200 43 -5 0 0 "8" 1 "out" 0>
-  <Port VDD 1 310 50 -53 -23 0 3 "5" 1 "analog" 0>
-  <Port VRF_NEG 1 1330 460 4 12 1 2 "4" 1 "in" 0>
-  <Port VRF_POS 1 350 460 -23 12 0 0 "3" 1 "in" 0>
   <Lib rhigh3 1 530 500 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.068u" 1 "12.9096u" 1 "1" 1>
   <Lib rhigh4 1 1140 420 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.67u" 1 "9.44u" 1 "1" 1>
   <Lib rhigh5 1 530 420 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1.67u" 1 "9.44u" 1 "1" 1>
@@ -68,9 +63,14 @@
   <INCLSCR INCLSCR1 1 65 -20 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ\n\n.LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_wcs\n" 0 "" 0 "" 0>
   <Lib cap_cmim2 1 420 460 -30 -53 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "75u" 0 "75u" 0>
   <Lib sg13_lv_nmos8 1 970 290 55 -121 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "16.1u" 0 "0.130u" 0 "6" 0 "1" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.479u" 0 "0" 0 "1" 0>
+  <Port VRF_POS 1 350 460 -23 12 0 0 "1" 1 "in" 0>
+  <Port VRF_NEG 1 1330 460 4 12 1 2 "2" 1 "in" 0>
+  <Port VOUT_P 1 730 200 -87 3 0 0 "3" 1 "out" 0>
+  <Port VOUT_N 1 1020 200 43 -5 0 0 "4" 1 "out" 0>
+  <Port VOL_POS 1 480 290 -23 12 0 0 "5" 1 "in" 0>
   <Port VOL_NEG 1 880 310 -26 36 0 1 "6" 1 "in" 0>
-  <Port VOL_POS 1 480 290 -23 12 0 0 "1" 1 "in" 0>
-  <Port GND 1 430 50 -53 -23 0 3 "2" 1 "analog" 0>
+  <Port GND 1 430 50 -53 -23 0 3 "7" 1 "analog" 0>
+  <Port VDD 1 310 50 -53 -23 0 3 "8" 1 "analog" 0>
 </Components>
 <Wires>
   <1000 270 1000 290 "" 0 0 0 "">
@@ -93,8 +93,6 @@
   <1190 40 1190 290 "" 0 0 0 "">
   <610 40 1190 40 "" 0 0 0 "">
   <610 40 610 290 "" 0 0 0 "">
-  <730 200 730 220 "" 0 0 0 "">
-  <1020 200 1020 220 "" 0 0 0 "">
   <890 460 960 460 "" 0 0 0 "">
   <970 520 970 570 "" 0 0 0 "">
   <970 350 970 410 "" 0 0 0 "">
@@ -139,12 +137,12 @@
   <740 290 760 290 "" 0 0 0 "">
   <760 290 770 290 "" 0 0 0 "">
   <760 270 760 290 "" 0 0 0 "">
-  <310 50 310 50 "VDD" 340 20 0 "">
+  <730 200 730 220 "" 0 0 0 "">
+  <1020 200 1020 220 "" 0 0 0 "">
   <530 540 530 540 "GND" 560 550 0 "">
   <1140 380 1140 380 "VDD" 1170 350 0 "">
   <530 380 530 380 "VDD" 560 350 0 "">
   <1140 540 1140 540 "GND" 1170 560 0 "">
-  <430 50 430 50 "GND" 460 20 0 "">
   <1000 270 1000 270 "GND" 1030 240 0 "">
   <890 480 890 480 "GND" 910 490 0 "">
   <880 90 880 90 "VDD" 910 60 0 "">
@@ -152,6 +150,8 @@
   <840 860 840 860 "GND" 870 830 0 "">
   <390 590 390 590 "VDD" 420 560 0 "">
   <760 270 760 270 "GND" 790 240 0 "">
+  <430 50 430 50 "GND" 460 20 0 "">
+  <310 50 310 50 "VDD" 340 20 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>

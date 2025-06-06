@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-355,-138,1153,671,1.04326,0,0>
+  <View=-348,-138,1160,671,1.04326,0,0>
   <Grid=5,5,1>
   <DataSet=Symbole_LNA_CG_Diff_Bounding.dat>
   <DataDisplay=Symbole_LNA_CG_Diff_Bounding.dpl>
@@ -24,9 +24,7 @@
   <Line 570 60 80 0 #000000 1 1>
   <.PortSym 650 60 3 180 SortiePlus>
   <Line 520 30 0 -40 #000000 1 1>
-  <.PortSym 520 -10 5 0 Vdd>
   <Line 520 180 0 -30 #000000 1 1>
-  <.PortSym 520 180 6 180 Vpol>
   <Text 510 30 8 #000000 0 "Vdd">
   <Text 510 130 8 #000000 0 "Vpol">
   <.PortSym 450 110 2 0 EntreeMoins>
@@ -39,15 +37,15 @@
   <Text 540 110 10 #000000 0 "Out-">
   <Line 545 135 0 15 #000000 1 1>
   <Line 545 150 15 0 #000000 1 1>
-  <.PortSym 560 150 7 180 GND>
   <Text 535 125 6 #000000 0 "GND\n">
+  <.PortSym 560 150 5 180 GND>
+  <.PortSym 520 -10 6 0 Vdd>
+  <.PortSym 520 180 7 0 Vpol>
 </Symbol>
 <Components>
   <Lib mn4 1 420 190 -100 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib mn1 1 740 190 -100 -48 0 0 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "58.8u" 1 "130n" 1 "20" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib cap_cmim3 1 680 530 -77 24 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
-  <Port Vdd 1 570 -60 -59 -38 0 3 "5" 1 "analog" 0>
-  <Port Vpol 1 160 -60 -59 -38 0 3 "6" 1 "analog" 0>
   <Lib cap_cmim5 1 310 490 -30 -53 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "30.6u" 0 "30.6u" 0>
   <Lib cap_cmim1 1 630 490 -31 -47 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "30.6u" 0 "30.6u" 0>
   <Port EntreePlus 1 270 490 -23 12 0 0 "1" 1 "in" 0>
@@ -65,7 +63,9 @@
   <Lib mn3 1 160 380 -60 -48 1 2 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 0 "5.8u" 1 "260n" 1 "1" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <Lib rpol1 1 320 330 -138 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3.006u" 1 "23.615u" 1 "1" 1>
   <Lib cap_cmim6 1 360 530 -85 15 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "23.015u" 0 "23.015u" 0>
-  <Port GND 1 890 -45 -59 -38 0 3 "7" 1 "analog" 0>
+  <Port GND 1 890 -45 -59 -38 0 3 "5" 1 "analog" 0>
+  <Port Vdd 1 570 -60 -59 -38 0 3 "6" 1 "analog" 0>
+  <Port Vpol 1 160 -60 -59 -38 0 3 "7" 1 "analog" 0>
 </Components>
 <Wires>
   <430 190 460 190 "" 0 0 0 "">
@@ -96,7 +96,6 @@
   <160 320 220 320 "" 0 0 0 "">
   <220 380 290 380 "" 0 0 0 "">
   <220 320 220 380 "" 0 0 0 "">
-  <570 -60 620 -60 "" 0 0 0 "">
   <650 490 680 490 "" 0 0 0 "">
   <590 490 610 490 "" 0 0 0 "">
   <740 50 840 50 "" 0 0 0 "">
@@ -137,6 +136,7 @@
   <360 570 455 570 "GND" 395 595 45 "">
   <360 550 360 570 "" 0 0 0 "">
   <360 490 360 510 "" 0 0 0 "">
+  <570 -60 620 -60 "" 0 0 0 "">
   <270 490 270 490 "Entreeplus" 195 445 0 "">
   <590 490 590 490 "Entreemoins" 505 445 0 "">
   <460 190 460 190 "GND" 490 160 0 "">
@@ -148,6 +148,7 @@
   <415 525 415 525 "GND" 445 495 0 "">
   <755 525 755 525 "GND" 785 495 0 "">
   <460 380 460 380 "GND" 470 410 0 "">
+  <890 -45 890 -45 "GND" 920 -70 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
