@@ -16,17 +16,17 @@
 <Symbol>
 </Symbol>
 <Components>
-  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "w=29.5u" 1 "l=29.5u" 1>
   <.SP SP1 1 350 600 0 70 0 0 "lin" 1 "25 MHz" 1 "10 GHz" 1 "400" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <NutmegEq NutmegEq1 1 120 430 -30 18 0 0 "SP1" 1 "Cmim=imag(y_1_1)/(2*pi*frequency)" 1>
   <INCLSCR INCLSCR1 1 150 320 -60 16 0 0 "\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n" 1 "" 0 "" 0>
   <GND * 1 380 390 0 0 0 0>
   <GND * 1 490 380 0 0 0 0>
   <Pac P1 1 380 350 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 GHz" 0 "26.85" 0 "true" 0>
-  <Lib cap_cmim1 1 490 360 30 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "l" 1 "w" 1>
   <Pac P2 1 730 360 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0>
   <R R1 1 670 310 -26 15 0 0 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <GND * 1 730 420 0 0 0 0>
+  <SpicePar SpicePar1 1 120 530 -28 18 0 0 "dim=55u" 1>
+  <Lib cap_cmim1 1 490 360 30 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "dim" 1 "dim" 1>
 </Components>
 <Wires>
   <380 370 380 380 "" 0 0 0 "">
