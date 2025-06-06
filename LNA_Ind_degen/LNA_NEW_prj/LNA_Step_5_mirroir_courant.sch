@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-139,-196,1586,755,0.911672,0,0>
+  <View=16,-131,1496,686,1.0625,0,0>
   <Grid=10,10,1>
-  <DataSet=cascode_polarisation_adaptation_entree.dat>
-  <DataDisplay=cascode_polarisation_adaptation_entree.dpl>
+  <DataSet=LNA_Step_4_mirroir_courant.dat>
+  <DataDisplay=LNA_Step_4_mirroir_courant.dpl>
   <OpenDisplay=0>
   <Script=cascode_polarisation_entree.m>
   <RunScript=0>
