@@ -1,6 +1,6 @@
-<Qucs Schematic 25.1.1>
+<Qucs Schematic 25.1.2>
 <Properties>
-  <View=-321,-317,1854,1138,0.723369,0,61>
+  <View=-520,-277,2016,1121,0.620172,0,0>
   <Grid=10,10,1>
   <DataSet=Bench_Parametre_S_adapt_bonding_NF.dat>
   <DataDisplay=Bench_Parametre_S_adapt_bonding_NF.dpl>
