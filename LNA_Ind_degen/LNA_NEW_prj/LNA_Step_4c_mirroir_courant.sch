@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-46,-131,1434,686,1.0625,0,0>
+  <View=3,-171,1484,651,1.0625,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_Step_4c_mirroir_courant.dat>
   <DataDisplay=LNA_Step_4c_mirroir_courant.dpl>
@@ -35,9 +35,9 @@
   <Lib Rrf 1 430 380 -18 -101 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rhigh" 0 "1u" 1 "2u" 1 "1" 1>
   <Lib nmos1 1 780 380 40 -63 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "106u" 1 "0.130u" 1 "11" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <GND * 1 270 440 0 0 0 0>
-  <Lib nmos3 1 270 380 -153 -44 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "23.15u" 1 "700n" 1 "2" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
   <.DC DC1 1 1030 -30 0 99 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
-  <Lib Rpol 1 430 350 -110 -196 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "20u" 1 "37.5u" 1 "1" 1>
+  <Lib nmos3 1 270 380 -153 -44 1 2 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "sg13_lv_nmos" 1 "58.000u" 1 "0.2u" 1 "4" 1 "1" 1 "0" 0 "0" 0 "0" 0 "0" 0 "0" 0 "0.346e-6" 0 "0.38e-6" 0 "0.15e-6" 0 "0" 0 "1" 0>
+  <Lib Rpol 1 270 180 50 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rsil" 0 "1.2u" 1 "20u" 1 "1" 0>
 </Components>
 <Wires>
   <780 550 780 620 "" 0 0 0 "">
@@ -72,6 +72,9 @@
   <270 140 270 140 "Vdd" 300 110 0 "">
 </Wires>
 <Diagrams>
+  <Tab 980 380 300 200 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/i(pr1)" #0000ff 0 3 1 0 0>
+  </Tab>
 </Diagrams>
 <Paintings>
 </Paintings>
