@@ -2,8 +2,8 @@
 <Properties>
   <View=16,-131,1496,686,1.0625,0,0>
   <Grid=10,10,1>
-  <DataSet=LNA_Step_4_mirroir_courant.dat>
-  <DataDisplay=LNA_Step_4_mirroir_courant.dpl>
+  <DataSet=LNA_Step_5_mirroir_courant.dat>
+  <DataDisplay=LNA_Step_5_mirroir_courant.dpl>
   <OpenDisplay=0>
   <Script=cascode_polarisation_entree.m>
   <RunScript=0>
@@ -80,7 +80,7 @@
 <Diagrams>
   <Smith 1140 320 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(s_1_1)" #0000ff 1 3 0 0 0>
-	  <Mkr 2.45e+09 161 -153 3 0 0>
+	  <Mkr 2.45e+09/0/0 161 -153 3 0 0>
   </Smith>
 </Diagrams>
 <Paintings>

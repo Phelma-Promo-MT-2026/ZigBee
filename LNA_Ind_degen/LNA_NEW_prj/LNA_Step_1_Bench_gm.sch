@@ -2,8 +2,8 @@
 <Properties>
   <View=195,-46,1426,632,1.27886,0,0>
   <Grid=10,10,1>
-  <DataSet=Bench_gm.dat>
-  <DataDisplay=Bench_gm.dpl>
+  <DataSet=LNA_Step_1_Bench_gm.dat>
+  <DataDisplay=LNA_Step_1_Bench_gm.dpl>
   <OpenDisplay=0>
   <Script=Bench_gm.m>
   <RunScript=0>

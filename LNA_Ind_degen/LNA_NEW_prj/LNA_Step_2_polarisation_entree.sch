@@ -2,8 +2,8 @@
 <Properties>
   <View=85,-131,1565,686,1.0625,0,0>
   <Grid=10,10,1>
-  <DataSet=LNA_Step_2_cascode_polarisation_entree.dat>
-  <DataDisplay=LNA_Step_2_cascode_polarisation_entree.dpl>
+  <DataSet=LNA_Step_2_polarisation_entree.dat>
+  <DataDisplay=LNA_Step_2_polarisation_entree.dpl>
   <OpenDisplay=0>
   <Script=cascode_polarisation_entree.m>
   <RunScript=0>
