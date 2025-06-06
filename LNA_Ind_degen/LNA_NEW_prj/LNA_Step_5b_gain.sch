@@ -44,7 +44,7 @@
   <GND * 1 440 540 0 0 0 0>
   <.SP SP1 1 1120 -10 0 70 0 0 "lin" 1 "1 MHz" 1 "5 GHz" 1 "5000" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <NutmegEq NutmegEq1 1 1330 0 -30 18 0 0 "ALL" 1 "g=db(s_2_1) + 10*log10(5000/50)" 1>
-  <Lib cap_cmim1 1 850 20 30 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "31u" 1 "31u" 1>
+  <Lib cap_cmim1 1 850 20 30 -26 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "29.5u" 1 "29.5u" 1>
 </Components>
 <Wires>
   <200 330 270 330 "" 0 0 0 "">
@@ -86,7 +86,7 @@
 <Diagrams>
   <Rect 1120 340 240 160 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.g" #0000ff 1 3 0 0 0>
-	  <Mkr 2.323e+09 172 -158 3 0 0>
+	  <Mkr 2.45e+09 172 -158 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
