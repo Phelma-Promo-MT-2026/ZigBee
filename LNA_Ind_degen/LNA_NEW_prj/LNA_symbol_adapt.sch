@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-258,-146,1291,709,1.01522,0,0>
+  <View=-188,-146,1361,709,1.01522,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_symbol_adapt.dat>
   <DataDisplay=LNA_symbol_adapt.dpl>
