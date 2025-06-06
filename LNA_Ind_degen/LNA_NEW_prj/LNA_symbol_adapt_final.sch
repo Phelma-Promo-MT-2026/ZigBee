@@ -1,6 +1,6 @@
-<Qucs Schematic 25.1.1>
+<Qucs Schematic 25.1.2>
 <Properties>
-  <View=-180,-145,1353,709,1.02576,0,0>
+  <View=-188,-146,1361,709,1.01522,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_symbol_adapt_final.dat>
   <DataDisplay=LNA_symbol_adapt_final.dpl>
@@ -45,9 +45,9 @@
   <Lib Cp 1 640 450 -43 19 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "25.9u" 1 "25.9u" 1>
   <Lib C1 1 950 70 -43 19 0 1 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "27.5u" 1 "27.5u" 1>
   <Lib C2 1 1010 260 -67 -43 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "34u" 1 "34u" 1>
-  <Sub Li 1 530 360 -26 89 0 0 "/home/userproj/QucsWorkspace/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
-  <Sub Ll 1 690 20 89 -1 0 1 "/home/userproj/QucsWorkspace/ZigBee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
-  <Sub Ls 1 690 500 89 -1 0 1 "/home/userproj/QucsWorkspace/ZigBee/Inductance/development/Modele_Inductance/Modele_1.6nH/Modele_Inductance_1.6nH.sch" 0>
+  <Sub Li 1 530 360 -26 123 0 0 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Sub Ll 1 690 20 123 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
+  <Sub Ls 1 690 500 123 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_1.6nH/Modele_Inductance_1.6nH.sch" 0>
 </Components>
 <Wires>
   <200 330 270 330 "" 0 0 0 "">
