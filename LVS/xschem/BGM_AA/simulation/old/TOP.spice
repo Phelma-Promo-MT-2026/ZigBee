@@ -1,6 +1,0 @@
-** sch_path: /home/userproj/microelectronics/projects/ZigBee/LVS/xschem/TOP_nmos_simple.sch
-.subckt TOP_nmos_simple
-
-M2 grille grille GND GND sg13_lv_nmos w=1u l=0.13u ng=1 m=1
-.ends
-.GLOBAL GND
