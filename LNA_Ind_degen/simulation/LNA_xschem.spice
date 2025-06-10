@@ -1,0 +1,45 @@
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/LNA_Ind_degen/LNA_xschem.sch
+.SUBCKT LNA_xschem Vout Vin GND Vdd
+*.PININFO Vout:B Vin:B GND:B Vdd:B
+XC1 net5 Vout cap_cmim w=27.5e-6 l=27.5e-6 m=1
+XM1 net4 Vdd net5 GND sg13_lv_nmos l=0.13u w=106u ng=11 m=1
+XR1 net2 net1 rhigh w=1e-6 l=2e-6 m=1 b=0
+XR2 net1 Vdd rsil w=1.2e-6 l=20.0e-6 m=1 b=0
+x1 Vdd net5 GND inductance_3nH
+XM2 net3 Vin net4 GND sg13_lv_nmos l=0.13u w=106u ng=11 m=1
+XM3 GND net1 net1 GND sg13_lv_nmos l=0.2u w=58.0u ng=4 m=1
+x2 Vin net2 GND inductance_3nH
+x3 net3 GND GND inductance_1-6nH
+XC2 Vout GND cap_cmim w=34.0e-6 l=34.0e-6 m=1
+XCp Vin net3 cap_cmim w=25.9e-6 l=25.9e-6 m=1
+.ENDS
+
+* expanding   symbol:  Zigbee/Inductance/MODEL_XSCHEM/inductance_3nH.sym # of pins=3
+** sym_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/Inductance/MODEL_XSCHEM/inductance_3nH.sym
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/Inductance/MODEL_XSCHEM/inductance_3nH.sch
+.SUBCKT inductance_3nH OUT IN GND
+*.PININFO GND:B OUT:B IN:B
+Ls net1 OUT 2.885n m=1
+Cox1 IN net2 55.8f m=1
+Cox2 OUT net3 55.8f m=1
+Csp IN OUT 13.69f m=1
+Rp1 net2 GND 18.32 m=1
+Rp2 net3 GND 18.32 m=1
+Rs IN net1 3.623 m=1
+.ENDS
+
+
+* expanding   symbol:  Zigbee/Inductance/MODEL_XSCHEM/inductance_1-6nH.sym # of pins=3
+** sym_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/Inductance/MODEL_XSCHEM/inductance_1-6nH.sym
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/Inductance/MODEL_XSCHEM/inductance_1-6nH.sch
+.SUBCKT inductance_1-6nH OUT IN GND
+*.PININFO GND:B OUT:B IN:B
+Ls net1 OUT 1.65n m=1
+Cox1 IN net2 10f m=1
+Cox2 OUT net3 10f m=1
+Csp IN OUT 25.785f m=1
+Rp1 net2 GND 72.575 m=1
+Rp2 net3 GND 72.575 m=1
+Rs IN net1 2.27 m=1
+.ENDS
+
