@@ -16,16 +16,16 @@
 <Symbol>
 </Symbol>
 <Components>
-  <SPICEINIT SPICEINIT1 1 130 250 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PDC/PDC.osdi" 1>
+  <SPICEINIT SPICEINIT1 1 130 250 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/PDC.osdi" 1>
   <SpiceModel SpiceModel1 1 120 150 -29 18 0 0 ".MODEL pdc1 charge_pump()" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
   <GND * 1 570 200 0 0 0 0>
   <.TR TR1 1 110 -50 0 99 0 0 "lin" 1 "0" 1 "1 ms" 1 "200" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "DoolittleLU" 0 "no" 0 "no" 0 "0" 0>
   <GND * 1 360 220 0 0 0 0>
-  <R R1 1 390 120 -26 15 0 0 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <GND * 1 280 150 0 0 0 0>
-  <Vrect V1 1 280 90 18 -26 0 1 "1 V" 1 "0.1 ms" 0 "0.1 ms" 0 "1 ns" 0 "1 ns" 0 "0 ns" 1 "0 V" 0>
   <SPICE_dev X1 1 470 90 -26 -102 0 0 "3" 0 "N" 0 "pdc1" 1 "" 0>
+  <Vrect V1 1 280 90 18 -26 0 1 "1 V" 1 "0.1 ms" 0 "0.1 ms" 0 "1 ns" 0 "1 ns" 0 "0 ns" 1 "0 V" 0>
   <Vrect V2 1 570 130 18 -26 0 1 "1 V" 1 "0.1 ms" 0 "0.1 ms" 0 "1 ns" 0 "1 ns" 0 "50 us" 1 "0 V" 0>
+  <R R1 1 390 120 -26 15 0 0 "1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
 </Components>
 <Wires>
   <570 160 570 200 "" 0 0 0 "">
