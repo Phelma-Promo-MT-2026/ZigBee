@@ -1,5 +1,5 @@
 ** sch_path: /home/userproj/microelectronics/projects/ZigBee/LVS/xschem/TOP.sch
-.subckt TOP
-
-M2 grille grille GND GND sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.subckt TOP Vin gnd Vout Vdd
+*.PININFO Vin:I gnd:B Vout:B Vdd:I
+M2 Vdd Vin gnd Vout sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
 .ends
