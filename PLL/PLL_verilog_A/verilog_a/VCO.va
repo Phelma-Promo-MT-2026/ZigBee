@@ -1,0 +1,27 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module VCO(Vctrl, vss, Vout, VoutI);
+	//déclaration de variables
+	input Vctrl;
+	inout vss;
+	output Vout, VoutI;
+	electrical Vctrl, vss, Vout, VoutI;
+	parameter real Ko = 524E6, fo = 2.4E9, Wo = 2*`M_PI*fo;
+	real W_VCO, phi;
+
+	analog begin
+		if(V(Vctrl, vss) > 2) begin
+			W_VCO = Wo + Ko*2;
+		end
+		else if(V(Vctrl, vss) < 0) begin
+			W_VCO = Wo;
+		end		
+		else begin
+			W_VCO = Wo + (Ko*V(Vctrl, vss));
+		end
+		phi = idt(W_VCO, 0.0);
+		V(Vout, vss) <+ 2*cos(phi);
+		V(VoutI, vss) <+ -2*cos(phi);
+	end
+endmodule

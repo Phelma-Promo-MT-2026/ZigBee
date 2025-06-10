@@ -1,0 +1,22 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module charge_pump(up, down, vout);
+    input up, down; // Signaux numériques UP et DOWN
+    output vout;    // Tension de sortie
+    electrical up, down, vout;
+    integer C = 1;
+
+    parameter real Icharge = 100u; // Courant de charge (µA)
+
+    analog begin
+        if (V(up) > 0.6 && V(down) < 0.6) begin
+            C = 1; // Injecte un courant positif
+        end else if (V(up) < 0.6 && V(down) > 0.6) begin
+            C = -1; // Retire un courant négatif
+        end else begin
+            C = 0; // Pas de courant si UP = DOWN
+        end
+        I(vout) <+ Icharge * C ;
+    end
+endmodule

@@ -1,0 +1,5 @@
+.SUBCKT TOP d g s b gnd
+M1 d g s s sg13_lv_nmos w=100u l=130n
+.ENDS
+
+Xnmos 0 Vdd Vin 0 gnd test_nmos
