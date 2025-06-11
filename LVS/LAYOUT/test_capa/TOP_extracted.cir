@@ -1,0 +1,7 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 11/06/2025 11:40
+
+.SUBCKT TOP
+M$1 GND \$2 VDD GND sg13_lv_nmos L=0.13u W=0.15u AS=0.1005p AD=0.1005p PS=1.34u
++ PD=1.34u
+C$2 VIN \$2 cap_cmim w=6.99u l=6.99u A=48.8601p P=27.96u m=1
+.ENDS TOP
