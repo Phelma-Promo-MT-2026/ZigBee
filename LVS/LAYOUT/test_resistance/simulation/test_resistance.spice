@@ -1,0 +1,6 @@
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/LVS/LAYOUT/test_resistance/test_resistance.sch
+.subckt test_resistance VIN VDD GND
+*.PININFO VIN:B VDD:I GND:B
+XR2 GND net1 rsil w=0.5e-6 l=0.5e-6 m=1 b=0
+XM1 net1 VIN VDD GND sg13_lv_nmos l=0.13u w=0.15u ng=1 m=1
+.ends

@@ -1,0 +1,5 @@
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/LVS/LAYOUT/test_nmos/test_nmos.sch
+.subckt test_nmos VDD VIN GND
+*.PININFO VDD:B VIN:I GND:B
+XM1 VDD VIN GND GND sg13_lv_nmos l=0.45u w=1.0u ng=1 m=1
+.ends
