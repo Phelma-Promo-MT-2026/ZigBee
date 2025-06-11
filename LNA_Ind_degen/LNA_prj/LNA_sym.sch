@@ -50,8 +50,8 @@
   <Lib C2 1 1010 260 -67 -43 0 0 "/home/userproj/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "34u" 1 "34u" 1>
   <Sub Li 1 530 360 -26 123 0 0 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
   <Sub Ll 1 690 20 123 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_Inductance.sch" 0>
-  <Sub Ls 1 690 500 123 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_1.6nH/Modele_Inductance_1.6nH.sch" 0>
   <Port Vpol 1 200 140 -53 -23 0 3 "5" 1 "analog" 0>
+  <Sub Ls 1 690 500 157 -1 0 1 "/home/userproj/QucsWorkspace/Zigbee/Inductance/development/Modele_Inductance/Modele_1.6nH/Modele_Inductance_1.6nH.sch" 0>
 </Components>
 <Wires>
   <200 330 270 330 "" 0 0 0 "">
