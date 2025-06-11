@@ -1,0 +1,7 @@
+* Qucs 25.1.1  /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2X.sch
+.SUBCKT INV_2X VDD IN OUT VSS
+
+Xsg13_lv_pmos1 VDD OUT IN VDD IHP_PDK_nonlinear_components_sg13_lv_pmos w=0.6U l=0.13U ng=2 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+Xsg13_lv_nmos1 VSS OUT IN VSS IHP_PDK_nonlinear_components_sg13_lv_nmos w=0.3U l=0.13U ng=1 m=1 as=0 ad=0 pd=0 ps=0 trise=0 z1=0.346E-6 z2=0.38E-6 wmin=0.15E-6 rfmode=0 pre_layout=1
+
+.ENDS INV_2X

@@ -2,10 +2,10 @@
 <Properties>
   <View=1111,370,1995,947,1.5078,0,0>
   <Grid=10,10,1>
-  <DataSet=INV_2x.dat>
-  <DataDisplay=INV_2x.dpl>
+  <DataSet=INV_2X.dat>
+  <DataDisplay=INV_2X.dpl>
   <OpenDisplay=0>
-  <Script=INV_2x.m>
+  <Script=INV_2X.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Titre>

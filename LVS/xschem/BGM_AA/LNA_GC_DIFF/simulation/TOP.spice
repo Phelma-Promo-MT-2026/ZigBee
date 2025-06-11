@@ -1,0 +1,33 @@
+** sch_path: /home/userproj/microelectronics/projects/ZigBee/LVS/xschem/BGM_AA/LNA_GC_DIFF/TOP.sch
+.subckt TOP VIN_PLUS GND VDD VPOL GND GND GND GND GND VOUT_PLUS GND GND GND GND GND VOUT_MOINS VIN_MOINS
+*.PININFO VIN_PLUS:I GND:B VDD:I VPOL:I GND:B GND:B GND:B GND:B GND:B VOUT_PLUS:B GND:B GND:B GND:B GND:B GND:B VOUT_MOINS:B
+*+ VIN_MOINS:I
+M1 net3 net1 net2 GND sg13_lv_nmos w=58.8u l=130n ng=20 m=1
+XR1 net1 VPOL rsil w=3.006u l=23.615u m=1 b=0
+M3 net1 net1 GND GND sg13_lv_nmos w=5.8u l=260n ng=1 m=1
+M2 VOUT_PLUS VDD net3 GND sg13_lv_nmos w=58.8u l=130n ng=20 m=1
+XC1 net2 VIN_PLUS cap_cmim w=30.6u l=30.6u m=1
+XC2 net2 GND cap_cmim w=24.829u l=24.829u m=1
+x1 GND net2 GND inductance_3nH
+x2 VOUT_PLUS VDD GND inductance_3nH
+M4 net4 net1 VIN_MOINS GND sg13_lv_nmos w=58.8u l=130n ng=20 m=1
+M5 VOUT_MOINS VDD net4 GND sg13_lv_nmos w=58.8u l=130n ng=20 m=1
+XC3 VIN_MOINS GND cap_cmim w=24.829u l=24.829u m=1
+x3 GND VIN_MOINS GND inductance_3nH
+x4 VOUT_MOINS VDD GND inductance_3nH
+.ends
+
+* expanding   symbol:  /home/userproj/microelectronics/projects/ZigBee/Inductance/MODEL_XSCHEM/inductance_3nH.sym # of pins=3
+** sym_path: /home/userproj/microelectronics/projects/ZigBee/Inductance/MODEL_XSCHEM/inductance_3nH.sym
+** sch_path: /home/userproj/microelectronics/projects/ZigBee/Inductance/MODEL_XSCHEM/inductance_3nH.sch
+.subckt inductance_3nH OUT IN GND
+*.PININFO GND:B OUT:B IN:B
+Ls net1 OUT 2.885n m=1
+Cox1 IN net2 55.8f m=1
+Cox2 OUT net3 55.8f m=1
+Csp IN OUT 13.69f m=1
+Rp1 net2 GND 18.32 m=1
+Rp2 net3 GND 18.32 m=1
+Rs IN net1 3.623 m=1
+.ends
+
