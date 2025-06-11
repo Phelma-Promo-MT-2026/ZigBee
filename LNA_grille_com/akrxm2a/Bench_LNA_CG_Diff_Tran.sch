@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-160,46,1107,726,1.50223,195,93>
+  <View=-88,84,1036,687,1.39967,0,0>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Diff_Tran.dat>
   <DataDisplay=Bench_LNA_CG_Diff_Tran.dpl>
