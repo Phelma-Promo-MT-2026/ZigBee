@@ -37,8 +37,8 @@
   <Vdc Vdd 1 -70 420 18 -26 0 1 "1.2 V" 1>
   <GND * 1 -70 460 0 0 0 0>
   <INCLSCR INCLSCR1 1 -10 150 -60 16 0 0 ".LIB cornerMOSlv.lib mos_tt\n\n.LIB cornerRES.lib res_typ\n.LIB cornerCAP.lib cap_typ\n\n.LIB cornerRES.lib res_wcs\n" 1 "" 0 "" 0>
-  <NutmegEq NutmegEq1 1 370 256 -30 18 0 0 "ALL" 1 "G21=dB(s_3_1)+10*log10(5000/50)" 1 "Gain_diff=db(((s_3_1-s_3_2)-(s_4_1-s_4_2))/2)+10*log10(5000/50)" 1>
   <.SP SP1 1 170 140 0 70 0 0 "lin" 1 "10k Hz" 1 "10G Hz" 1 "5001" 1 "no" 1 "1" 1 "2" 1 "no" 0 "no" 0>
+  <NutmegEq NutmegEq1 1 370 256 -30 18 0 0 "ALL" 1 "G21=dB(s_3_1)+10*log10(5000/50)" 1 "Gain_diff=db(((s_3_1-s_3_2)-(s_4_1-s_4_2))/2)+10*log10(5000/50)" 1>
 </Components>
 <Wires>
   <470 490 470 500 "" 0 0 0 "">

@@ -39,7 +39,7 @@
   <Pac P3 1 530 580 18 -26 0 1 "3" 1 "5000 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
   <Pac P2 1 60 620 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 G " 0 "26.85" 0 "true" 0>
   <NutmegEq NutmegEq1 0 680 390 -30 18 0 0 "ALL" 1 "s11_re=real(s_1_1)" 1 "s11_im=imag(s_1_1)" 1 "s33_re=real(s_3_3)" 1 "s33_im=imag(s_3_3)" 1 "s13_re=real(s_1_3)" 1 "s13_im=imag(s_1_3)" 1 "s31_re=real(s_3_1)" 1 "s31_im=imag(s_3_1)" 1 "delta_re=s11_re * s33_re - s11_im * s33_im - s13_re * s31_re + s13_im * s31_im" 1 "delta_im=s11_re * s33_im + s11_im * s33_re - s13_re * s31_im - s13_im * s31_re" 1 "delta=sqrt(delta_re^2 + delta_im^2)" 1 "s11_mag=sqrt(s11_re^2 + s11_im^2)" 1 "s33_mag=sqrt(s33_re^2 + s33_im^2)" 1 "s13_mag=sqrt(s13_re^2 + s13_im^2)" 1 "s31_mag=sqrt(s31_re^2 + s31_im^2)" 1 "var_re=s13_re * s31_re + s13_im * s31_im" 1 "var_im=s13_re * s31_im + s13_im * s31_re" 1 "var=sqrt(var_re^2+var_im^2)" 1 "K=(1 - s11_mag^2 - s33_mag^2 + delta^2)/(2*var)" 1>
-  <NutmegEq NutmegEq3 1 840 390 -30 18 0 0 "ALL" 1 "delta=abs(s_1_1*s_2_2-s_1_2*s_2_1)" 1 "k=(1-abs(s_1_1)^2+abs(s_2_2)^2+abs(delta)^2)/(2*abs(s_1_2*s_2_1))" 1>
+  <NutmegEq NutmegEq3 1 840 390 -30 18 0 0 "ALL" 1 "delta=abs(s_1_1*s_3_3-s_1_3*s_3_1)" 1 "k=(1-abs(s_1_1)^2+abs(s_3_3)^2+abs(delta)^2)/(2*abs(s_1_3*s_3_1))" 1>
 </Components>
 <Wires>
   <50 310 50 320 "" 0 0 0 "">

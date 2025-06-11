@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-640,122,1337,1184,0.795476,0,1>
+  <View=-647,127,1261,1151,0.824219,0,0>
   <Grid=10,10,1>
   <DataSet=Bench_LNA_CG_Diff_IIP3.dat>
   <DataDisplay=Bench_LNA_CG_Diff_IIP3.dpl>
