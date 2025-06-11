@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=-406,812,714,1456,1.40433,0,0>
+  <View=-501,812,615,1413,1.44759,282,0>
   <Grid=5,5,1>
   <DataSet=PFD.dat>
   <DataDisplay=PFD.dpl>
@@ -36,20 +36,22 @@
 <Components>
   <GND * 1 -120 1320 0 0 0 3>
   <Vdc V2 1 -90 1320 -26 18 0 0 "1.2 V" 1>
-  <Port P2 1 -60 1240 -23 12 0 0 "2" 1 "analog" 0>
   <Port P4 1 515 1320 4 -46 0 2 "4" 1 "analog" 0>
+  <Sub SUB5 5 85 900 -26 88 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
+  <Sub SUB7 5 85 1260 -26 88 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
+  <Sub SUB4 1 380 1170 -393 -79 0 2 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/AND.sch" 0>
   <GND * 1 -210 960 0 0 0 3>
   <Vdc V3 1 -180 960 -26 18 0 0 "1.2 V" 1>
-  <Port P1 1 -150 1040 -23 12 0 0 "1" 1 "analog" 0>
   <INCLSCR INCLSCR1 1 -185 868 -60 16 0 0 ".LIB /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt\n" 1 "" 0 "" 0>
   <Port P3 1 515 960 4 -46 0 2 "3" 1 "analog" 0>
-  <Sub SUB5 5 85 900 -26 155 0 0 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/INV_2x.sch" 0>
-  <Sub SUB4 1 380 1170 -687 -120 0 2 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/AND.sch" 0>
-  <Sub SUB9 5 205 900 -26 155 0 0 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/INV_2x.sch" 0>
-  <Sub SUB1 1 90 1020 -194 76 0 0 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/Bascule_D.sch" 0>
-  <Sub SUB7 5 85 1260 -26 155 0 0 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/INV_2x.sch" 0>
-  <Sub SUB8 5 205 1260 -26 155 0 0 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/INV_2x.sch" 0>
-  <Sub SUB2 1 90 1265 -194 -93 1 0 "/home/userproj/QucsWorkspace/Zigbee/PLL/Pompe_Charge/Bascule_D.sch" 0>
+  <Sub SUB8 5 205 1260 -26 88 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
+  <Sub SUB9 5 205 900 -26 88 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
+  <Sub SUB2 1 90 1265 -190 -66 1 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
+  <Sub SUB1 1 90 1020 -190 49 0 0 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/Bascule_D.sch" 0>
+  <Sub SUB10 1 130 1090 -526 88 1 2 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV_2x.sch" 0>
+  <Sub SUB11 1 110 1150 -246 28 1 2 "/home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/Pompe_Charge/INV.sch" 0>
+  <Port P1 1 60 1020 -23 12 0 0 "1" 1 "analog" 0>
+  <Port P2 1 60 1265 -23 12 0 0 "2" 1 "analog" 0>
 </Components>
 <Wires>
   <275 960 275 1130 "" 0 0 0 "">
@@ -61,18 +63,17 @@
   <170 1320 275 1320 "" 0 0 0 "">
   <130 960 275 960 "" 0 0 0 "">
   <130 960 130 990 "" 0 0 0 "">
-  <60 1050 60 1150 "" 0 0 0 "">
-  <-150 1040 60 1040 "" 0 0 0 "">
-  <60 1020 60 1040 "" 0 0 0 "">
   <-40 990 60 990 "" 0 0 0 "">
   <-40 960 -40 990 "" 0 0 0 "">
-  <-60 1240 60 1240 "" 0 0 0 "">
-  <60 1240 60 1265 "" 0 0 0 "">
-  <60 1150 60 1235 "" 0 0 0 "">
   <130 1295 170 1295 "" 0 0 0 "">
   <170 1295 170 1320 "" 0 0 0 "">
   <-40 1295 60 1295 "" 0 0 0 "">
   <-40 1295 -40 1320 "" 0 0 0 "">
+  <-180 1150 -180 1240 "" 0 0 0 "">
+  <-180 1240 60 1240 "" 0 0 0 "">
+  <60 1235 60 1240 "" 0 0 0 "">
+  <-180 1050 -180 1150 "" 0 0 0 "">
+  <-180 1050 60 1050 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>

@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=92,437,889,865,1.97365,0,0>
+  <View=92,430,853,927,1.75164,0,0>
   <Grid=5,5,1>
   <DataSet=VCO_div256_sarah.dat>
   <DataDisplay=VCO_div256_sarah.dpl>
@@ -34,7 +34,7 @@
   <Text 15 35 9 #000000 90 "VCOm">
 </Symbol>
 <Components>
-  <SPICEINIT SPICEINIT1 1 170 725 -32 18 0 0 "osdi /home/userproj/microelectronics/projects/ZigBee/PLL/PLL_verilog_A/osdi/VCO_10MHz_sarah.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/psp103_nqs.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/r3_cmc.osdi" 1>
+  <SPICEINIT SPICEINIT1 1 170 725 -32 18 0 0 "osdi /home/userproj/microelectronics/ProjetZigbee/ZigBee/PLL/PLL_verilog_A/osdi/VCO_10MHz_sarah.osdi\nosdi /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/psp103_nqs.osdi" 1>
   <SpiceModel SpiceModel1 1 165 650 -29 18 0 0 ".MODEL vco1 VCO()" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
   <SPICE_dev X1 1 390 665 -26 -141 0 0 "5" 0 "N" 0 "vco1" 1 "" 0>
   <Port P1 1 350 605 -23 12 0 0 "1" 1 "analog" 0>
