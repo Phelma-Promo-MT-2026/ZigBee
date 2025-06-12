@@ -1,0 +1,6 @@
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/LVS/LAYOUT/test_inductance/test_inductance.sch
+.subckt test_inductance VDD VIN GND
+*.PININFO VDD:B VIN:B GND:B
+XM1 VDD net1 GND GND sg13_lv_nmos l=0.13u w=0.15u ng=1 m=1
+L1 VIN net1 1n m=1
+.ends

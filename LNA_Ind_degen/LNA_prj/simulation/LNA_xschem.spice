@@ -1,0 +1,15 @@
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/Zigbee/LNA_Ind_degen/LNA_prj/LNA_xschem.sch
+.subckt LNA_xschem OUT IN GND VDD VPOL
+*.PININFO OUT:B IN:B GND:B VDD:B VPOL:B
+XC1 net5 OUT cap_cmim w=27.5e-6 l=27.5e-6 m=1
+XM1 net4 VDD net5 GND sg13_lv_nmos l=0.13u w=106u ng=11 m=1
+XR1 IN net1 rhigh w=1e-6 l=2e-6 m=1 b=0
+XR2 net1 VPOL rsil w=1.2e-6 l=20.0e-6 m=1 b=0
+XM2 net2 net3 net4 GND sg13_lv_nmos l=0.13u w=106u ng=11 m=1
+XM3 GND net1 net1 GND sg13_lv_nmos l=0.2u w=58.0u ng=4 m=1
+XC2 OUT GND cap_cmim w=34.0e-6 l=34.0e-6 m=1
+XCp net3 net2 cap_cmim w=25.9e-6 l=25.9e-6 m=1
+Ls net2 GND 1.6n m=1
+LL1 VDD net5 3n m=1
+L1 IN net3 3n m=1
+.ends
