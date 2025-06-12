@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=186,56,1405,710,1.29146,0,0>
+  <View=84,51,1558,842,1.06732,0,0>
   <Grid=10,10,1>
   <DataSet=Capacite_cmim.dat>
   <DataDisplay=Capacite_cmim.dpl>
@@ -25,7 +25,7 @@
   <GND * 1 890 180 0 0 0 0>
   <GND * 1 890 340 0 0 0 0>
   <Pac P2 1 840 180 -36 39 0 2 "1" 1 "50 Ohm" 1 "0 dBm" 0 "2.45 GHz" 1 "26.85" 0 "true" 0>
-  <SpicePar SpicePar1 1 480 560 -28 18 0 0 "w=18.3u" 1 "l=18.3u" 1>
+  <SpicePar SpicePar1 1 480 560 -28 18 0 0 "w=17.1u" 1 "l=17.1u" 1>
   <Lib cap_cmim1 1 840 340 -34 28 0 1 "<userhome>/<qucs_workspace>/user_lib/IHP_PDK_basic_components" 0 "cap_cmim" 0 "l" 1 "w" 1>
 </Components>
 <Wires>
