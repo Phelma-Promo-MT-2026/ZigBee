@@ -15,7 +15,7 @@ module VCO(Vctrl, vss, VoutDiv, VoutVCOp, VoutVCOm);
 			W_VCODiv = WoDiv + KoDiv*1.2;
 			W_VCO = WoVCO + KoVCO*1.2;
 		end
-		else if(V(Vctrl, vss) < 0) begin
+		else if(V(Vctrl, vss) <= 0) begin
 			W_VCODiv = WoDiv;
 			W_VCO = WoVCO;
 		end		

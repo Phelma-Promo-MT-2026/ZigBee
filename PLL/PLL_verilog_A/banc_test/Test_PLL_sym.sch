@@ -1,6 +1,6 @@
 <Qucs Schematic 25.1.1>
 <Properties>
-  <View=53,-71,1320,745,1.22119,0,126>
+  <View=97,-102,1320,696,1.08994,0,0>
   <Grid=5,5,1>
   <DataSet=Test_PLL_sym.dat>
   <DataDisplay=Test_PLL_sym.dpl>
@@ -23,6 +23,7 @@
   <GND * 1 610 255 0 0 0 0>
   <R R2 1 580 255 -26 15 0 0 "1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <.TR TR1 1 140 120 0 99 0 0 "lin" 1 "0" 1 "1 ns" 1 "200000" 0 "Trapezoidal" 0 "2" 0 "1 ps" 0 "1e-16" 0 "15000" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "no" 0 "0" 0>
+  <.CUSTOMSIM CUSTOM1 1 850 205 0 41 0 0 "tran 50p 100n\nlet" 1 "V(out);V(in)" 0 "custom#ac1#.plot;custom#ac1#.print" 0>
 </Components>
 <Wires>
   <550 190 550 190 "voutp" 580 160 0 "">
