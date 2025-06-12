@@ -1,0 +1,6 @@
+** sch_path: /home/userproj/microelectronics/PDK/IHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/xschem/untitled.sch
+.subckt untitled
+
+XM1 net3 net1 net2 net2 sg13_lv_nmos l=0.45u w=1.0u ng=1 m=1
+L1 net4 net1 1n m=1
+.ends
