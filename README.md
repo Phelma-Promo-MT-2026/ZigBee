@@ -104,11 +104,3 @@ Ce dépôt est partagé à des fins **pédagogiques et académiques uniquement**
 - Le **PDK IHP SG13G2** est fourni sous **licence libre** pour recherche et enseignement  
 - **Aucun usage commercial ou de production** n'est autorisé  
 
-# 🔗 Liens utiles
-
-- [IHP Open PDK](https://example.com)  
-- [IIC-OSIC-TOOLS Docker](https://example.com)  
-- [QUCS-S GitHub](https://example.com)  
-- [Ngspice](https://example.com)  
-- [Xschem](https://example.com)  
-- [KLayout](https://example.com)
