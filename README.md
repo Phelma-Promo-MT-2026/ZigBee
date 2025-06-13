@@ -10,7 +10,7 @@ Conception d'un **récepteur ZigBee** en technologie **BiCMOS 130nm (IHP SG13G2)
 - Réalisation des layouts physiques (mask layout)
 - Intégration et validation système
 
-> 🔧 Seule la partie **récepteur RF** a été développée.  
+> Seule la partie **récepteur RF** a été développée.  
 > L’émetteur et les fonctions numériques ne sont pas dans le périmètre de conception, mais sont analysés dans les documents d'étude système.
 
 ## Blocs développés :
@@ -82,11 +82,11 @@ Technologie cible : **IHP Open PDK – SG13G2 130nm BiCMOS RF**
 ###  Documentation d'Adrien Luitot (MT promotion 2025) - notamment installation de QUCS-S
 👉 [Guide Analog Course](https://analog-course.readthedocs.io/en/latest/design_softwares/qucs.html)
 
-### 🐳 Environnement Docker (optionnel)
+### Environnement Docker (optionnel)
 
 👉 [IIC-OSIC-TOOLS] https://github.com/iic-jku/IIC-OSIC-TOOLS.git
 
-# 👨‍🏫 Auteurs & Contributions
+# Auteurs & Contributions
 
 Projet réalisé par les étudiants de la promotion **MT 2026** de **Grenoble INP - Phelma**, avec le soutien et l'encadrement de :
 
