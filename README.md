@@ -91,10 +91,10 @@ Technologie cible : **IHP Open PDK – SG13G2 130nm BiCMOS RF**
 Projet réalisé par les étudiants de la promotion **MT 2026** de **Grenoble INP - Phelma**, avec le soutien et l'encadrement de :
 
 - **Prof. Sylvain Bourdel** - encadrant principal  
-- **Prof. Yann Le Guennec** - analyse système 
-- **T. Larja** – gestion de projet et management
-- **A. Aitoumeri** - mise en place machine virtuelle
-- **A. Luitot** - support technique logiciels 
+- **Prof. Yannis Le Guennec** - analyse système 
+- **Prof. Tarik Larja** – gestion de projet et management
+- **Tech. Abdelhamid Aitoumeri** - mise en place machine virtuelle
+- **Etud. Adrien Luitot** - support technique logiciels 
 
 # 📄 Licence
 
