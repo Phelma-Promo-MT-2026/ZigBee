@@ -15,14 +15,17 @@ Conception d'un **récepteur ZigBee** en technologie **BiCMOS 130nm (IHP SG13G2)
 
 ## Blocs développés :
 
-- **LNA** : deux architectures – grille commune et dégénérée à inductance  
+- **LNA** : deux architectures – grille commune et à inductance dégénérée
 - **Mixer** : double équilibré avec adaptation d’entrée/sortie  
 - **Balun** : conversion single ↔ différentiel  
-- **VCO** : oscillateur contrôlé en tension, compatible avec la PLL  
 - **PLL** :  
-  - Chaîne analogique : PFD, pompe de charge, filtre de boucle, diviseur  
+  - PFD
+  - pompe de charge
+  - filtre de boucle
+  - diviseur de fréquence 
+  - VCO
   - Modélisation Verilog-A  
-- **Rx_Complet** : intégration LNA + Mixer + Balun + VCO pour simulation système  
+- **Rx_Complet** : intégration LNA + Mixer + Balun
 
 ## 📁 Organisation du dépôt
 
@@ -46,11 +49,11 @@ Contient tous les documents de conception, spécifications, rapports, tutoriels 
 
 Contient les fichiers de simulation, schémas, layouts et bancs de test pour chaque bloc :
 
-- `LNA_Inductance_Degenerated/` – LNA avec inductance dégénérée
-- `LNA_Grille_Commune/` – LNA en grille commune
-- `Mixer/`, `Balun/`, `VCO/`, `PFD_CP_Filter/`, `Divider/`, `PLL_VerilogA/`
+- `LNA_Ind_Degen/` – LNA avec inductance dégénérée
+- `LNA_Grille_Com/` – LNA en grille commune
+- `Mixer/`, `Balun/`
+- `PLL/`, `VCO/`, `PFD_CP_Filter/`, `Divider/`, `PLL_VerilogA/`
 - `Rx_Complet/` – test système du récepteur global
-- `Layouts/` – GDS réalisés sous KLayout
 
 ---
 
@@ -76,7 +79,7 @@ Technologie cible : **IHP Open PDK – SG13G2 130nm BiCMOS RF**
 ###  Installation du PDK
 👉 [Tutoriel officiel IHP](https://ihp-open-pdk-docs.readthedocs.io/en/latest/install.html)
 
-###  Installation de QUCS-S
+###  Documentation d'Adrien Luitot (MT promotion 2025) - notamment installation de QUCS-S
 👉 [Guide Analog Course](https://analog-course.readthedocs.io/en/latest/design_softwares/qucs.html)
 
 ### 🐳 Environnement Docker (optionnel)
@@ -87,10 +90,11 @@ Technologie cible : **IHP Open PDK – SG13G2 130nm BiCMOS RF**
 
 Projet réalisé par les étudiants de la promotion **MT 2026** de **Grenoble INP - Phelma**, avec le soutien et l'encadrement de :
 
-- **Prof. Sylvain Bourdel** – encadrant principal  
-- **Prof. Yann Le Guennec**  
-- **T. Larja** – support système et coordination  
-- **A. Luitot & A. Aitoumeri** – mise en place logicielle, scripts d’automatisation  
+- **Prof. Sylvain Bourdel** - encadrant principal  
+- **Prof. Yann Le Guennec** - analyse système 
+- **T. Larja** – gestion de projet et management
+- **A. Aitoumeri** - mise en place machine virtuelle
+- **A. Luitot** - support technique logiciels 
 
 # 📄 Licence
 
